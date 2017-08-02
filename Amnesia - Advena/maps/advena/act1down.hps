@@ -27,13 +27,15 @@ PlayMusic("25_amb.ogg", true, 0.5, 1.0, 1, true);
 void OnLeave() { 
 }
 void odkrec_zawor1(string &in asEntity, int alState) {
-if(alState == 1) {
+    
+    // zmiana na zawór lewostronny 
+if(alState == -1) {
 PlaySoundAtEntity("wat1", "16_water_stream_drips.snt", "valve_iron_rusty02_3", 0, false);
 CreateParticleSystemAtEntity("wat_ps1","ps_water_stream_bucket.ps" ,"ScriptArea_4", true);
 CreateParticleSystemAtEntity("wat_ps2","ps_water_stream_bucket.ps" ,"ScriptArea_4", true);
 CreateParticleSystemAtEntity("wat_ps3","ps_water_stream_bucket.ps" ,"ScriptArea_4", true);
 }
-if(alState == -1) {
+if(alState == 1) {
 DestroyParticleSystem("wat_ps1");
 DestroyParticleSystem("wat_ps2");
 DestroyParticleSystem("wat_ps3");
@@ -41,13 +43,13 @@ StopSound("wat1",1.0f);
 }
 }
 void odkrec_zawor2(string &in asEntity, int alState) {
-if(alState == 1) {
+if(alState == -1) {
 PlaySoundAtEntity("wat12", "16_water_stream_drips.snt", "valve_iron_rusty02_2", 0, false);
 CreateParticleSystemAtEntity("wat_ps12","ps_water_stream_bucket.ps" ,"ScriptArea_5", true);
 CreateParticleSystemAtEntity("wat_ps22","ps_water_stream_bucket.ps" ,"ScriptArea_5", true);
 CreateParticleSystemAtEntity("wat_ps32","ps_water_stream_bucket.ps" ,"ScriptArea_5", true);
 }
-if(alState == -1) {
+if(alState == 1) {
 DestroyParticleSystem("wat_ps12");
 DestroyParticleSystem("wat_ps22");
 DestroyParticleSystem("wat_ps32");
@@ -55,13 +57,13 @@ StopSound("wat12",1.0f);
 }
 }
 void odkrec_zawor4(string &in asEntity, int alState) {
-if(alState == 1) {
+if(alState == -1) {
 PlaySoundAtEntity("wat13", "16_water_stream_drips.snt", "valve_iron_rusty02_4", 0, false);
 CreateParticleSystemAtEntity("wat_ps13","ps_water_stream_bucket.ps" ,"ScriptArea_6", true);
 CreateParticleSystemAtEntity("wat_ps23","ps_water_stream_bucket.ps" ,"ScriptArea_6", true);
 CreateParticleSystemAtEntity("wat_ps33","ps_water_stream_bucket.ps" ,"ScriptArea_6", true);
 }
-if(alState == -1) {
+if(alState == 1) {
 DestroyParticleSystem("wat_ps13");
 DestroyParticleSystem("wat_ps23");
 DestroyParticleSystem("wat_ps33");
@@ -69,13 +71,13 @@ StopSound("wat13",1.0f);
 }
 }
 void odkrec_zawor5(string &in asEntity, int alState) {
-if(alState == 1) {
+if(alState == -1) {
 PlaySoundAtEntity("wat14", "16_water_stream_drips.snt", "valve_iron_rusty02_1", 0, false);
 CreateParticleSystemAtEntity("wat_ps14","ps_water_stream_bucket.ps" ,"ScriptArea_7", true);
 CreateParticleSystemAtEntity("wat_ps24","ps_water_stream_bucket.ps" ,"ScriptArea_7", true);
 CreateParticleSystemAtEntity("wat_ps34","ps_water_stream_bucket.ps" ,"ScriptArea_7", true);
 }
-if(alState == -1) {
+if(alState == 1) {
 DestroyParticleSystem("wat_ps14");
 DestroyParticleSystem("wat_ps24");
 DestroyParticleSystem("wat_ps34");

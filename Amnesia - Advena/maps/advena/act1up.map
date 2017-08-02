@@ -78,8 +78,7 @@
                 <File Id="14" Path="entities/lamp/candle_floor/candle_floor_no_light.ent" />
                 <File Id="15" Path="entities/lamp/candle_floor/candle_floor.ent" />
                 <File Id="16" Path="entities/door/prison/prison.ent" />
-                <File Id="17" Path="entities/lamp/hanging_lantern/hanging_lantern_ceiling.ent" />
-                <File Id="18" Path="entities/special/childsnake_floor_water/childsnake_floor_water_blood_advena.ent" />
+                <File Id="17" Path="entities/lamp/hanging_lantern/hanging_lantern_ceiling.ent" />               
                 <File Id="19" Path="entities/prison/worn_hay_mattress/worn_hay_mattress.ent" />
                 <File Id="20" Path="entities/prison/strappado_shackles/strappado_shackles.ent" />
                 <File Id="21" Path="entities/prison/prisoner_cage/prisoner_cage.ent" />

@@ -1,13 +1,23 @@
 void OnStart() {
 
 	AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",true,1);
-	AddEntityCollideCallback("Player","GruntPojawienie","GruntPojawienie",true,1);
+	AddEntityCollideCallback("Player","GruntPojawienie","GruntPojawienie",true,1);   
+        AddLocalVarInt("losuj_czy_duch",RandInt(1,2));
+        //0 oleju w lampie
+        SetPlayerLampOil(0.0f);
+        
 }
 
 void OnEnter() {
  //PlaySoundAtEntity("","scare_whine_loop.snt", "Dzwieki1", 0, true);
 // PlaySoundAtEntity("","scare_male_terrified.snt", "Dzwieki2", 0, true);
  //PlaySoundAtEntity("","scare_baby_cry.snt", "Dzwieki3", 0, true);
+      /*
+     Autosave & szybkość gracza 0.9
+     */
+    	SetPlayerMoveSpeedMul(1.0f);	
+	AutoSave();
+
 
 }
 
@@ -20,7 +30,13 @@ void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 PlayGuiSound("react_scare.snt",1);   
 }
 void GruntPojawienie(string &in asParent, string &in asChild, int alState)  {
-SetEntityActive("servant_grunt_1",true);
+    
+       if(GetLocalVarInt("losuj_czy_duch") == 1) {
+        SetEntityActive("servant_grunt_1", true);
+    } else {
+        SetEntityActive("servant_grunt_2", true);
+    }
+//SetEntityActive("servant_grunt_1",true);
 PlayGuiSound("react_breath.snt",1);
 	  for(int d=1;d<=30;d++) {      AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_"+d, 0, ""); }  
 }

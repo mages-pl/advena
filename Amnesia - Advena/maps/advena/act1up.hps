@@ -19,7 +19,7 @@ AddEntityCollideCallback("Player", "ScriptArea_12", "ScriptArea_12", false, 0); 
 
 }
  
-//####### ZATRZAŒNIJ DRZWI #####################
+//####### ZATRZAï¿½NIJ DRZWI #####################
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
  SetSwingDoorLocked("prison_silent_6", true, true);
  SetSwingDoorDisableAutoClose("prison_silent_6", true);
@@ -33,7 +33,7 @@ void particle_door(string &in asTimer) {
  CreateParticleSystemAtEntity("", "ps_dust_impact_vert.ps", "ScriptArea_22", false);
 }
  
-//##### PODNIEŒ IG£Ê ###############
+//##### PODNIEï¿½ IGï¿½ï¿½ ###############
 void dotyk1(string &in asEntity, string &in Type) {
 AddTimer("",0.5,"Teleport_Cell");
 }
@@ -49,7 +49,7 @@ SetPlayerCrouchDisabled(true);
  FadeRadialBlurTo(0.75f, 0.8f);
 szybkosc = 3;
 FadeOut(1); 
-break; // przejœcie ekranu do czerni mo¿na dodaæ efekt os³abienia
+break; // przejï¿½cie ekranu do czerni moï¿½na dodaï¿½ efekt osï¿½abienia
 case 2:
 szybkosc = 1;
  TeleportPlayer("PlayerStartArea_2");
@@ -60,9 +60,9 @@ szybkosc = 1;
  SetMoveObjectState("prison_silent_6", 1);
 break; 
 case 3:
- FadeIn(1); // Wrócenie do stanu normalnoœci + teleport do koszmarnej celi 
+ FadeIn(1); // Wrï¿½cenie do stanu normalnoï¿½ci + teleport do koszmarnej celi 
 szybkosc = 10;
-break; // panika, cela wype³nia siê krwi¹ + panika + os³abienie
+break; // panika, cela wypeï¿½nia siï¿½ krwiï¿½ + panika + osï¿½abienie
  case 4:
  FadeOut(1);
  szybkosc = 2;
@@ -82,7 +82,7 @@ break;
 
 	if (GetLocalVarInt("intro_cell_sequence") <= 6){ AddTimer("", szybkosc, "Teleport_Cell"); }
 }
-//############# EFEKTY DWIÊKOWE ##############
+//############# EFEKTY Dï¿½WIï¿½KOWE ##############
 void ScriptArea_6(string &in asParent, string &in asChild, int alState) {
 	if(alState == 1) {
  RemoveTimer("scare_sound_prison_n");
@@ -121,7 +121,7 @@ void OnEnter() {
 PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
 AutoSave();
 }
-//############ PODNIEŒ OLIWE ##############
+//############ PODNIEï¿½ OLIWE ##############
 void oil_take_act1up(string &in asEntity, string &in type) {
   	GiveSanityDamage(15, true);
     CreateParticleSystemAtEntityExt( "", "ps_green_wind_breeze.ps", "ScriptArea_21", false, 0.7f, 0.8f, 0.8f, 0.7f, true, 0, 2, 100, 110);
