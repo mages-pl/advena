@@ -1,0 +1,38 @@
+void OnStart() {
+ AddUseItemCallback("","key_tomb_1","otworz_act1toact2","otworz_act1toact2",true);	
+}
+void OnEnter() {
+//
+PlayMusic("att_grunt", true, 0.7, 0.1, 10, true);
+if(GetLocalVarInt("q_pozar") == 0) {
+AddLocalVarInt("q_pozar",1);
+AddQuest("Journal","act1burning");
+AddTimer("Efekty_pozaru",RandInt(2,15),"Efekty_pozaru");
+}
+ AddUseItemCallback("","key_tomb_1","otworz_act1toact2","otworz_act1toact2",true);
+ AddTimer("break_glass1",RandInt(3,12),"break_glass1");
+ StopPlayerLookAt();
+}
+void break_glass1(string &in asTimer) {
+RemoveTimer(asTimer);
+ AddTimer("break_glass1",RandInt(3,12),"break_glass1");
+	PlayGuiSound("break_glass_bottle",1);
+}
+void otworz_act1toact2(string &in asItem, string &in asEntity) {
+ SetEntityActive("otworz_act1toact2",false);
+ SetEntityActive("otworz_act1toact2_1",true);
+ RemoveItem("key_tomb_1");
+}
+void Efekty_pozaru(string &in asTimer) {
+RemoveTimer(asTimer);
+if(GetPlayerHealth() <= 0.05) {
+
+}
+	GivePlayerDamage(RandInt(0,5), "BloodSplash", false, false);
+	PlaySoundAtEntity("","player_cough", "Player", 0, false);
+AddTimer("Efekty_pozaru",RandInt(2,15),"Efekty_pozaru");	
+}
+void OnLeave() {
+CompleteQuest("Journal","act1burning");
+StopMusic(2,2.0f);
+}

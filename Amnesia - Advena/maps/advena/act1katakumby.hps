@@ -1,0 +1,26 @@
+void OnStart() {
+
+	AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",true,1);
+	AddEntityCollideCallback("Player","GruntPojawienie","GruntPojawienie",true,1);
+}
+
+void OnEnter() {
+ //PlaySoundAtEntity("","scare_whine_loop.snt", "Dzwieki1", 0, true);
+// PlaySoundAtEntity("","scare_male_terrified.snt", "Dzwieki2", 0, true);
+ //PlaySoundAtEntity("","scare_baby_cry.snt", "Dzwieki3", 0, true);
+
+}
+
+void OnLeave() {
+
+}
+void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
+	CreateParticleSystemAtEntity("", "ps_dust_ghost.ps", "ScriptArea_2", false);
+   PlaySoundAtEntity("","03_in_a_bottle","ScriptArea_2", 0 , false);
+PlayGuiSound("react_scare.snt",1);   
+}
+void GruntPojawienie(string &in asParent, string &in asChild, int alState)  {
+SetEntityActive("servant_grunt_1",true);
+PlayGuiSound("react_breath.snt",1);
+	  for(int d=1;d<=30;d++) {      AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_"+d, 0, ""); }  
+}
