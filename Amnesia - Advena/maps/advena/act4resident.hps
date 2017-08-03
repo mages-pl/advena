@@ -19,7 +19,7 @@ void OnStart() {
 	SetEntityPlayerInteractCallback("quest_drzwi", "quest_drzwi",true);
 	//GiveItemFromFile("lantern", "lantern.ent");
  
-AddTimer("thunder",0.1,"TimerThunder");
+//AddTimer("thunder",0.1,"TimerThunder");
 }
 void ScriptArea_8(string &in asParent, string &in asChild, int alState){
  if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
@@ -60,85 +60,85 @@ ShowEnemyPlayerPosition("waterlurker_1");
 AddLocalVarInt("waterlurker",1);
 }
 }
-void TimerThunder(string &in asTimer)
-{
-	AddLocalVarInt("ThunderStep", 1);				//What step to play in the event
-	float fEventSpeed = RandFloat(0.05f, 0.15f);	//The default time between steps in an event
-
-	switch(GetLocalVarInt("ThunderStep")) {
-		case 1:
-			ThunderLights(2,0.05f);
-		break;
-		case 2:
-			ThunderLights(1,0.05f);
-		break;
-		case 3:
-			ThunderLights(3,0.05f);
-		break;
-		case 4:
-			ThunderLights(1,0.05f);
-		break;
-		case 5:
-			ThunderLights(2,0.05f);
-		break;
-		case 6:
-			ThunderLights(3,0.05f);
-		break;
-		case 7:
-			ThunderLights(1,0.3f);
-			PlaySoundAtEntity("Thunder", "general_thunder.snt", "AreaThunder", 0.0f, false);
-		break;
-	}
-	
-	if(GetLocalVarInt("ThunderStep") < 8)  AddTimer("thunder", fEventSpeed, "TimerThunder");
-	else { 
-		SetLocalVarInt("ThunderStep", 0); 
-		
-		AddTimer("thunder", RandFloat(10.0f, 30.0f), "TimerThunder"); 
-	}
-}
-void ThunderLights(int alIntensity, float afFade)
-{
-	/*Skip parts of a flash everynow and then but not the first strong light 
-	**and not the last "back to normal" light
-	 */
-	if(RandFloat(1, 3) == 1 && (GetLocalVarInt("ThunderStep") != 3 or GetLocalVarInt("ThunderStep") != 7)) return;
-	
-	float fF = 0.2f;
-	
-	switch(alIntensity) {
-		case 1:
-			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.52f,0.55f,0.6f,0.45f,-1,afFade-0.04f);
-			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.32f,0.35f,0.4f,0.2f,-1,afFade-0.025f);
-			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.2f,0.25f,0.35f,-1,-1,afFade);
-		break;
-		case 2:
-			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.82f+fF,0.85f+fF,0.9f+fF,0.9f+fF,-1,afFade-0.04f);
-			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.72f+fF,0.75f+fF,0.8f+fF,0.4f+fF,-1,afFade-0.025f);
-			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.25f+fF,0.3f+fF,0.4f+fF,-1,-1,afFade);
-		break;
-		case 3:
-			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.92f+fF,0.95f+fF,1+fF,1+fF,-1,afFade-0.04f);
-			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.82f+fF,0.85f+fF,0.9f+fF,0.5f+fF,-1,afFade-0.025f);
-			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.3f+fF,0.35f+fF,0.45f+fF,-1,-1,afFade);
-		break;
-	}
-}
- void CollideAreaThunder(string &in asParent, string &in asChild, int alState)
-{
-	if(asChild == "areabeginthunder") {
-		AddTimer("thunder", RandFloat(1, 5), "TimerThunder"); 
-		
-		AddEntityCollideCallback("Player", "areaendthunder", "CollideAreaThunder", true, 1);
-		
-	} else {
-		RemoveTimer("thunder");
-		
-		ThunderLights(1,0.3f);
-		
-		AddEntityCollideCallback("Player", "areabeginthunder", "CollideAreaThunder", true, 1);
-	}
-}
+//void TimerThunder(string &in asTimer)
+//{
+//	AddLocalVarInt("ThunderStep", 1);				//What step to play in the event
+//	float fEventSpeed = RandFloat(0.05f, 0.15f);	//The default time between steps in an event
+//
+//	switch(GetLocalVarInt("ThunderStep")) {
+//		case 1:
+//			ThunderLights(2,0.05f);
+//		break;
+//		case 2:
+//			ThunderLights(1,0.05f);
+//		break;
+//		case 3:
+//			ThunderLights(3,0.05f);
+//		break;
+//		case 4:
+//			ThunderLights(1,0.05f);
+//		break;
+//		case 5:
+//			ThunderLights(2,0.05f);
+//		break;
+//		case 6:
+//			ThunderLights(3,0.05f);
+//		break;
+//		case 7:
+//			ThunderLights(1,0.3f);
+//			PlaySoundAtEntity("Thunder", "general_thunder.snt", "AreaThunder", 0.0f, false);
+//		break;
+//	}
+//	
+//	if(GetLocalVarInt("ThunderStep") < 8)  AddTimer("thunder", fEventSpeed, "TimerThunder");
+//	else { 
+//		SetLocalVarInt("ThunderStep", 0); 
+//		
+//		AddTimer("thunder", RandFloat(10.0f, 30.0f), "TimerThunder"); 
+//	}
+//}
+//void ThunderLights(int alIntensity, float afFade)
+//{
+//	/*Skip parts of a flash everynow and then but not the first strong light 
+//	**and not the last "back to normal" light
+//	 */
+//	if(RandFloat(1, 3) == 1 && (GetLocalVarInt("ThunderStep") != 3 or GetLocalVarInt("ThunderStep") != 7)) return;
+//	
+//	float fF = 0.2f;
+//	
+//	switch(alIntensity) {
+//		case 1:
+//			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.52f,0.55f,0.6f,0.45f,-1,afFade-0.04f);
+//			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.32f,0.35f,0.4f,0.2f,-1,afFade-0.025f);
+//			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.2f,0.25f,0.35f,-1,-1,afFade);
+//		break;
+//		case 2:
+//			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.82f+fF,0.85f+fF,0.9f+fF,0.9f+fF,-1,afFade-0.04f);
+//			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.72f+fF,0.75f+fF,0.8f+fF,0.4f+fF,-1,afFade-0.025f);
+//			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.25f+fF,0.3f+fF,0.4f+fF,-1,-1,afFade);
+//		break;
+//		case 3:
+//			for(int i=0;i<=5;i++) FadeLightTo("spotthunder_"+i,0.92f+fF,0.95f+fF,1+fF,1+fF,-1,afFade-0.04f);
+//			for(int i=0;i<=7;i++) FadeLightTo("pointthunder_"+i,0.82f+fF,0.85f+fF,0.9f+fF,0.5f+fF,-1,afFade-0.025f);
+//			for(int i=0;i<=3;i++) FadeLightTo("ambthunder_"+i,0.3f+fF,0.35f+fF,0.45f+fF,-1,-1,afFade);
+//		break;
+//	}
+//}
+// void CollideAreaThunder(string &in asParent, string &in asChild, int alState)
+//{
+//	if(asChild == "areabeginthunder") {
+//		AddTimer("thunder", RandFloat(1, 5), "TimerThunder"); 
+//		
+//		AddEntityCollideCallback("Player", "areaendthunder", "CollideAreaThunder", true, 1);
+//		
+//	} else {
+//		RemoveTimer("thunder");
+//		
+//		ThunderLights(1,0.3f);
+//		
+//		AddEntityCollideCallback("Player", "areabeginthunder", "CollideAreaThunder", true, 1);
+//	}
+//}
   
 void ScriptArea_4(string &in asParent, string &in asChild, int alState) {
 SetEntityActive("waterlurker_2",true);

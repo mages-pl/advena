@@ -4059,6 +4059,14 @@
                         <Var Name="HallucinationEndDist" Value="3" />
                     </UserVariables>
                 </Entity>
+                    <Entity Active="false" FileIndex="16" Group="0" ID="1908" Name="servant_grunt_2" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8.30726 0 16.6723">
+                    <UserVariables>
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="DisableTriggers" Value="false" />
+                        <Var Name="Hallucination" Value="true" />
+                        <Var Name="HallucinationEndDist" Value="1" />
+                    </UserVariables>
+                </Entity>
                 <Entity Active="true" FileIndex="17" Group="0" ID="1911" Name="Z_act1katakumby1_2" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8.2556 0.580402 20.9365">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />

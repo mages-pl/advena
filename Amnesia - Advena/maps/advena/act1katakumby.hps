@@ -12,9 +12,10 @@ void OnEnter() {
  //PlaySoundAtEntity("","scare_whine_loop.snt", "Dzwieki1", 0, true);
 // PlaySoundAtEntity("","scare_male_terrified.snt", "Dzwieki2", 0, true);
  //PlaySoundAtEntity("","scare_baby_cry.snt", "Dzwieki3", 0, true);
-      /*
-     Autosave & szybkość gracza 0.9
+      /* 
+     Autosave & szybkość gracza 1.0 
      */
+     
     	SetPlayerMoveSpeedMul(1.0f);	
 	AutoSave();
 
