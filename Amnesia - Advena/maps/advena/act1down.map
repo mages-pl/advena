@@ -46,7 +46,7 @@
                 <File Id="29" Path="static_objects/relictbase/stairs/NC_rail.DAE" />
             </FileIndex_StaticObjects>
             <FileIndex_Entities NumOfFiles="55">
-                <File Id="0" Path="entities/special/prison_tunnel_entry/prison_tunnel_entry_broken_advena.ent" />
+                <File Id="0" Path="custom_stories/Amnesia - Advena/entities/special/prison_tunnel_entry/prison_tunnel_entry_broken_advena.ent" />
                 <File Id="1" Path="entities/special/prison_tunnel_entry/prison_tunnel_entry_static.ent" />
                 <File Id="2" Path="entities/door/castle/castle.ent" />
                 <File Id="3" Path="entities/furniture/cabinet_simple/cabinet_simple.ent" />
