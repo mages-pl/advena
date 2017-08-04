@@ -17,6 +17,7 @@ AddUseItemCallback("", "hand_drill_part01_1", "ScriptArea_1", "Poloz_Raczke", tr
 AddUseItemCallback("", "key_tomb_1", "level_celler_1", "Otworz_Drzwi_Act4", true);
 }
 void OnEnter() {
+     AutoSave();
 PlayMusic("12_amb",true, 1.0f, 0.0f, 10, false); 
 }
 void ScriptArea_3(string &in asParent, string &in asChild, int alState) {

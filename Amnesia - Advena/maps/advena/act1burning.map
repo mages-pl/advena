@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="-34 -6.75 181.25" CameraTarget="-34 -6.75 1.25" CameraZoom="5.5" GridHeight="1.25" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="146.001 -6.75 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="5.5" GridHeight="-34" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-34 173.251 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="5.5" GridHeight="-6.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-25.0167 24.2112 10.1271" CameraTarget="-8.49924 -3.25 0.309927" CameraZoom="0.4" GridHeight="-3.25" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-34 -6.75 181.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="1.25" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="146.001 -6.75 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="-34" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-34 173.251 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="-6.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-19.0667 0.377955 9.43881" CameraTarget="-12.3502 -8.5 10.172" CameraZoom="1.5" GridHeight="-8.5" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -6790,7 +6790,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3375" Mesh="" Name="Z_act1_to_act2" Rotation="3.14159 0.261794 3.14159" Scale="1 1 1" Tag="" WorldPos="2 0 14.25">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3375" Mesh="" Name="Z_act1_to_act2" Rotation="3.14159 0.261794 3.14159" Scale="1 1 1" Tag="" WorldPos="2 0.588013 14.25">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="14" Group="0" ID="3380" Name="shelf_high01_7" Rotation="3.12021 1.13888 -2.83316" Scale="1 1 1" Tag="" WorldPos="-1.85976 0.242724 -0.696846">

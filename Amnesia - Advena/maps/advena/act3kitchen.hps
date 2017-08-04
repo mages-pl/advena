@@ -17,6 +17,7 @@ SetEntityPlayerInteractCallback("kwas_damage", "kwas_damage", false);
 AddUseItemCallback("", "glass_container_1", "ScriptArea_11", "Napelnij_olejem", true);
 }
 void OnEnter() {
+     AutoSave();
 PlayMusic("01_amb_darkness",true, 0.5, 0.1, 1,false);
 }
 void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
@@ -102,7 +103,7 @@ switch(GetLocalVarInt("cutscene_kitchen")) {
 case 1: 
 FadeOut(0.2f);
 PlayGuiSound("ui_emotion_stone.snt",1);
-// Fade In i pojawienie siê cia³a
+// Fade In i pojawienie siï¿½ ciaï¿½a
 break;
 case 2:
 SetEntityActive("graveyard_corpse03_1",true);
@@ -111,7 +112,7 @@ FadeLightTo("PointLight_4", 0, 0, 0, 0, 0, 1);
 SetLampLit("chandelier_large_2", false, true);
 for(int x=3;x<6;x++) { SetEntityActive("butcher_knife_"+x,true); }
 break;
-case 3: // z czerni do normalnoœci + szok tym cia³em
+case 3: // z czerni do normalnoï¿½ci + szok tym ciaï¿½em
 FadeIn(0.2f);
 PlayGuiSound("react_breath_slow.snt",1);
 GiveSanityDamage(10,true);

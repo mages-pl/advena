@@ -2,10 +2,10 @@
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
         <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="0.5 1.75 160.875" CameraTarget="0.5 1.75 -19.125" CameraZoom="2.18461" GridHeight="-19.125" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="180.5 1.75 -19.125" CameraTarget="0.5 1.75 -19.125" CameraZoom="2.18461" GridHeight="0.5" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-0.233356 181.75 -19.125" CameraTarget="-0.233356 1.75 -19.125" CameraZoom="2.75009" GridHeight="1.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="17.0529 26.4152 6.06383" CameraTarget="3.60033 1.75 -2.59125" CameraZoom="0.531092" GridHeight="1.75" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.5 1.75 160.875" CameraTarget="0.5 1.75 -19.125" CameraZoom="0" GridHeight="-19.125" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="180.5 1.75 -19.125" CameraTarget="0.5 1.75 -19.125" CameraZoom="0" GridHeight="0.5" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.233356 181.75 -19.125" CameraTarget="-0.233356 1.75 -19.125" CameraZoom="0" GridHeight="1.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="15.7332 3.92337 0.166779" CameraTarget="18.1079 1.75 -0.33117" CameraZoom="2.7311" GridHeight="1.75" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -1643,7 +1643,7 @@
                         <Var Name="SpinDir" Value="BothWays" />
                     </UserVariables>
                 </Entity>
-                <Area Active="false" AreaType="Script" Group="0" ID="311" Mesh="" Name="AreaBrokenWheel" Rotation="3.14159 1.57045 3.14159" Scale="0.4 0.4 0.15" Tag="" WorldPos="-10.2284 1.99558 -14.3221">
+                <Area Active="false" AreaType="Script" Group="0" ID="311" Mesh="" Name="AreaBrokenWheel" Rotation="3.14159 1.57045 3.14159" Scale="0.4 0.4 0.15" Tag="" WorldPos="-10.3863 1.99558 -14.3221">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
@@ -1676,7 +1676,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act1toact2" />
                         <Var Name="StartPos" Value="Z_act2sterownia" />
-                        <Var Name="MapFile" Value="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/custom_stories/Advena/maps/act1_to_act2.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act1_to_act2.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />

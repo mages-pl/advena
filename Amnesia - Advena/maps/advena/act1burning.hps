@@ -3,6 +3,8 @@ void OnStart() {
 }
 void OnEnter() {
 //
+     AutoSave();
+     
 PlayMusic("att_grunt", true, 0.7, 0.1, 10, true);
 if(GetLocalVarInt("q_pozar") == 0) {
 AddLocalVarInt("q_pozar",1);

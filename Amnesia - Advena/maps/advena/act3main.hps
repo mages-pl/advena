@@ -3,7 +3,8 @@ void OnStart() {
 	//## PIANO
 	//########################################################################
 		for(int tasjen=1;tasjen<=5;tasjen++) { SetEntityPlayerInteractCallback("song"+tasjen,"song"+tasjen,false);	}
-AddEntityCollideCallback("Player","ScriptArea_10","ScriptArea_10",false,1);
+for(int vb=1;vb<=5;vb++) { SetEntityPlayerLookAtCallback("show_song"+vb,"show_song"+vb,false);	}
+                AddEntityCollideCallback("Player","ScriptArea_10","ScriptArea_10",false,1);
 AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",true,1);
 AddEntityCollideCallback("Player","ScriptArea_8","ScriptArea_8",true,1);
 AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",false,0);
@@ -11,6 +12,7 @@ AddUseItemCallback("", "glass_container_oil_1", "ScriptArea_2", "Nasmaruj_pokret
 AddUseItemCallback("", "record_phonograph", "phonograph_1", "odtworz_nagranie", true);
 }
 void OnEnter() {
+     AutoSave();
 	PlayMusic("amb_extra01.ogg",false, 0.85,1.0,1,false);
 	if(GetLocalVarInt("rozdzial3") == 0) {
 FadeOut(0);
@@ -18,6 +20,35 @@ FadeOut(0);
  AddLocalVarInt("rozdzial3",1);
  AddTimer("",5,"EndFade_Rozdzial");
  }
+}
+void show_song1(string &in asEntity, int alState) {
+    if(alState == 1) { 
+        SetMessage("Act3", "song1_t", 0);
+    }
+}
+
+void show_song2(string &in asEntity, int alState) {
+    if(alState == 1) { 
+        SetMessage("Act3", "song2_t", 0);
+    }
+}
+
+void show_song3(string &in asEntity, int alState) {
+    if(alState == 1) { 
+        SetMessage("Act3", "song3_t", 0);
+    }
+}
+
+void show_song4(string &in asEntity, int alState) {
+    if(alState == 1) { 
+        SetMessage("Act3", "song4_t", 0);
+    }
+}
+
+void show_song5(string &in asEntity, int alState) {
+    if(alState == 1) { 
+        SetMessage("Act3", "song5_t", 0);
+    }
 }
 void EndFade_Rozdzial(string &in asTimer) {
 FadeIn(0.5f);
@@ -125,9 +156,16 @@ SetEntityActive("phonograph_2",false);
 AddPlayerSanity(5);
 }
 void przesun_obraz(string &in asEntity, int alState) {
-if(alState == 1) {
+     if(alState == 1) {
+     AddTimer("",5,"przesuwanie_obrazu_po_czasie");
+     }
+ }
+  
+
+void przesuwanie_obrazu_po_czasie(string &in asTimer) {
+
  SetMoveObjectState("painting_large03_1", -1.5f);
-}
+
 }
 void OnLeave() {
 

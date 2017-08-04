@@ -416,6 +416,7 @@ AddTimer("Koniec_Teleport_Secret",2.5f,"Koniec_Teleport_Secret");
 	FadePlayerFOVMulTo(1, 1);
  }
 void OnEnter() {
+     AutoSave();
  PlayMusic("08_amb_success",false, 0.8, 0.1, 1,false);
  
 }

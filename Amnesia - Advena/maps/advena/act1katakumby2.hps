@@ -1,6 +1,6 @@
 void OnStart() {
 AddEntityCollideCallback("Player","strach1","strach1",true,1);
-AddEntityCollideCallback("Player","strach2","strach2",false,1);
+AddEntityCollideCallback("Player","strach2","strach2",true,1);
 AddEntityCollideCallback("Player","strach3","strach3",true,-1);
 AddEntityCollideCallback("Player","Level_door_script1","Level_door_script1",true,-1);
 AddEntityCollideCallback("Player","strach4","strach4",true,1);
@@ -16,7 +16,7 @@ ChangeMap("act1main.map", "Z_act0main", "","");
 void strach1(string &in asParent, string &in asChild, int alState) {
 GiveSanityDamage(10,false);
 PlayGuiSound("react_breath.snt",1);
-	PlaySoundAtEntity("scare1", "05_event_door_bang.snt", "strach1", 0, false);
+	PlaySoundAtEntity("scare1", "05_event_door_bang.snt", "strach1daleko", 0, false);
 }
 void strach2(string &in asParent, string &in asChild, int alState) {
 GiveSanityDamage(5,false);
@@ -134,6 +134,7 @@ void stop_m(string &in asTimer) {
 StopMusic(2,2.0f);
 }
 void OnEnter() {
+     AutoSave();
 AddTimer("scare_sound",RandInt(15,60),"scare_sound");
 }
 void scare_sound(string &in asTimer) {
@@ -172,46 +173,142 @@ SetMoveObjectState("castle_portcullis_1", 0.0f);
 void zmien_lever_1(string &in asEntity, int alState) {
 if((alState == 1)  )  {
 if(GetGlobalVarInt("szyfr") == 0) {
+SetLeverStuckState("Ziemia", 1, false);
 SetGlobalVarInt("szyfr",1);
 GiveSanityDamage(1,true);
 }
+
+else  {
+    SetGlobalVarInt("szyfr",0);
+    SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+    
+    
 }
-if(alState == 0) {
+
+
+}
+else if((alState == -1))  {
 SetGlobalVarInt("szyfr",0);
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+
+ 
+AddPlayerSanity(1);
+} 
+else {
+ 
+    
 }
 }
 void zmien_lever_2(string &in asEntity, int alState) {
 if((alState == 1) )  {
 if(GetGlobalVarInt("szyfr") == 1) {
+     SetLeverStuckState("Woda", 1, false);
 SetGlobalVarInt("szyfr",2);
 GiveSanityDamage(1,true);
 }
+else  {
+    
+    SetGlobalVarInt("szyfr",0);
+    SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+    
 }
-if(alState == 0) {
+
+}
+else if(alState == -1) {
 SetGlobalVarInt("szyfr",0);
+
+ 
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+
+ 
+AddPlayerSanity(1);
+}
+else { 
+  
 }
 }
 void zmien_lever_3(string &in asEntity, int alState) {
 if((alState == 1)  ) {
 if(GetGlobalVarInt("szyfr") == 2) {
 SetGlobalVarInt("szyfr",3);
+     SetLeverStuckState("Ogien", 1, false);
 GiveSanityDamage(1,true);
+} else {
+    
+   SetGlobalVarInt("szyfr",0);
+
+ 
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);  
+    
 }
 }
-if(alState == 0){
-SetGlobalVarInt("szyfr",0);
+else if((alState == -1)  ) {
+    SetGlobalVarInt("szyfr",0);
+
+ 
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+
+ 
+AddPlayerSanity(1);
+}
+else {
+    
+ 
 }
 }
 void zmien_lever_4(string &in asEntity, int alState) {
 if((alState == 1)  ) {
 if(GetGlobalVarInt("szyfr") == 3) {
 SetGlobalVarInt("szyfr",4);
+     SetLeverStuckState("Wiatr", 1, false);
 AddTimer("szyfr_ok",1,"szyfr_ok");
 GiveSanityDamage(1,true);
 }
+else {
+    
+          SetGlobalVarInt("szyfr",0);
+
+ 
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
 }
-if(alState == 0) {
-SetGlobalVarInt("szyfr",0);
+}
+else if(alState == -1) {
+ SetGlobalVarInt("szyfr",0);
+
+ 
+  SetLeverStuckState("Ziemia", 0, false);
+    SetLeverStuckState("Woda", 0, false);
+    SetLeverStuckState("Ogien", 0, false);
+    SetLeverStuckState("Wiatr", 0, false);
+
+ 
+AddPlayerSanity(1);
+}
+else { 
+    
+   
+    
 }
 }
 void szyfr_ok(string &in asTimer) {
@@ -225,8 +322,8 @@ void OnLeave() {
 
 }
 void dotyk_piedestalu(string &in asEntity) {
- 
-SetPlayerSanity(100);
-SetPlayerHealth(100);
+ // podniesienie area w edytorze, usuniecie atrybutu player lookat auto remote
+AddPlayerSanity(1);
+AddPlayerHealth(1);
  
 }

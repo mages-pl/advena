@@ -2,10 +2,10 @@
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
         <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="-26.4285 7.89148 179.771" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="3.06357" GridHeight="-0.229155" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="153.571 7.89148 -0.229155" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="3.06357" GridHeight="-26.4285" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-26.3395 188 -0.0748411" CameraTarget="-26.3395 8 -0.0748411" CameraZoom="3.28507" GridHeight="8" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-5.70999 24.7519 -30.6614" CameraTarget="-10.2869 8 -37.597" CameraZoom="0.983516" GridHeight="8" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-26.4285 7.89148 179.771" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="0" GridHeight="-0.229155" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="153.571 7.89148 -0.229155" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="0" GridHeight="-26.4285" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-26.3395 188 -0.0748411" CameraTarget="-26.3395 8 -0.0748411" CameraZoom="0" GridHeight="8" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-10.3179 14.9035 -20.9826" CameraTarget="-19.9219 3 -13.7464" CameraZoom="1.08351" GridHeight="3" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />

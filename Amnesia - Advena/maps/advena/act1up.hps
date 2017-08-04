@@ -6,7 +6,7 @@ SetLocalVarInt("intro_cell_sequence",0); // OK
 AddEntityCollideCallback("Player", "ScriptArea_6", "ScriptArea_6", false, 0);  // OK
 AddEntityCollideCallback("Player", "ScriptArea_7", "ScriptArea_7", false, 1);  // OK
 AddEntityCollideCallback("Player", "ScriptArea_13", "ScriptArea_13", true, 1); // OK
-AddEntityCollideCallback("Player", "ScriptArea_3", "DezActive_Man", true, 1); // OK
+//AddEntityCollideCallback("Player", "ScriptArea_3", "DezActive_Man", true, 1); // OK
 AddEntityCollideCallback("Player", "ScriptArea_1", "ScriptArea_1", true, 1); // OK
 AddEntityCollideCallback("Player", "ScriptArea_16", "ScriptArea_16", false, 0); // OK
 AddEntityCollideCallback("Player", "ScriptArea_18", "ScriptArea_18", true, 1); // OK
@@ -54,7 +54,7 @@ case 2:
 szybkosc = 1;
  TeleportPlayer("PlayerStartArea_2");
   SetSwingDoorLocked("prison_silent_6", false, false);
-   SetMoveObjectState("childsnake_floor_water_blood_2", 1.0f);
+   //SetMoveObjectState("childsnake_floor_water_blood_2", 1.0f);
  SetSwingDoorDisableAutoClose("prison_silent_6", false);
  SetSwingDoorClosed("prison_silent_6", false, false);
  SetMoveObjectState("prison_silent_6", 1);
@@ -131,19 +131,19 @@ void oil_take_act1up(string &in asEntity, string &in type) {
 void StopLook_wind(string &in asTimer) {
 	PlayGuiSound("react_pant2.ogg",1);		
 }
-void DezActive_Man(string &in asParent, string &in asChild, int alState) {
-	SetEntityActive("deformed_man_1", false);
-	CreateParticleSystemAtEntity("", "ps_ghost_release", "deformed_man_1", false);	
-	PlaySoundAtEntity("","15_man02_whimp.snt", "deformed_man_1", 0, false);	
-	CreateParticleSystemAtEntity("", "ps_cave_monster_scream", "deformed_man_3", false);
-	AddTimer("",2,"Next_Man");
-	}
-void Next_Man(string &in asTimer) {
-SetEntityActive("deformed_man_2", true);
-PlaySoundAtEntity("","15_man01_whimp.snt", "deformed_man_3", 0, false);	
-CreateParticleSystemAtEntity("", "ps_ghost_release", "deformed_man_3", false);
-CreateParticleSystemAtEntity("", "ps_cave_monster_scream", "deformed_man_3", false);
-}
+//void DezActive_Man(string &in asParent, string &in asChild, int alState) {
+//	SetEntityActive("deformed_man_1", false);
+//	CreateParticleSystemAtEntity("", "ps_ghost_release", "deformed_man_1", false);	
+//	PlaySoundAtEntity("","15_man02_whimp.snt", "deformed_man_1", 0, false);	
+//	CreateParticleSystemAtEntity("", "ps_cave_monster_scream", "deformed_man_3", false);
+//	AddTimer("",2,"Next_Man");
+//	}
+//void Next_Man(string &in asTimer) {
+//SetEntityActive("deformed_man_2", true);
+//PlaySoundAtEntity("","15_man01_whimp.snt", "deformed_man_3", 0, false);	
+//CreateParticleSystemAtEntity("", "ps_ghost_release", "deformed_man_3", false);
+//CreateParticleSystemAtEntity("", "ps_cave_monster_scream", "deformed_man_3", false);
+//}
  
 void OnLeave() {
 StopMusic(1,1.0f);

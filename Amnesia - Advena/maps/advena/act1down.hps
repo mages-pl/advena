@@ -2,9 +2,22 @@ void OnStart() {
 AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",false,1);
 AddEntityCollideCallback("Player","ScriptArea_3","ScriptArea_3",false,1);
 AddEntityCollideCallback("Player","ScriptArea_2","ScriptArea_2",true,1);
+
+AddEntityCollideCallback("Player","ScriptArea_9","ScriptArea_9",true,1);
+ 
+
 }
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 PlaySoundAtEntity("priosn1", "fb_sfx_21_prisoner_wait_room.ogg", "ScriptArea_1", 0, false);
+}
+
+void ScriptArea_9(string &in asParent, string &in asChild, int alState) {
+if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
+GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
+}
+AddGlobalVarInt("OdkryteSkrytki",1);
+PlayGuiSound("quest_completed",1);
+SetMessage("Skrytki","Odkryto", 3); 
 }
 
 void ScriptArea_3(string &in asParent, string &in asChild, int alState) {
@@ -22,6 +35,7 @@ void react_1(string &in asTimer) {
 	GiveSanityDamage(5, true);
 }
 void OnEnter() { 
+     AutoSave();
 PlayMusic("25_amb.ogg", true, 0.5, 1.0, 1, true);
 }
 void OnLeave() { 

@@ -19,9 +19,20 @@ void OnStart() {
 	SetEntityPlayerInteractCallback("quest_drzwi", "quest_drzwi",true);
 	//GiveItemFromFile("lantern", "lantern.ent");
  
+        AddEntityCollideCallback("Player","sekret_lurker1","sekret_lurker1",true,1);
+        
 //AddTimer("thunder",0.1,"TimerThunder");
 }
 void ScriptArea_8(string &in asParent, string &in asChild, int alState){
+ if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
+GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
+}
+AddGlobalVarInt("OdkryteSkrytki",1);
+PlayGuiSound("quest_completed",1);
+SetMessage("Skrytki","Odkryto", 3); 
+}
+
+void sekret_lurker1(string &in asParent, string &in asChild, int alState){
  if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
 GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
 }
@@ -159,6 +170,7 @@ SetEntityActive("waterlurker_2",false);
 SetEntityActive("waterlurker_3",false);
 }
 void OnEnter() {
+    AutoSave();
 	PlayMusic("07_amb.ogg",true, 0.85,1.0,1,true);
 }
 

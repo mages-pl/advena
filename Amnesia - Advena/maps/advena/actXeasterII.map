@@ -5,7 +5,7 @@
             <Viewport CameraPosition="27 3.75001 138.25" CameraTarget="27 3.75001 -41.75" CameraZoom="0" GridHeight="-41.75" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="207 3.75001 -41.75" CameraTarget="27 3.75001 -41.75" CameraZoom="0" GridHeight="27" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="28.8068 183.75 -41.75" CameraTarget="28.8068 3.75 -41.75" CameraZoom="0" GridHeight="3.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="28.5033 2.91483 -46.8624" CameraTarget="22.8228 0 -41.6141" CameraZoom="1.8" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="15.5611 3.12044 -45.6247" CameraTarget="8.90837 0 -44.2354" CameraZoom="1.9" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -158,30 +158,30 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3679" Name="wall_default_extension_35" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="40.75 4 -58" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3680" Name="wall_default_extension_36" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="44.75 4 -58" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="3681" Name="wall_corner_concave_round_extension_6" Rotation="0 2.14577e-006 0" Scale="1 1 1" Tag="" WorldPos="48.75 4 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3682" Name="wall_default_extension_37" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.75 4 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3683" Name="wall_default_extension_38" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.75 4 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3684" Name="wall_default_extension_39" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.75 4 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3685" Name="wall_default_extension_40" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.75 4 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3682" Name="wall_default_extension_37" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="50.75 4 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3683" Name="wall_default_extension_38" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="50.75 4 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3684" Name="wall_default_extension_39" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="50.75 4 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3685" Name="wall_default_extension_40" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="50.75 4 -40" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3686" Name="wall_default_extension_41" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 4 -38" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3687" Name="wall_default_extension_42" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 4 -38" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3688" Name="wall_default_extension_43" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 4 -38" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3689" Name="wall_default_extension_44" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 4 -38" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3690" Name="wall_default_extension_45" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 4 -38" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3691" Name="wall_default_extension_46" Rotation="-3.14159 -6.75532e-007 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 4 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3692" Name="wall_default_extension_47" Rotation="-3.14159 1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="26.75 4 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3693" Name="wall_default_extension_48" Rotation="-3.14159 1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="26.75 4 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3695" Name="wall_fence_metal_1" Rotation="2.53518e-006 1.5708 2.53518e-006" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3692" Name="wall_default_extension_47" Rotation="2.53518e-006 1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="26.75 4 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="3693" Name="wall_default_extension_48" Rotation="2.53518e-006 1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="26.75 4 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3695" Name="wall_fence_metal_1" Rotation="-3.14159 1.5708 -3.14159" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3696" Name="wall_fence_metal_2" Rotation="0 2.14577e-006 0" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3697" Name="wall_fence_metal_3" Rotation="3.13643 -1.5708 -3.13643" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3697" Name="wall_fence_metal_3" Rotation="-0.00516263 -1.5708 0.00516263" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3698" Name="wall_fence_metal_4" Rotation="-3.14159 -2.14577e-006 3.14159" Scale="1 0.75 1" Tag="" WorldPos="38 5 -48.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3722" Name="wall_fence_metal_5" Rotation="-0.00516263 -1.5708 0.00516263" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3722" Name="wall_fence_metal_5" Rotation="3.13643 -1.5708 -3.13643" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3723" Name="wall_fence_metal_6" Rotation="-3.14159 -2.14577e-006 3.14159" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3724" Name="wall_fence_metal_7" Rotation="0 2.14577e-006 0" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3725" Name="wall_fence_metal_8" Rotation="-3.14159 1.5708 -3.14159" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3735" Name="wall_fence_metal_9" Rotation="3.13643 -1.5708 -3.13643" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3725" Name="wall_fence_metal_8" Rotation="2.53518e-006 1.5708 2.53518e-006" Scale="1 0.75 1" Tag="" WorldPos="43.4955 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3735" Name="wall_fence_metal_9" Rotation="-0.00516263 -1.5708 0.00516263" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3736" Name="wall_fence_metal_10" Rotation="-3.14159 -2.14577e-006 3.14159" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3737" Name="wall_fence_metal_11" Rotation="0 2.14577e-006 0" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3738" Name="wall_fence_metal_12" Rotation="2.53518e-006 1.5708 2.53518e-006" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="3738" Name="wall_fence_metal_12" Rotation="-3.14159 1.5708 -3.14159" Scale="1 0.75 1" Tag="" WorldPos="32.7841 5 -48.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="3849" Name="pillar_roman_short_3" Rotation="0 6.99382e-007 0" Scale="1 1 1" Tag="" WorldPos="33.75 0 -38.4163" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="3850" Name="pillar_roman_short_4" Rotation="0 6.99382e-007 0" Scale="1 1 1" Tag="" WorldPos="41 0 -38.4163" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="7" Group="0" ID="3851" Name="wall_welder_wood_333" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="33.7818 -0.00999999 -38.8159" />
@@ -215,48 +215,48 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="16" Group="0" ID="4028" Name="wall_welder_convex_9" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="22.75 0 -43.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="4029" Name="pillar_roman_short_5" Rotation="0 6.99382e-007 0" Scale="1 1 1" Tag="" WorldPos="41 4 -41.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="4030" Name="pillar_roman_short_6" Rotation="0 6.99382e-007 0" Scale="1 1 1" Tag="" WorldPos="33.75 4 -41.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4046" Name="ceiling_default_1" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4047" Name="ceiling_default_2" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4048" Name="ceiling_default_3" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4049" Name="ceiling_default_4" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4050" Name="ceiling_default_5" Rotation="-2.53518e-006 -1.5708 -2.53518e-006" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4052" Name="ceiling_default_6" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4053" Name="ceiling_default_7" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4054" Name="ceiling_default_8" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4055" Name="ceiling_default_9" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4056" Name="ceiling_default_10" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4058" Name="ceiling_default_11" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4059" Name="ceiling_default_12" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4060" Name="ceiling_default_13" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4061" Name="ceiling_default_14" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4062" Name="ceiling_default_15" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4064" Name="ceiling_default_16" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4065" Name="ceiling_default_17" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4066" Name="ceiling_default_18" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4067" Name="ceiling_default_19" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4068" Name="ceiling_default_20" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4070" Name="ceiling_default_21" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4071" Name="ceiling_default_22" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4072" Name="ceiling_default_23" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4073" Name="ceiling_default_24" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4074" Name="ceiling_default_25" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4076" Name="ceiling_default_26" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -40" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4077" Name="ceiling_default_27" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -48" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4078" Name="ceiling_default_28" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -52" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4079" Name="ceiling_default_29" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -44" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4080" Name="ceiling_default_30" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -56" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4083" Name="wall_welder_stone_147" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="50.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4084" Name="wall_welder_stone_148" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="46.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4085" Name="wall_welder_stone_149" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="38.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4086" Name="wall_welder_stone_150" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="42.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4087" Name="wall_welder_stone_151" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="30.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4088" Name="wall_welder_stone_152" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="34.5 8.25 -38" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4090" Name="wall_welder_stone_153" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="30.5 8.25 -58" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4091" Name="wall_welder_stone_154" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.5 8.25 -58" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4092" Name="wall_welder_stone_155" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="46.5 8.25 -58" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4093" Name="wall_welder_stone_156" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="38.5 8.25 -58" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4094" Name="wall_welder_stone_157" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="42.5 8.25 -58" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4095" Name="wall_welder_stone_158" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="34.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4046" Name="ceiling_default_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4047" Name="ceiling_default_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4048" Name="ceiling_default_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4049" Name="ceiling_default_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4050" Name="ceiling_default_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="48.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4052" Name="ceiling_default_6" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4053" Name="ceiling_default_7" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4054" Name="ceiling_default_8" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4055" Name="ceiling_default_9" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4056" Name="ceiling_default_10" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="44.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4058" Name="ceiling_default_11" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4059" Name="ceiling_default_12" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4060" Name="ceiling_default_13" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4061" Name="ceiling_default_14" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4062" Name="ceiling_default_15" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="40.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4064" Name="ceiling_default_16" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4065" Name="ceiling_default_17" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4066" Name="ceiling_default_18" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4067" Name="ceiling_default_19" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4068" Name="ceiling_default_20" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="36.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4070" Name="ceiling_default_21" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4071" Name="ceiling_default_22" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4072" Name="ceiling_default_23" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4073" Name="ceiling_default_24" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4074" Name="ceiling_default_25" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="32.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4076" Name="ceiling_default_26" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4077" Name="ceiling_default_27" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4078" Name="ceiling_default_28" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4079" Name="ceiling_default_29" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="4080" Name="ceiling_default_30" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="28.75 8.25 -56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4083" Name="wall_welder_stone_147" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="50.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4084" Name="wall_welder_stone_148" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="46.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4085" Name="wall_welder_stone_149" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="38.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4086" Name="wall_welder_stone_150" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="42.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4087" Name="wall_welder_stone_151" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="30.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4088" Name="wall_welder_stone_152" Rotation="1.57079 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="34.5 8.25 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4090" Name="wall_welder_stone_153" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="30.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4091" Name="wall_welder_stone_154" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="50.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4092" Name="wall_welder_stone_155" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="46.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4093" Name="wall_welder_stone_156" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="38.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4094" Name="wall_welder_stone_157" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="42.5 8.25 -58" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="4095" Name="wall_welder_stone_158" Rotation="-1.5708 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="34.5 8.25 -58" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="4119" Name="wall_welder_wood_331" Rotation="-1.5708 -1.42261e-006 3.14159" Scale="1 0.5 1" Tag="" WorldPos="14.75 2.75 -44" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="4120" Name="wall_welder_wood_346" Rotation="-1.5708 -1.42261e-006 3.14159" Scale="1 0.5 1" Tag="" WorldPos="14.75 4 -44" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="4121" Name="wall_welder_wood_347" Rotation="-1.5708 4.81208e-006 -1.5708" Scale="1 0.5 1" Tag="" WorldPos="14.75 3 -44" />
@@ -2144,7 +2144,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="3" Group="0" ID="3954" Name="table_nice_wood01_6" Rotation="1.4478e-015 0.362159 4.08644e-015" Scale="1 0.65 1" Tag="" WorldPos="42.1345 3.092e-009 -55.6107">
+                <Entity Active="true" FileIndex="3" Group="0" ID="3954" Name="table_nice_wood01_6" Rotation="1.4478e-015 0.362159 4.08644e-015" Scale="1 0.65 1" Tag="" WorldPos="42.1345 3.55766e-009 -55.6107">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="true" />
@@ -2588,7 +2588,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="" />
                         <Var Name="StartPos" Value="Z_actXeasterII" />
-                        <Var Name="MapFile" Value="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/custom_stories/Advena/maps/act6main.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act6main.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />

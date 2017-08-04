@@ -4,10 +4,14 @@ void OnStart() {
 	AddEntityCollideCallback("Player","pick_up_item","pick_up_item",true,1);
 	AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",false,1);
 
+     AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);   
+        //
+        
 	//###### PLAYER INTERACT
 	SetEntityPlayerInteractCallback("spalonadupa_1","spalonadupa_1",false);	
 }
 void OnEnter() {
+     AutoSave();
 PlayMusic("02_amb_safe",true, 0.8, 0.1, 1,true);
 }
 void ScriptArea_4(string &in asParent, string &in asChild, int alState) {
@@ -16,6 +20,17 @@ StopMusic(2.0f,1);
   CheckPoint ("Check_point_library", "PlayerStartArea_2", "ScriptArea_4", "", "");
  AddLocalVarInt("dotknij_drzwi",1);
 AddTimer("",1,"Paper_music");
+}
+
+void ScriptArea_7(string &in asParent, string &in asChild, int alState) {
+ if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
+GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
+}
+AddGlobalVarInt("OdkryteSkrytki",1);
+PlayGuiSound("quest_completed",1);
+SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlobalVarString("Separator")+GetGlobalVarInt("MaxSkrytek")
+
+   
 }
 void Paper_music(string &in asTimer) {
 PlayMusic("01_paper_self",false, 0.8, 0.1, 1,false);

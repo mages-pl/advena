@@ -1,7 +1,7 @@
 //#################################################################################
 //##					- AMNESIA - ADVENA -
 //##-------------------------------------------------------------------------------
-//##	COPYRIGHT (c) 2012-2013 BY MICHA£ 'TASILVAR' JENDRASZCZYK
+//##	COPYRIGHT (c) 2012-2013 BY MICHAï¿½ 'TASILVAR' JENDRASZCZYK
 //##-------------------------------------------------------------------------------
 //## 	POLSKA MODYFIKACJA GRY AMNESIA - THE DARK DESCENT -
 //#################################################################################
@@ -84,6 +84,9 @@ AddUseItemCallback("", "glass_container_quest","poloz_sloik","poloz_sloik",true)
  AddUseItemCallback("","igla1","ScriptArea_19","sumon_igla",true);
  //############## INTERACT ITEM #############################################
 SetEntityPlayerInteractCallback("kolowrot_obroc", "kolowrot_obroc",false);
+
+SetEntityPlayerInteractCallback("podnies_dywan", "podnies_dywan",false);
+
 }
 //############## INTRODUCTION SEQUENCE #############################
 void INTRO_SEQUENCE_START(string &in asTimer) 
@@ -154,8 +157,22 @@ void poloz_sloik(string &in asItem, string &in asEntity) {
 //SetEntityActive("glass_container_quest_end",true);
 RemoveItem(asItem);
 AddAttachedPropToProp("invisible_box_mass_3", "glass_container_quest_end", "glass_container_filled.ent", 0,0,0, 0,0,0);
+AddLocalVarInt("sloik_polozony",1);
 }
 //######## SECRET PLACE ###########################################
+
+void podnies_dywan(string &in asEntity) {
+    
+    if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
+GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
+}
+AddGlobalVarInt("OdkryteSkrytki",1);
+PlayGuiSound("quest_completed",1);
+SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlobalVarString("Separator")+GetGlobalVarInt("MaxSkrytek")
+
+    
+}
+
 void Skrytki(string &in asParent, string &in asChild, int alState) {
 if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
 GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
@@ -271,9 +288,12 @@ SetLocalVarInt("Lina",1);
 }
 if(alState == 1) {
 if(GetLocalVarInt("Lina") == 1) {
+    if(GetLocalVarInt("sloik_polozony") == 1) { 
 RemoveAttachedPropFromProp("invisible_box_mass_3", "glass_container_quest_end");
 AddPlayerSanity(1);
  SetEntityActive("glass_container_quest_end",true);
+ SetLocalVarInt("sloik_polozony",0);
+    } 
 	//GiveItemFromFile("glass_container_quest_end", "glass_container_filled.ent");
 }
 }
@@ -297,7 +317,7 @@ AddPlayerSanity(1);
   AddLocalVarInt("summon",1);
     SetLightVisible("SwiatloKwas", true);
 	RemoveItem("glass_container_quest_end");
-	GiveItemFromFile("glass_container_oil_q", "glass_container.ent");
+	//GiveItemFromFile("glass_container_oil_q", "glass_container.ent"); // usuniecie sloja ktory bedzie dopiero w act3kitchen
     CreateParticleSystemAtEntity("kwas", "ps_acid_web_dissolve.ps", "ScriptArea_19", false); 
 	 PlaySoundAtEntity("","gameplay_acid_web.ogg","ScriptArea_19", 0 , false);  
 	 CreateParticleSystemAtEntityExt( "", "ps_acid_web_dissolve.ps", "ScriptArea_19", false, 0.15, 0.55, 0.3, 1, true, 0, 2, 100, 110);

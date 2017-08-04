@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.1 999" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="-29.5 14 189.25" CameraTarget="-29.5 14 9.25" CameraZoom="0" GridHeight="9.25" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="150.5 14 9.25" CameraTarget="-29.5 14 9.25" CameraZoom="0" GridHeight="-29.5" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-29.5 194.001 9.25" CameraTarget="-29.5 14 9.25" CameraZoom="0" GridHeight="14" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="3.19796 5.80106 -6.09414" CameraTarget="4.2586 4 -2.20785" CameraZoom="2.42753" GridHeight="4" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-1.99979 0.554567 185.888" CameraTarget="-1.99979 0.554567 5.88838" CameraZoom="0" GridHeight="5.88838" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="178 0.554567 5.88838" CameraTarget="-1.99979 0.554567 5.88838" CameraZoom="0" GridHeight="-1.99979" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-1.99979 180.001 5.88838" CameraTarget="-1.99979 0 5.88838" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-3.0832 2.32306 4.37409" CameraTarget="-1.64714 0 4.04238" CameraZoom="2.9" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -74,7 +74,7 @@
                 <File Id="57" Path="static_objects/decals/paper_pile.dae" />
                 <File Id="58" Path="static_objects/decals/paper_pile02.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="94">
+            <FileIndex_Entities NumOfFiles="93">
                 <File Id="0" Path="entities/storage/storage_box_wood02/storage_box_wood02.ent" />
                 <File Id="1" Path="entities/storage/shelf01/shelf01.ent" />
                 <File Id="2" Path="entities/storage/shelf02/shelf02.ent" />
@@ -112,7 +112,7 @@
                 <File Id="34" Path="entities/storage/shelf_high02/shelf_high02.ent" />
                 <File Id="35" Path="entities/furniture/cabinet_simple/cabinet_simple.ent" />
                 <File Id="36" Path="entities/furniture/table_metal/table_metal.ent" />
-                <File Id="37" Path="entities/furniture/layout_board/layout_board.ent" />
+                <File Id="37" Path="entities/bottle/wine_stack/wine_stack.ent" />
                 <File Id="38" Path="entities/furniture/chair_wood02/chair_wood02_broken.ent" />
                 <File Id="39" Path="entities/furniture/chair_wood02/chair_wood02.ent" />
                 <File Id="40" Path="entities/storage/shelf_thin/shelf_thin.ent" />
@@ -168,7 +168,6 @@
                 <File Id="90" Path="entities/container/vase02/vase02_ghost.ent" />
                 <File Id="91" Path="entities/obstacles/mansionbase_window/mb_window.ent" />
                 <File Id="92" Path="entities/item/key_office/key_piwnica.ent" />
-                <File Id="93" Path="entities/bottle/wine_stack/wine_stack.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="1">
                 <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
@@ -585,7 +584,6 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="863" Name="cobweb_11" Rotation="0 -1.309 0" Scale="1 1 1" Tag="" WorldPos="10.8942 1 11.4777" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="864" Name="cobweb_12" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="11.0425 1 12.3429" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="41" Group="0" ID="865" Name="cobweb_13" Rotation="0 -0.261799 0" Scale="1 1 1" Tag="" WorldPos="-1.97194 1 2.10897" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="42" Group="0" ID="866" Name="cobweb_14" Rotation="-1.18391 0.523599 0" Scale="1 1 1" Tag="" WorldPos="-1.72527 1.69765 9.77072" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="893" Name="wall_door_way_12" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="1.75 0 -7" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="894" Name="wall_door_way_13" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="9.75 0 -7" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="895" Name="wall_door_frame_9" Rotation="0 3.49691e-007 0" Scale="1 1 1" Tag="" WorldPos="1.75 0 -7" />
@@ -2656,44 +2654,6 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="28" Group="0" ID="632" Name="barrel01_4" Rotation="0 5.23599 0" Scale="1 1 1" Tag="" WorldPos="-2.80343 0 5.70028">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="true" FileIndex="28" Group="0" ID="633" Name="barrel01_5" Rotation="0 5.23599 0" Scale="1 1 1" Tag="" WorldPos="-1.99979 0 5.88838">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
                 <Entity Active="true" FileIndex="28" Group="0" ID="634" Name="barrel01_6" Rotation="0 5.23599 0" Scale="1 1 1" Tag="" WorldPos="6.67646 0 11.3372">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3211,12 +3171,6 @@
                     </UserVariables>
                 </Entity>
                 <Entity Active="true" FileIndex="36" Group="0" ID="703" Name="table_metal_1" Rotation="0.783253 0.0654057 1.50525" Scale="1 1 1" Tag="" WorldPos="9.85895 0.50736 15.1081">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="IsAffectedByDecal" Value="true" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="true" FileIndex="37" Group="0" ID="704" Name="layout_board_1" Rotation="0 0.5236 0" Scale="1 1 1" Tag="" WorldPos="-1.89153 0 9.67272">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="true" />
@@ -3977,8 +3931,8 @@
                         <Var Name="CustomSubItemTypeName" Value="" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="867" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="15.0117 4.89578 -4.33632" />
-                <Sound Active="true" Group="0" ID="868" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.58848 5.08232 19.0706" />
+                <Sound Active="true" Group="0" ID="867" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="15.0117 4.89578 -4.33632" />
+                <Sound Active="true" Group="0" ID="868" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.58848 5.08232 19.0706" />
                 <Area Active="true" AreaType="Liquid" Group="0" ID="871" Mesh="" Name="LiquidArea_1" Rotation="0 0 0" Scale="31.25 0.5 30.5" Tag="" WorldPos="3.75 0.0398043 6.5">
                     <UserVariables>
                         <Var Name="Density" Value="100" />
@@ -6880,8 +6834,8 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="1347" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_rain.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-58.25 14.25 5.75" />
-                <Sound Active="true" Group="0" ID="1348" MaxDistance="5" MinDistance="1" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_rain.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-22.25 18.5 -42.25" />
+                <Sound Active="true" Group="0" ID="1347" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_rain.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-58.25 14.25 5.75" />
+                <Sound Active="true" Group="0" ID="1348" MaxDistance="5" MinDistance="1" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_rain.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-22.25 18.5 -42.25" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_rain.ps" Group="0" ID="1349" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_62" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-18.5 14 -39.5" />
                 <FogArea Active="true" Color="0.8 0.8 0.8 1" End="17" FalloffExp="1" Group="0" ID="1354" Name="FogArea_2" Rotation="0 0 0" Scale="28.25 3.25 21.25" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="true" Start="2" Tag="" WorldPos="-21 4.5 -20.75" />
                 <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.1 0.2 0.5" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1390" Name="BoxLight_1" Radius="1" Rotation="0 0 0" Scale="43.5 22.5 27.25" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="43.5 22.5 27.25" Tag="" WorldPos="-20.75 8.25 -23" />
@@ -7266,7 +7220,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Entity Active="true" FileIndex="93" Group="0" ID="1543" Name="wine_stack_1" Rotation="3.12503 -0.258343 3.12807" Scale="1 1 1" Tag="" WorldPos="0.737137 6.12501 11.0437">
+                <Entity Active="true" FileIndex="37" Group="0" ID="1543" Name="wine_stack_1" Rotation="3.12503 -0.258343 3.12807" Scale="1 1 1" Tag="" WorldPos="0.737137 6.12501 11.0437">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -7305,9 +7259,9 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="1546" MaxDistance="25" MinDistance="15" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/22/22_amb_thunder.snt" Tag="" UseDefault="false" Volume="0.7" WorldPos="-16.185 18.4637 5.61717" />
-                <Sound Active="true" Group="0" ID="1547" MaxDistance="5" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/22/22_amb_hole.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.39315 -2.94115 6.72528" />
-                <Sound Active="true" Group="0" ID="1548" MaxDistance="7" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/18/18_water_pour1.snt" Tag="" UseDefault="false" Volume="0.7" WorldPos="-22.6147 11.4006 5.64843" />
+                <Sound Active="true" Group="0" ID="1546" MaxDistance="25" MinDistance="15" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/22/22_amb_thunder.snt" Tag="" UseDefault="false" Volume="0.7" WorldPos="-16.185 18.4637 5.61717" />
+                <Sound Active="true" Group="0" ID="1547" MaxDistance="5" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/22/22_amb_hole.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.39315 -2.94115 6.72528" />
+                <Sound Active="true" Group="0" ID="1548" MaxDistance="7" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/18/18_water_pour1.snt" Tag="" UseDefault="false" Volume="0.7" WorldPos="-22.6147 11.4006 5.64843" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1549" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_60" Rotation="0 -1.06055 0" Scale="1 1 1" Tag="" WorldPos="-5.97326 0.435992 -5.04805" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1550" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_67" Rotation="0 -0.164891 0" Scale="1 1 1" Tag="" WorldPos="-8.4236 0.435992 -2.21759" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1551" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_68" Rotation="0 -0.164891 0" Scale="1 1 1" Tag="" WorldPos="-9.02394 0.435992 1.68729" />
@@ -7322,8 +7276,18 @@
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1560" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_77" Rotation="0 -0.164891 0" Scale="1 1 1" Tag="" WorldPos="15.7815 0.435992 -0.450907" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1561" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_78" Rotation="0 -1.40932 0" Scale="1 1 1" Tag="" WorldPos="10.3201 0.435992 -5.55561" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_paper_in_water.ps" Group="0" ID="1562" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_79" Rotation="0 -1.40932 0" Scale="1 1 1" Tag="" WorldPos="-5.10938 0.435992 -5.33333" />
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0.1 0.1 0.2 0.5" FalloffMap="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/lights/light_falloff_short_fade.tga" FlickerActive="true" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0.3" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1583" Name="PointLight_1" Radius="10" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-19.25 13.25 -8" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.1 0.1 0.2 0.5" FalloffMap="../../../../../Program Files (x86)/Amnesia - The Dark Descent/redist/lights/light_falloff_short_fade.tga" FlickerActive="true" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0.3" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1583" Name="PointLight_1" Radius="10" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-19.25 13.25 -8" />
                 <Area Active="true" AreaType="Script" Group="0" ID="1584" Mesh="" Name="ScriptArea_8" Rotation="0 0 0" Scale="3 2 3" Tag="" WorldPos="3.75 5 -1.75">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="1585" Mesh="" Name="sekret_lurker1" Rotation="0 0 0" Scale="1.34902 1 1" Tag="" WorldPos="-2.46134 0.73401 3.95832">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />

@@ -5,7 +5,7 @@
             <Viewport CameraPosition="0.293218 0.004 181.686" CameraTarget="0.293218 0.004 1.68589" CameraZoom="0" GridHeight="1.68589" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180.293 0.004 1.68589" CameraTarget="0.293218 0.004 1.68589" CameraZoom="0" GridHeight="0.293218" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0.293218 180 1.68589" CameraTarget="0.293218 0 1.68589" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="5.52617 7.87595 -11.9794" CameraTarget="-1.03345 0 -6.25451" CameraZoom="1.449" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.514372 4.62238 10.5563" CameraTarget="-8.95987 -8 22.5569" CameraZoom="0.949006" GridHeight="-8" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -3395,7 +3395,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act3cellar" />
                         <Var Name="StartPos" Value="Z_act4main" />
-                        <Var Name="MapFile" Value="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/maps/advena/act3_cellarbase.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act3_cellarbase.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />
@@ -3403,7 +3403,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="912" Mesh="" Name="Z_act4resident" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-14.367 6.09528 -5.28225">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="912" Mesh="" Name="Z_act4resident" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-14.367 6.63354 -5.28225">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="31" Group="0" ID="913" Name="level_engine_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-44.5 -7.9203 22">
@@ -3421,7 +3421,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act5ending" />
                         <Var Name="StartPos" Value="Z_act4main" />
-                        <Var Name="MapFile" Value="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/custom_stories/Advena/maps/act5ending.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act5ending.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />
@@ -3429,7 +3429,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="914" Mesh="" Name="Z_act5ending" Rotation="0 1.40935 0" Scale="1.0028 0.984547 1.01122" Tag="" WorldPos="-43.6296 -7.96603 21.9708">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="914" Mesh="" Name="Z_act5ending" Rotation="0 1.40935 0" Scale="1.0028 0.984547 1.01122" Tag="" WorldPos="-43.6296 -7.45613 21.9708">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="30" Group="0" ID="915" Name="level_wood_2" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-16.25 6 -5">
@@ -3447,7 +3447,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act4resident" />
                         <Var Name="StartPos" Value="Z_act4main" />
-                        <Var Name="MapFile" Value="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/custom_stories/Advena/maps/act4resident.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act4resident.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />
@@ -3455,7 +3455,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="916" Mesh="" Name="Z_act3_cellarbase" Rotation="3.14159 4.44253e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-0.25 0.0549632 14.5">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="916" Mesh="" Name="Z_act3_cellarbase" Rotation="3.14159 4.44253e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-0.25 0.684408 14.5">
                     <UserVariables />
                 </Area>
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_light_dust_large.ps" Group="0" ID="1038" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_30" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.5 4 -21.5" />

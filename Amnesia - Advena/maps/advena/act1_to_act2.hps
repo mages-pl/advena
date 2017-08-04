@@ -55,7 +55,7 @@ PlaySoundAtEntity("", "03_in_a_bottle.snt", "ScriptArea_19", 0.0f, false);
 SetEntityActive("bottle_absinthe_7",true);
 SetEntityActive("bottle_absinthe_8",true);
 }
-//########## Krzyk kogoœ #########################
+//########## Krzyk kogoï¿½ #########################
 void ScriptArea_22(string &in asParent, string &in asChild, int alState) {
 PlaySoundAtEntity("", "15_the_big_scream1.snt", "hatch_large_2", 0.0f, false);
 GiveSanityDamage(10, false);
@@ -252,16 +252,16 @@ PlayGuiSound("react_breath.snt",1);
 //####################################################
 //void lever_up(string &in asParent, string &in asChild, int alState)
 void lever_move_1(string &in asEntity, int alState) {
-if(alState == 1) { // je¿eli dŸwignia jest na dole
+if(alState == 1) { // jeï¿½eli dï¿½wignia jest na dole
 SetLocalVarInt("lever_1",1);
 AddTimer("",0.2,"Check_lever");
 SetMoveObjectState("water_level1", 1);
 }
-else if(alState == -1) { // jeœli jest na górze
+else if(alState == -1) { // jeï¿½li jest na gï¿½rze
 SetLocalVarInt("lever_1",0);
  SetMoveObjectState("water_level1", -1);
 }
-else { // jeœli jest po œrodku
+else { // jeï¿½li jest po ï¿½rodku
 SetLocalVarInt("lever_1",0);
  
 }
@@ -269,32 +269,32 @@ SetLocalVarInt("lever_1",0);
 }
 //##################################
 void lever_move_2(string &in asEntity, int alState) {
-if(alState == 1) { // je¿eli dŸwignia jest na dole
+if(alState == 1) { // jeï¿½eli dï¿½wignia jest na dole
 SetLocalVarInt("lever_2",0);
  
 }
-else if(alState == -1) { // jeœli jest na górze
+else if(alState == -1) { // jeï¿½li jest na gï¿½rze
 SetLocalVarInt("lever_2",1);
 AddTimer("",0.2,"Check_lever");
 //SetMoveObjectState("water_level2", 1);
 }
-else { // jeœli jest po œrodku
+else { // jeï¿½li jest po ï¿½rodku
 SetLocalVarInt("lever_2",0);
  
 }
 }
 //#################################
 void lever_move_3(string &in asEntity, int alState) {
-if(alState == 1) { // je¿eli dŸwignia jest na dole
+if(alState == 1) { // jeï¿½eli dï¿½wignia jest na dole
 SetLocalVarInt("lever_3",0);
 //SetMoveObjectState("water_level1", 1);
 }
-else if(alState == -1) { // jeœli jest na górze
+else if(alState == -1) { // jeï¿½li jest na gï¿½rze
 SetLocalVarInt("lever_3",1);
 AddTimer("",0.2,"Check_lever");
 //SetMoveObjectState("water_level3", 1);
 }
-else { // jeœli jest po œrodku
+else { // jeï¿½li jest po ï¿½rodku
 SetLocalVarInt("lever_3",0);
 }
 }
@@ -438,6 +438,9 @@ SetLocalVarInt("sound_scare_effect1",0);
 }
 }
 void OnEnter() {
+    
+    AutoSave();
+    
 if(GetLocalVarInt("rozdzial2") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "2", 3.0f);
