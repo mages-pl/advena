@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="5.73919 11.0951 189.551" CameraTarget="5.73919 11.0951 9.55117" CameraZoom="0" GridHeight="9.55117" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="185.739 11.0951 9.55117" CameraTarget="5.73919 11.0951 9.55117" CameraZoom="0" GridHeight="5.73919" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="5.73919 190.818 9.55117" CameraTarget="5.73919 10.8175 9.55117" CameraZoom="0" GridHeight="10.8175" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-4.07362 -3.37158 -36.3622" CameraTarget="-13.0155 -2.25 -36.4845" CameraZoom="1.71338" GridHeight="-2.25" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-38.9199 10.6412 0.511023" CameraTarget="-34.5569 -2.25 -5.45441" CameraZoom="1.21338" GridHeight="-2.25" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -2134,7 +2134,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="6" Group="0" ID="287" Name="wood_box01_2" Rotation="-2.76664 1.5708 -2.76664" Scale="1 1 1" Tag="" WorldPos="-38.25 4.58862 -2.13622">
+                <Entity Active="true" FileIndex="6" Group="0" ID="287" Name="wood_box01_2" Rotation="-2.76664 1.5708 -2.76664" Scale="1 1 1" Tag="" WorldPos="-38.25 5.704 -2.136">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2153,7 +2153,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="6" Group="0" ID="288" Name="wood_box01_3" Rotation="-2.76664 1.5708 -2.76664" Scale="1 1 1" Tag="" WorldPos="-37.9552 4.57076 -5.11811">
+                <Entity Active="true" FileIndex="6" Group="0" ID="288" Name="wood_box01_3" Rotation="-2.76664 1.5708 -2.76664" Scale="1 1 1" Tag="" WorldPos="-37.955 5.704 -5.118">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -4343,7 +4343,7 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act2main" />
-                        <Var Name="StartPos" Value="Z_act1_to_act2" />
+                        <Var Name="StartPos" Value="PlayerStartArea_2" />
                         <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act2main.map" />
                         <Var Name="Locked" Value="true" />
                         <Var Name="LockedSound" Value="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/door/door_level_metal_locked.snt" />
@@ -4526,7 +4526,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="Liquid" Group="0" ID="1342" Mesh="" Name="LiquidArea_8" Rotation="0 0 0" Scale="2.75 0.25 1.1" Tag="" WorldPos="-38.1 4.65 -2.1">
+                <Area Active="true" AreaType="Liquid" Group="0" ID="1342" Mesh="" Name="LiquidArea_8" Rotation="0 0 0" Scale="2.75 1.65 1.1" Tag="" WorldPos="-38.1 5.13674 -2.1">
                     <UserVariables>
                         <Var Name="Density" Value="100" />
                         <Var Name="LinearViscosity" Value="0.1" />
@@ -4552,7 +4552,7 @@
                         <Var Name="PhysicsMaterial" Value="Water" />
                     </UserVariables>
                 </Area>
-                <Area Active="true" AreaType="Liquid" Group="0" ID="1345" Mesh="" Name="LiquidArea_10" Rotation="0 0 0" Scale="2.75 0.25 1.25" Tag="" WorldPos="-38.1 4.65 -5.16285">
+                <Area Active="true" AreaType="Liquid" Group="0" ID="1345" Mesh="" Name="LiquidArea_10" Rotation="0 0 0" Scale="2.75 2.35 1.25" Tag="" WorldPos="-38.1 4.86238 -5.16285">
                     <UserVariables>
                         <Var Name="Density" Value="100" />
                         <Var Name="LinearViscosity" Value="0.1" />
@@ -5022,12 +5022,9 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1422" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_24" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="1.2 0.5 -2.85" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1423" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_25" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="1.2 0.5 -3.4" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1424" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_39" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="1.2 0.5 -4.15" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1425" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_42" Rotation="3.14159 2.3562 3.14159" Scale="1 1 1" Tag="" WorldPos="0.7 0.5 -2.85" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1426" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_53" Rotation="3.14159 2.3562 3.14159" Scale="1 1 1" Tag="" WorldPos="0.7 0.5 -3.4" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1427" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_61" Rotation="3.14159 2.3562 3.14159" Scale="1 1 1" Tag="" WorldPos="0.7 0.5 -4.15" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1425" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_42" Rotation="3.14159 2.3562 3.14159" Scale="1 1 1" Tag="" WorldPos="1 0.5 -2.75" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1426" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_53" Rotation="3.14159 2.3562 3.14159" Scale="1 1 1" Tag="" WorldPos="1 0.5 -3.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct_top.ps" Group="0" ID="1428" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_62" Rotation="0 0.523598 0" Scale="1 1 1" Tag="" WorldPos="7.05 -3.35 -0.3" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct_top.ps" Group="0" ID="1429" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_63" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="6.95 -3.2 0.55" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct_top.ps" Group="0" ID="1430" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_64" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="6.8 -3.5 -8.15" />
@@ -5101,7 +5098,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="StuckState" Value="None" />
                         <Var Name="InteractionDisablesStuck" Value="false" />
-                        <Var Name="OverrideDefaults" Value="false" />
+                        <Var Name="OverrideDefaults" Value="true" />
                         <Var Name="MiddleAngleAmount" Value="0" />
                         <Var Name="AutoMoveToAngle" Value="false" />
                         <Var Name="AutoMoveGoal" Value="Middle" />
@@ -5367,7 +5364,7 @@
                 </Area>
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1517" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_34" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="1.26361 4.01369 -3.84961" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/impact/ps_impact_water_stream_sewer_duct.ps" Group="0" ID="1518" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_37" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="1.32704 3.93726 -3.06134" />
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1519" Mesh="" Name='CheckPoint (&quot;Checkpoint_hol_ksiazki&quot;,  &quot;&quot;, &quot;PlayerStartArea_2' Rotation="3.14159 -1.5437 3.14159" Scale="1.75 1.25 1.5" Tag="" WorldPos="-17.25 1 -3.5">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1519" Mesh="" Name="PlayerStartArea_2" Rotation="3.14159 -1.5437 3.14159" Scale="1.75 1.25 1.5" Tag="" WorldPos="-17.25 1 -3.5">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="15" Group="0" ID="1528" Name="torch_static01_27" Rotation="0.520293 -8.94655e-007 1.56148e-006" Scale="1 1 1" Tag="" WorldPos="-21.5 2.25 -10.25">
@@ -5991,7 +5988,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1666" Mesh="" Name="Z_act2sterownia" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="2.25 0.265485 -48.75">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1666" Mesh="" Name="Z_act2sterownia" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="2.25 1 -48.75">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="45" Group="0" ID="1671" Name="water_level2" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-37.6079 4.76568 -3.61564">
@@ -6013,7 +6010,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="45" Group="0" ID="1672" Name="water_level3" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-37.6079 4.76568 -5.36627">
+                <Entity Active="true" FileIndex="45" Group="0" ID="1672" Name="water_level3" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-38.1428 5.921 -5.366">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -6035,7 +6032,7 @@
                 <Area Active="true" AreaType="PlayerStart" Group="0" ID="1675" Mesh="" Name="PlayerStartArea_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-31.6962 5 -3.20944">
                     <UserVariables />
                 </Area>
-                <Entity Active="true" FileIndex="45" Group="0" ID="1678" Name="water_level1" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-37.6079 4.76568 -1.89863">
+                <Entity Active="true" FileIndex="45" Group="0" ID="1678" Name="water_level1" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.309761 1 0.174087" Tag="" WorldPos="-38.188 5.921 -1.899">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />

@@ -1,17 +1,17 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.1 999" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="-1.99979 0.554567 185.888" CameraTarget="-1.99979 0.554567 5.88838" CameraZoom="0" GridHeight="5.88838" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="178 0.554567 5.88838" CameraTarget="-1.99979 0.554567 5.88838" CameraZoom="0" GridHeight="-1.99979" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-1.99979 180.001 5.88838" CameraTarget="-1.99979 0 5.88838" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-3.0832 2.32306 4.37409" CameraTarget="-1.64714 0 4.04238" CameraZoom="2.9" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-23.2173 12.724 -7.01816" CameraTarget="-24.5532 11 -12.7393" CameraZoom="2.1" GridHeight="11" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
         </Groups>
     </EditorSession>
-    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="">
+    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="true" SkyBoxColor="0.12 0.138 0.207 1" SkyBoxTexture="custom_stories/Amnesia - Advena/textures/envmaps/night_sky-Advena.dds">
         <MapContents>
             <FileIndex_StaticObjects NumOfFiles="59">
                 <File Id="0" Path="static_objects/castlebase/wall/corner_concave_round_exstension_short.dae" />
@@ -2454,7 +2454,7 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act4main" />
-                        <Var Name="StartPos" Value="Z_act4resident" />
+                        <Var Name="StartPos" Value="PlayerStartArea_1" />
                         <Var Name="MapFile" Value="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/maps/advena/act4main.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
@@ -6077,9 +6077,6 @@
                 <ParticleSystem Active="true" Color="0.1 0.1 0.2 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="1207" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_56" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-12.6905 12.5498 2.01891" />
                 <ParticleSystem Active="true" Color="0.1 0.1 0.2 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="1208" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_57" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.5036 12.3068 -3.99341" />
                 <ParticleSystem Active="true" Color="0.1 0.1 0.2 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="1212" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_61" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-27.4333 11.8186 -6.63105" />
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1213" Mesh="" Name="Z_act4main" Rotation="3.14159 0.261804 3.14159" Scale="1 1 1" Tag="" WorldPos="-11.75 10.8409 26">
-                    <UserVariables />
-                </Area>
                 <Entity Active="false" FileIndex="85" Group="0" ID="1214" Name="waterlurker_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-8.75 0 7">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
@@ -6704,7 +6701,7 @@
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="key_piwnica" />
+                        <Var Name="ContainedItem" Value="None" />
                         <Var Name="DisableBreakable" Value="false" />
                         <Var Name="IsInsanityVision" Value="false" />
                         <Var Name="VisionMaxSanity" Value="30" />
@@ -7184,7 +7181,7 @@
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_water_stream_extension.ps" Group="0" ID="1528" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_65" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-22.75 19 4.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_water_stream_extension.ps" Group="0" ID="1530" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_66" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.25 20.25 6.5" />
                 <ParticleSystem Active="true" Color="0.1 0.1 0.2 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="1532" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_58" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-7.79235 12.5498 1.4148" />
-                <Entity Active="true" FileIndex="92" Group="0" ID="1534" Name="key_piwnica_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-27.096 10.75 4.44699">
+                <Entity Active="true" FileIndex="92" Group="0" ID="1534" Name="key_piwnica_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-28 12.666 4.61461">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -7296,6 +7293,9 @@
                         <Var Name="ItemInteraction" Value="false" />
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="1586" Mesh="" Name="PlayerStartArea_1" Rotation="-3.14159 0.0937506 -3.14159" Scale="1 1 1" Tag="" WorldPos="-11.7834 11.3941 25.2208">
+                    <UserVariables />
                 </Area>
             </Entities>
             <Misc>

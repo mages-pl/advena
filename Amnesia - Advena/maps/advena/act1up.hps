@@ -43,7 +43,7 @@ AddLocalVarInt("intro_cell_sequence",1);
 int szybkosc = 10;
 switch(GetLocalVarInt("intro_cell_sequence")) {
 case 1:
-SetEntityActive("enemy_suitor_1",true);
+
 PlayGuiSound("react_pant.snt",1);
 SetPlayerCrouchDisabled(true);
  FadeRadialBlurTo(0.75f, 0.8f);
@@ -51,10 +51,14 @@ szybkosc = 3;
 FadeOut(1); 
 break; // przej�cie ekranu do czerni mo�na doda� efekt os�abienia
 case 2:
+    SetEntityActive("enemy_suitor_1",true);
+ShowEnemyPlayerPosition("enemy_suitor_1"); 
 szybkosc = 1;
  TeleportPlayer("PlayerStartArea_2");
   SetSwingDoorLocked("prison_silent_6", false, false);
-   //SetMoveObjectState("childsnake_floor_water_blood_2", 1.0f);
+  
+    SetMoveObjectState("childsnake_floor_water_blood_advena_1", 1.0f);
+    
  SetSwingDoorDisableAutoClose("prison_silent_6", false);
  SetSwingDoorClosed("prison_silent_6", false, false);
  SetMoveObjectState("prison_silent_6", 1);
@@ -193,6 +197,7 @@ AddPlayerSanity(35);
   PlayMusic("12_puzzle_cavein.ogg", false, 0.7, 0.1, 10, false);
   SetEntityActive("chlebek1",false);
   AddTimer("",30,"play_ambient_music"); // 30
+  AddGlobalVarInt("wiezien_chleb_result",1);
 }
 void play_ambient_music(string &in asTimer) {
 StopMusic(2,1.0f);

@@ -1,4 +1,6 @@
 void OnStart() {
+      AddLocalVarInt("FirstAct1ToAct2",0);
+      
 	SetEntityPlayerLookAtCallback("Check_lever","Check_lever",false);
 //######### LEVER COLLIDE #####################
 for(int k=0;k<4;k++) {
@@ -182,10 +184,14 @@ SetEntityActive("FogArea_4",false);
 SetEntityActive("waterlurker_music02_1",false);
 CompleteQuest("Journal","act1toact2");
 PlayMusic("16_puzzle_bridge",false,0.5,0.1,1.0,false);
+
+/* Dodany checkpoint */
+  CheckPoint ("Act1ToAct2CheckpointUgaszone", "Z_act2sterownia", "OnEnter", "Death_Category", "Act1ToAct2Water");
+       
 }
 void ContinueMusic(string &in asTimer) {
 StopMusic(1,2.0f);
-PlayMusic("04_amb",true, 0.5, 0.1, 1,true);
+PlayMusic("04_amb",true, 0.75, 0.1, 1,true);
 }
 //####### SMOKING DAMAGE ########################
 void Smoking(string &in asParent, string &in asChild, int alState) {
@@ -312,7 +318,7 @@ AddTimer("",16,"Next_Ambients");
 }
 }
 void Next_Ambients(string &in asTimer) {
-PlayMusic("amb_extra01",true, 0.7, 0.5, 1,false);
+PlayMusic("amb_extra01",true, 0.75, 0.5, 1,false);
 }
 //######## LADDER ADDER ################
 void ScriptArea_4(string &in asItem, string &in asEntity) {
@@ -337,7 +343,7 @@ void StickyAttachPipe(string &in asStickyArea, string &in asBodyName)
 	 SetLocalVarInt("Posion",1);
 	 AddTimer("",1,"Preload_Particle");
 	 SetEntityActive("Death_Smoke",false);
-	 CheckPoint ("Checkpoint_nad_klapa", "PlayerStartArea_2", "", "", "");
+	 CheckPoint ("Checkpoint_nad_klapa", "PlayerStartArea_2", "OnEnter", "Death_Category", "Act1ToAct2Water");
 }
 void Preload_Particle(string &in asTimer) {
 PreloadParticleSystem("ParticleSystem_27");
@@ -438,16 +444,23 @@ SetLocalVarInt("sound_scare_effect1",0);
 }
 }
 void OnEnter() {
+     StopMusic(2, 2.0f);
+  AutoSave();
+  
+  PlayMusic("04_amb",true, 0.75, 0.1, 1,false);
     
-    AutoSave();
-    
+    if(GetLocalVarInt("FirstAct1ToAct2") == 0 ) {
+         CheckPoint ("Act1ToAct2Checkpoint", "Z_act1burning", "OnEnter", "Death_Category", "Act1ToAct2Smoke");
+         AddLocalVarInt("FirstAct1ToAct2",1);
+    }
+   
 if(GetLocalVarInt("rozdzial2") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "2", 3.0f);
  AddLocalVarInt("rozdzial2",1);
  AddTimer("",5,"EndFade_Rozdzial");
  }
-PlayMusic("04_amb",true, 0.5, 0.1, 1,false);
+
 if(GetGlobalVarInt("OpenDoorAct2") >= 1) {
 
 SetEntityActive("water_plane_ch02_17",false);

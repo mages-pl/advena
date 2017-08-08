@@ -3,13 +3,31 @@ void OnStart() {
 	//## PIANO
 	//########################################################################
 		for(int tasjen=1;tasjen<=5;tasjen++) { SetEntityPlayerInteractCallback("song"+tasjen,"song"+tasjen,false);	}
-for(int vb=1;vb<=5;vb++) { SetEntityPlayerLookAtCallback("show_song"+vb,"show_song"+vb,false);	}
+//for(int vb=1;vb<=5;vb++) { SetEntityPlayerLookAtCallback("show_song"+vb,"show_song"+vb,false,1);	}
                 AddEntityCollideCallback("Player","ScriptArea_10","ScriptArea_10",false,1);
 AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",true,1);
 AddEntityCollideCallback("Player","ScriptArea_8","ScriptArea_8",true,1);
+
+AddEntityCollideCallback("Player","strach4","strach4",true,1);
+
 AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",false,0);
 AddUseItemCallback("", "glass_container_oil_1", "ScriptArea_2", "Nasmaruj_pokretlo", true);
 AddUseItemCallback("", "record_phonograph", "phonograph_1", "odtworz_nagranie", true);
+}
+
+void strach4(string &in asParent, string &in asChild, int alState)  { 
+  
+    GiveSanityDamage(10,false);
+    
+ SetEntityActive("servant_grunt_1",true);
+ 
+ 
+AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_9", 0, "");
+AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_12", 0, "");
+AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_19", 0, "");
+AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_22", 0, "");
+ 
+
 }
 void OnEnter() {
      AutoSave();

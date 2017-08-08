@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="2.32673 -1.95 202.956" CameraTarget="2.32673 -1.95 22.9557" CameraZoom="0" GridHeight="22.9557" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="182.327 -1.95 22.9557" CameraTarget="2.32673 -1.95 22.9557" CameraZoom="0" GridHeight="2.32673" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="2.32673 177.75 22.9557" CameraTarget="2.32673 -2.25 22.9557" CameraZoom="0" GridHeight="-2.25" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-3.06953 5.07155 0.108954" CameraTarget="-9.3301 0 -0.153962" CameraZoom="1.82495" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="8.50661 3.58507 14.6184" CameraTarget="4.90748 0 16.4604" CameraZoom="2.22495" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -241,10 +241,10 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="204" Name="wall_welder_wood_39" Rotation="-3.14159 -0.0845765 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="26.0373 3.05379e-007 9.82148" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="205" Name="wall_welder_wood_40" Rotation="-3.14159 -0.0845765 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="23.605 -2.74528e-007 10.0277" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="206" Name="wall_welder_wood_41" Rotation="-3.14159 -0.0845765 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="23.4756 -3.05379e-007 8.79047" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="210" Name="wall_welder_wood_42" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="22.2833 -9.02588e-007 8.72579" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="211" Name="wall_welder_wood_43" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="22.2416 -8.89101e-007 9.96881" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="212" Name="wall_welder_wood_44" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="19.8019 -1.48167e-006 9.88697" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="213" Name="wall_welder_wood_45" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="19.8192 -1.49512e-006 8.64312" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="210" Name="wall_welder_wood_42" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="22.2833 -9.62193e-007 8.72579" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="211" Name="wall_welder_wood_43" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="22.2416 -9.48705e-007 9.96881" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="212" Name="wall_welder_wood_44" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="19.8019 -1.54127e-006 9.88697" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="213" Name="wall_welder_wood_45" Rotation="-3.14159 0.0335387 -3.14159" Scale="0.5 0.65 0.5" Tag="" WorldPos="19.8192 -1.55472e-006 8.64312" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="11" Group="0" ID="240" Name="ceiling_corner_concave_short_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-5.75 4 -2.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="11" Group="0" ID="241" Name="ceiling_corner_concave_short_2" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-5.75 4 3.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="243" Name="ceiling_corner_convex_short_1" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="10 4 4" />
@@ -1432,7 +1432,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="5" Group="0" ID="214" Name="bed_simple_16" Rotation="-3.14159 -1.53726 -3.14159" Scale="1 1 1" Tag="" WorldPos="21.0412 -1.19125e-006 9.29607">
+                <Entity Active="true" FileIndex="5" Group="0" ID="214" Name="bed_simple_16" Rotation="-3.14159 -1.53726 -3.14159" Scale="1 1 1" Tag="" WorldPos="21.0412 -1.25086e-006 9.29607">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -1996,7 +1996,7 @@
                         <Var Name="StuckState" Value="None" />
                         <Var Name="InteractionDisablesStuck" Value="false" />
                         <Var Name="OverrideDefaults" Value="true" />
-                        <Var Name="MinLimit" Value="-180" />
+                        <Var Name="MinLimit" Value="0" />
                         <Var Name="MaxLimit" Value="180" />
                         <Var Name="MinLimitStuck" Value="false" />
                         <Var Name="MaxLimitStuck" Value="false" />
@@ -2019,7 +2019,7 @@
                         <Var Name="StuckState" Value="None" />
                         <Var Name="InteractionDisablesStuck" Value="false" />
                         <Var Name="OverrideDefaults" Value="true" />
-                        <Var Name="MinLimit" Value="-180" />
+                        <Var Name="MinLimit" Value="0" />
                         <Var Name="MaxLimit" Value="180" />
                         <Var Name="MinLimitStuck" Value="false" />
                         <Var Name="MaxLimitStuck" Value="false" />
@@ -2042,7 +2042,7 @@
                         <Var Name="StuckState" Value="None" />
                         <Var Name="InteractionDisablesStuck" Value="false" />
                         <Var Name="OverrideDefaults" Value="true" />
-                        <Var Name="MinLimit" Value="-180" />
+                        <Var Name="MinLimit" Value="0" />
                         <Var Name="MaxLimit" Value="180" />
                         <Var Name="MinLimitStuck" Value="false" />
                         <Var Name="MaxLimitStuck" Value="false" />
@@ -2065,7 +2065,7 @@
                         <Var Name="StuckState" Value="None" />
                         <Var Name="InteractionDisablesStuck" Value="false" />
                         <Var Name="OverrideDefaults" Value="true" />
-                        <Var Name="MinLimit" Value="-180" />
+                        <Var Name="MinLimit" Value="0" />
                         <Var Name="MaxLimit" Value="180" />
                         <Var Name="MinLimitStuck" Value="false" />
                         <Var Name="MaxLimitStuck" Value="false" />

@@ -7,6 +7,7 @@ void OnStart() {
      AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);   
         //
         
+         // AddEntityPlayerLookAtCallback("Player","spojrz_sekret_bibl","spojrz_sekret_bibl",true,1);    
 	//###### PLAYER INTERACT
 	SetEntityPlayerInteractCallback("spalonadupa_1","spalonadupa_1",false);	
 }
@@ -21,7 +22,15 @@ StopMusic(2.0f,1);
  AddLocalVarInt("dotknij_drzwi",1);
 AddTimer("",1,"Paper_music");
 }
-
+void spojrz_sekret_bibl(string &in asParent, string &in asChild, int alState) {
+  if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
+GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
+}
+AddGlobalVarInt("OdkryteSkrytki",1);
+PlayGuiSound("quest_completed",1);
+SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlobalVarString("Separator")+GetGlobalVarInt("MaxSkrytek")
+  
+}
 void ScriptArea_7(string &in asParent, string &in asChild, int alState) {
  if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
 GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);

@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="-34 -6.75 181.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="1.25" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="146.001 -6.75 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="-34" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-34 173.251 1.25" CameraTarget="-34 -6.75 1.25" CameraZoom="0" GridHeight="-6.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-19.0667 0.377955 9.43881" CameraTarget="-12.3502 -8.5 10.172" CameraZoom="1.5" GridHeight="-8.5" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-35.0287 -6.87976 4.90181" CameraTarget="-34.6469 -8.5 9.12121" CameraZoom="2.4" GridHeight="-8.5" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -1713,7 +1713,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="41" Group="0" ID="808" Name="otworz_act1toact2" Rotation="0 -15.708 0" Scale="1 1 1" Tag="" WorldPos="2 0.0776212 16.1777">
+                <Entity Active="true" FileIndex="41" Group="0" ID="808" Name="otworz_act1toact2" Rotation="0 -15.708 0" Scale="1 1 1" Tag="" WorldPos="2 0.078 16.178">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -1728,7 +1728,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act1toact2" />
                         <Var Name="StartPos" Value="PlayerStartArea_1" />
-                        <Var Name="MapFile" Value="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/custom_stories/Advena/maps/act1katakumby.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act1_to_act2.map" />
                         <Var Name="Locked" Value="true" />
                         <Var Name="LockedSound" Value="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/door/door_level_metal_locked.snt" />
                         <Var Name="LockedTextCat" Value="" />
@@ -6732,7 +6732,7 @@
                 </Entity>
                 <PointLight Active="true" CastShadows="false" DiffuseColor="1 0.35 0 1" FalloffMap="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3336" Name="PointLight_41" Radius="3" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-35.2985 -6.28892 1.40991" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="1 0.35 0 1" FalloffMap="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3337" Name="PointLight_42" Radius="2" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-26.3118 -7.41732 1.40991" />
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3338" Mesh="" Name="PlayerStartArea_1" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="-34.25 -8 3.25">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3338" Mesh="" Name="PlayerStartArea_1" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="-34.25 -7.25 3.25">
                     <UserVariables />
                 </Area>
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_torch_fire.ps" Group="0" ID="3339" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_21" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-29 -7 6.75" />
@@ -6767,7 +6767,7 @@
                 <ParticleSystem Active="true" Color="1 0.35 0 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_fire_orb_room.ps" Group="0" ID="3370" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_149" Rotation="3.14159 -0.523593 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.75 1.5 -7.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_torch_fire.ps" Group="0" ID="3371" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_150" Rotation="3.14159 -0.663574 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.75 0.75 -7" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="1 0.35 0 1" FalloffMap="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3372" Name="PointLight_43" Radius="3" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-3.5 1 -9.5" />
-                <Entity Active="false" FileIndex="41" Group="0" ID="3374" Name="otworz_act1toact2_1" Rotation="0 -15.708 0" Scale="1 1 1" Tag="" WorldPos="2 0 16.1777">
+                <Entity Active="false" FileIndex="41" Group="0" ID="3374" Name="otworz_act1toact2_1" Rotation="0 -15.708 0" Scale="1 1 1" Tag="" WorldPos="2 0.078 16.178">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -6782,7 +6782,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act1toact2" />
                         <Var Name="StartPos" Value="Z_act1burning" />
-                        <Var Name="MapFile" Value="D:/Program Files (x86)/Amnesia - The Dark Descent/redist/maps/advena/act1_to_act2.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act1_to_act2.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />

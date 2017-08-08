@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.1 999" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="0.293218 0.004 181.686" CameraTarget="0.293218 0.004 1.68589" CameraZoom="0" GridHeight="1.68589" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180.293 0.004 1.68589" CameraTarget="0.293218 0.004 1.68589" CameraZoom="0" GridHeight="0.293218" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0.293218 180 1.68589" CameraTarget="0.293218 0 1.68589" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-0.514372 4.62238 10.5563" CameraTarget="-8.95987 -8 22.5569" CameraZoom="0.949006" GridHeight="-8" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="5.03513 3.33501 -17.963" CameraTarget="8.99867 0 -22.317" CameraZoom="2" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -3100,7 +3100,7 @@
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="Lit" Value="false" />
+                        <Var Name="Lit" Value="true" />
                         <Var Name="ConnectedLight" Value="" />
                         <Var Name="ConnectionLightAmount" Value="1" />
                         <Var Name="ConnectionLightUseOnColor" Value="true" />
@@ -3403,7 +3403,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="PlayerStart" Group="0" ID="912" Mesh="" Name="Z_act4resident" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-14.367 6.63354 -5.28225">
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="912" Mesh="" Name="PlayerStartArea_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-14.367 6.63354 -5.28225">
                     <UserVariables />
                 </Area>
                 <Entity Active="true" FileIndex="31" Group="0" ID="913" Name="level_engine_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-44.5 -7.9203 22">
@@ -3432,7 +3432,7 @@
                 <Area Active="true" AreaType="PlayerStart" Group="0" ID="914" Mesh="" Name="Z_act5ending" Rotation="0 1.40935 0" Scale="1.0028 0.984547 1.01122" Tag="" WorldPos="-43.6296 -7.45613 21.9708">
                     <UserVariables />
                 </Area>
-                <Entity Active="true" FileIndex="30" Group="0" ID="915" Name="level_wood_2" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-16.25 6 -5">
+                <Entity Active="true" FileIndex="30" Group="0" ID="915" Name="level_wood_2" Rotation="0.00996971 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-16.25 6 -5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -3446,7 +3446,7 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act4resident" />
-                        <Var Name="StartPos" Value="Z_act4main" />
+                        <Var Name="StartPos" Value="PlayerStartArea_1" />
                         <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act4resident.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
@@ -3518,7 +3518,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="33" Group="0" ID="1058" Name="wriggle_prison_bar_2" Rotation="-1.57077 -1.49603 1.57077" Scale="1 1 1" Tag="" WorldPos="6.25 2.25 -19.25">
+                <Entity Active="true" FileIndex="33" Group="0" ID="1058" Name="wriggle_prison_bar_2" Rotation="1.57077 1.49603 -1.57082" Scale="1 1 1" Tag="" WorldPos="6.14599 3.21017 -19.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -4367,6 +4367,7 @@
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="0.977666 3.37203" BillboardType="Axis" ConnectLight="PointLight_18" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1325" IsHalo="false" MaterialFile="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/billboards/bb_lightyellow_lightray.mat" Name="Billboard_20" Rotation="-1.4942 0.572573 1.69555" Tag="" WorldPos="-20.079 -4.13092 23.5765" />
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="0.977666 3.37203" BillboardType="Axis" ConnectLight="PointLight_18" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1326" IsHalo="false" MaterialFile="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/billboards/bb_lightyellow_lightray.mat" Name="Billboard_21" Rotation="-1.4942 0.572573 1.69555" Tag="" WorldPos="-18.6778 -3.8376 23.5765" />
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="0.977666 3.37203" BillboardType="Axis" ConnectLight="PointLight_18" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1327" IsHalo="false" MaterialFile="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/billboards/bb_lightyellow_lightray.mat" Name="Billboard_22" Rotation="-1.4942 0.572573 1.69555" Tag="" WorldPos="-19.3363 -4.49716 23.5765" />
+                <Sound Active="true" Group="0" ID="1328" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/11/11_animal_squeal.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-1 5 -10" />
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="208" Name="Compound_2" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-2.11076 8.99998 -13.9048">

@@ -6,13 +6,7 @@ void OnStart() {
 	AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",false,1);
 	AddEntityCollideCallback("Player","ScriptArea_5","ScriptArea_5",false,1);
 	AddUseItemCallback("", "key_piwnica1", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica2", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica01", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica_01", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica_1", "mansion_1", "otworz_piwnice", true);	
-	AddUseItemCallback("", "key_piwnica_2", "mansion_1", "otworz_piwnice", true);	
-
+   
 	AddEntityCollideCallback("Player", "areaendthunder", "CollideAreaThunder", true, 1);	
 	AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",false,1);
 	AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);

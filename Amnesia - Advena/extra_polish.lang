@@ -7,6 +7,11 @@
     <Entry Name="Error_Przelacznik">Mechanizm ten wygląda na popsuty</Entry>
     <Entry Name="Przelacznik_Info">Wygląda mi to na jakiś mechnizm przełączająćy.</Entry>
   </CATEGORY>
+    <CATEGORY Name="Death_Category">
+        <Entry Name="Act1BruningDeath">Pożar pochłonął Twoją duszę</Entry>
+          <Entry Name="Act1ToAct2Smoke">Trujący gaz pozbawił Cię życia</Entry>
+             <Entry Name="Act1ToAct2Water">Zginąłeś w mrocznych czeluściach</Entry>
+    </CATEGORY>
   <CATEGORY Name="Act3">
     <Entry Name="Dotnij_czaszka">Ludzka czaszka</Entry>
     <Entry Name="Dotnij_fonograf">Fonograf</Entry>
@@ -137,6 +142,7 @@
     <Entry Name="act4resident">Rezydencja</Entry>
     <Entry Name="act5ending">Krematorium</Entry>
     <Entry Name="act6main">Dziedziniec</Entry>
+     <Entry Name="act1main_room">Kostnica</Entry>
   </CATEGORY>
   <CATEGORY Name="Rozdzial">
     <Entry Name="Epilog">Epilog: Koniec zła</Entry>

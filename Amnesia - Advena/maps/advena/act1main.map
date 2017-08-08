@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="5.13109 0.0470217 218.317" CameraTarget="5.13109 0.0470217 38.3157" CameraZoom="0" GridHeight="38.3157" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="185.131 0.0470217 38.3157" CameraTarget="5.13109 0.0470217 38.3157" CameraZoom="0" GridHeight="5.13109" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="5.13109 180.036 38.3157" CameraTarget="5.13109 0.0356822 38.3157" CameraZoom="0" GridHeight="0.0356822" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="2.76638 2.96837 56.4877" CameraTarget="3.2988 0.0356822 58.703" CameraZoom="2.59999" GridHeight="0.0356822" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="5.43761 2.72813 39.3344" CameraTarget="10.9219 0.0356822 39.7362" CameraZoom="2.1" GridHeight="0.0356822" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -124,7 +124,7 @@
                 <File Id="107" Path="static_objects/cellarbase/wall/default_extension02.dae" />
                 <File Id="108" Path="static_objects/decals/damaged_cellarbase_wood_floor02.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="173">
+            <FileIndex_Entities NumOfFiles="174">
                 <File Id="0" Path="entities/special/antidote_corpse/antidote_corpse_drilled.ent" />
                 <File Id="1" Path="entities/door/hatch_ceiling/hatch_ceiling.ent" />
                 <File Id="2" Path="entities/lamp/torch_floor/torch_floor.ent" />
@@ -298,6 +298,7 @@
                 <File Id="170" Path="entities/ornament/paintings/painting02/painting02.ent" />
                 <File Id="171" Path="entities/ornament/paintings/painting07/painting07.ent" />
                 <File Id="172" Path="entities/ornament/pot_plant_small01/pot_plant_small01.ent" />
+                <File Id="173" Path="entities/navigation/sign_broken/sign_broken01.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="10">
                 <File Id="0" Path="textures/decals/blood_stain_small.mat" />
@@ -3151,7 +3152,6 @@
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.828 1 0.534 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="723" Name="PointLight_3" Radius="5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-21.25 -2.75 20" />
                 <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="730" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-21.25 0.463453 19.75" />
                 <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="731" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-19.5 0.289107 16.25" />
-                <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="732" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-22.5 0.859834 13.5" />
                 <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="733" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-25.5 0.772892 12.5" />
                 <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="734" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-29.75 0.324464 11.2997" />
                 <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="735" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_6" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-19.5 0.463453 21.5" />
@@ -3826,7 +3826,7 @@
                 <Area Active="true" AreaType="PathNode" Group="0" ID="937" Mesh="" Name="PathNodeArea_5" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="8.5 0 41.5">
                     <UserVariables />
                 </Area>
-                <Area Active="true" AreaType="PathNode" Group="0" ID="938" Mesh="" Name="PathNodeArea_6" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="4.75 0.25 38.25">
+                <Area Active="true" AreaType="PathNode" Group="0" ID="938" Mesh="" Name="PathNodeArea_6" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="11.8733 0.25 41.7612">
                     <UserVariables />
                 </Area>
                 <Area Active="true" AreaType="PathNode" Group="0" ID="939" Mesh="" Name="PathNodeArea_7" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="13.25 0 41.5">
@@ -3884,7 +3884,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="false" FileIndex="53" Group="0" ID="966" Name="enemy_suitor_1" Rotation="0 0.591947 0" Scale="1 1 1" Tag="" WorldPos="1.5 0 36.5">
+                <Entity Active="false" FileIndex="53" Group="0" ID="966" Name="enemy_suitor_1" Rotation="0 0.591947 0" Scale="1 1 1" Tag="" WorldPos="10.49 0 41.5306">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />
@@ -18809,10 +18809,8 @@
                     </UserVariables>
                 </Entity>
                 <Sound Active="true" Group="0" ID="2943" MaxDistance="13" MinDistance="10" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/15/15_acid.snt" Tag="" UseDefault="false" Volume="1.3" WorldPos="-24.25 -0.25 16.5" />
-                <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="2944" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_18" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.2777 0.859834 10.8339" />
+                <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="2944" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_18" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-21.9855 0.482213 12.4723" />
                 <FogArea Active="true" Color="0.379 0.414 0.145 1" End="5" FalloffExp="1" Group="0" ID="2945" Name="FogArea_6" Rotation="0 0 0" Scale="2.63458 2.27297 5.50465" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="-23.452 1 7.5" />
-                <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="2946" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_34" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-22.9084 1.76123 10.4348" />
-                <ParticleSystem Active="true" Color="0.672 1 0.586 0.4" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_area_fog_sewer.ps" Group="0" ID="2947" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_37" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-24.2127 1.76123 10.4348" />
                 <FogArea Active="true" Color="0.379 0.414 0.145 1" End="25" FalloffExp="1" Group="0" ID="2949" Name="FogArea_7" Rotation="0 0 0" Scale="15.6224 11.773 13.0682" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="1" Tag="" WorldPos="-26.6325 0.963415 17.0697" />
                 <Entity Active="true" FileIndex="136" Group="0" ID="2955" Name="barrel01_30" Rotation="0 0.523598 0" Scale="1 1 1" Tag="" WorldPos="-25.0904 -4 53.7145">
                     <UserVariables>
@@ -22115,6 +22113,25 @@
                 <Area Active="true" AreaType="PlayerStart" Group="0" ID="3566" Mesh="" Name="PlayerStartArea_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-34.75 0.75 12.5">
                     <UserVariables />
                 </Area>
+                <Entity Active="true" FileIndex="173" Group="0" ID="3568" Name="sign_broken01_1" Rotation="0 -1.49532 7.15256e-007" Scale="1 1 1" Tag="" WorldPos="6.63319 1.31532 39.6108">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="show_kostnica" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="1352" Name="Compound_2" Rotation="3.14159 -4.44253e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.2612 0 -0.557225" />

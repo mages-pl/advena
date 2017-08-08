@@ -29,11 +29,11 @@ SetPlayerLampOil(0.0f);
 //############## INTRODUCTION SEQUENCE #############################
 // AddTimer("START_GAME",0.5,"INTRO_SEQUENCE_START");
 //############## SECRETS ########################################### 
-SetGlobalVarInt("MaxSkrytek",25);
-SetGlobalVarInt("OdkryteSkrytki",0);
-SetGlobalVarString("Odkryto","Odkryto ");
-SetGlobalVarString("Separator"," / ");
-SetGlobalVarString("Skrytek"," skrytek");
+AddGlobalVarInt("MaxSkrytek",25);
+AddGlobalVarInt("OdkryteSkrytki",0);
+AddGlobalVarString("Odkryto","Odkryto ");
+AddGlobalVarString("Separator"," / ");
+AddGlobalVarString("Skrytek"," skrytek");
 for(int q=1;q<=3;q++) {
 AddEntityCollideCallback("Player","Skrytka_"+q,"Skrytki",true,1);
 }
@@ -58,7 +58,11 @@ AddEntityCollideCallback("Player","ScriptArea_49","ScriptArea_49",true,1);
 AddEntityCollideCallback("Player","ScriptArea_10","ScriptArea_10",true,1);
 AddEntityCollideCallback("Player","ScriptArea_11","ScriptArea_11",true,1);
 AddEntityCollideCallback("Player","ScriptArea_12","ScriptArea_12",true,1);
+
+//SetEntityPlayerLookAtCallback("show_kostnica","show_kostnica",false,1);
+
 AddEntityCollideCallback("Player","ScriptArea_14","ScriptArea_14",true,1);
+
 AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",true,1);
 AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);
 AddEntityCollideCallback("Player","ScriptArea_9","ScriptArea_9",true,1);
@@ -87,6 +91,9 @@ SetEntityPlayerInteractCallback("kolowrot_obroc", "kolowrot_obroc",false);
 
 SetEntityPlayerInteractCallback("podnies_dywan", "podnies_dywan",false);
 
+}
+void show_kostnica(string &in asEntity, int alState) {
+   SetMessage("Levels","act1main_room", 3); 
 }
 //############## INTRODUCTION SEQUENCE #############################
 void INTRO_SEQUENCE_START(string &in asTimer) 
@@ -434,10 +441,14 @@ FadeIn(1);
 //###### teleport to nightmitare ######################
 void ScriptArea_14(string &in asParent, string &in asChild, int alState) {
 
+    if(GetGlobalVarInt("wiezien_chleb_result") == 0) {
    PlaySoundAtEntity("","insanity_imageflash01","ScriptArea_14", 0 , false);
     GiveSanityDamage(100,false);
 	 PlayMusic("24_event_vision",false, 0.8, 0.1, 10, false);
 	AddTimer("",3,"Teleport_Nightmitare");
+    } else {
+        
+    }
 } 
 void Teleport_Nightmitare(string &in asTimer) {
  FadeOut(2);
