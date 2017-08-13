@@ -46,7 +46,7 @@
                 <File Id="4" Path="entities/storage/storage_box_wood01/storage_box_wood01_large.ent" />
                 <File Id="5" Path="entities/storage/storage_box_wood01/storage_box_wood01.ent" />
                 <File Id="6" Path="entities/ornament/cross_small_metal/cross_small_metal.ent" />
-                <File Id="7" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="7" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="8" Path="entities/container/barrel01/barrel01.ent" />
                 <File Id="9" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />
                 <File Id="10" Path="entities/container/vase01/vase01.ent" />

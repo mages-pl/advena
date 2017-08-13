@@ -163,7 +163,7 @@
                 <File Id="58" Path="entities/equipment/rope_pile/rope_stump02.ent" />
                 <File Id="59" Path="entities/equipment/rope_pile/rope_stump01.ent" />
                 <File Id="60" Path="entities/equipment/wooden_board_pile/wooden_board_pile01.ent" />
-                <File Id="61" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="61" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="62" Path="entities/gameplay/bridge_metal_vert/bridge_metal_vert.ent" />
                 <File Id="63" Path="entities/storage/storage_box_wood02/storage_box_wood02_moveable.ent" />
                 <File Id="64" Path="entities/obstacles/sewer_grate/sewer_grate_worn.ent" />

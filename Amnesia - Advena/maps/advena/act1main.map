@@ -266,7 +266,7 @@
                 <File Id="138" Path="entities/container/vase02/vase02.ent" />
                 <File Id="139" Path="entities/container/wood_box01/wood_box01_breakable.ent" />
                 <File Id="140" Path="entities/container/wood_box02/wood_box02_broken.ent" />
-                <File Id="141" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="141" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="142" Path="entities/tool/plane/plane.ent" />
                 <File Id="143" Path="entities/tool/shovel/shovel.ent" />
                 <File Id="144" Path="entities/lamp/hanging_lantern/hanging_lantern_ceiling.ent" />

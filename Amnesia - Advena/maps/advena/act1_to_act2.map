@@ -118,7 +118,7 @@
                 <File Id="0" Path="entities/door/level_dungeon/level_dungeon.ent" />
                 <File Id="1" Path="entities/door/cellar_wood01/cellar_wood01.ent" />
                 <File Id="2" Path="entities/door/hatch_large/hatch_large.ent" />
-                <File Id="3" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="3" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="4" Path="entities/door/hatch_drainage/hatch_drainage.ent" />
                 <File Id="5" Path="entities/item/wooden_bucket/wooden_bucket_object.ent" />
                 <File Id="6" Path="entities/container/wood_box01/wood_box01.ent" />

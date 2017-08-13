@@ -48,7 +48,7 @@
         <Var Name="StaticMoveStopSound" Value="" />
         <Var Name="StaticMoveLoopSound" Value="" />
         <Var Name="RandomizeAnimationStart" Value="true" />
-        <Var Name="BreakActive" Value="true" />
+        <Var Name="BreakActive" Value="false" />
         <Var Name="BreakDestroyJoints" Value="false" />
         <Var Name="BreakMinEnergy" Value="100" />
         <Var Name="BreakEntity" Value="wood_box_small01_broken.ent" />

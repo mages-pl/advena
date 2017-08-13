@@ -107,7 +107,7 @@
                 <File Id="29" Path="entities/storage/shelf_no_back/shelf_no_back.ent" />
                 <File Id="30" Path="entities/storage/storage_box_wood01/storage_box_wood01_large.ent" />
                 <File Id="31" Path="entities/storage/storage_box_wood01/storage_box_wood01.ent" />
-                <File Id="32" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="32" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="33" Path="entities/item/crowbar/crowbar.ent" />
                 <File Id="34" Path="entities/storage/shelf_high02/shelf_high02.ent" />
                 <File Id="35" Path="entities/furniture/cabinet_simple/cabinet_simple.ent" />

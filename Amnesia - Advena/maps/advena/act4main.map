@@ -107,7 +107,7 @@
                 <File Id="1" Path="entities/storage/storage_box_wood02/storage_box_wood02.ent" />
                 <File Id="2" Path="entities/storage/storage_box_wood01/storage_box_wood01.ent" />
                 <File Id="3" Path="entities/container/barrel01/barrel01.ent" />
-                <File Id="4" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="4" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="5" Path="entities/gameplay/wooden_boards_block/wooden_boards_block.ent" />
                 <File Id="6" Path="entities/door/hatch_metal01/hatch_metal01.ent" />
                 <File Id="7" Path="entities/door/cellar_wood01/cellar_wood01.ent" />

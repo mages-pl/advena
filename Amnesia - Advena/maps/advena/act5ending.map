@@ -103,7 +103,7 @@
                 <File Id="15" Path="entities/container/wood_box02/wood_box02.ent" />
                 <File Id="16" Path="entities/gameplay/valve_iron/valve_iron_rusty.ent" />
                 <File Id="17" Path="entities/container/barrel01/barrel01.ent" />
-                <File Id="18" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="18" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="19" Path="entities/equipment/brick_pile/brick_pile_large.ent" />
                 <File Id="20" Path="entities/equipment/brick_pile/brick_pile01.ent" />
                 <File Id="21" Path="entities/equipment/brick/brick.ent" />

@@ -45,6 +45,7 @@ ShowEnemyPlayerPosition("servant_grunt_1");
 GiveSanityDamage(10,false);
 }
 void ScriptArea_6(string &in asParent, string &in asChild, int alState) {
+    SetEntityActive("ScriptArea_3",false);
 SetEntityActive("servant_grunt_2",false);
 AddTimer("",15,"KoniecGruntDoor");
 GiveSanityDamage(10,false);
@@ -101,6 +102,10 @@ RemoveItem("key_tomb_rusty_1");
 AddLocalVarInt("NewKey",1);
 RotatePropToSpeed("ceiling_machinery_cog_3", 1.0f, 1.0f, 0.0f, 0.0f,1.0f, true, "ScriptArea_11");
 RotatePropToSpeed("ceiling_machinery_cog_2", 1.0f, 1.0f, 0.0f, 0.0f,1.0f, true, "ScriptArea_10");
+AddTimmer("",15,"klucz_gotowy");
+
+}
+void klucz_gotowy(string &in asTimmer) {
 if(GetLocalVarInt("NewKey") == 2) {
 SetSwingDoorLocked("hatch_ceiling_1", false, false);
  SetSwingDoorDisableAutoClose("hatch_ceiling_1", false);
@@ -108,6 +113,8 @@ SetSwingDoorLocked("hatch_ceiling_1", false, false);
  AddPlayerSanity(15);
  PlayMusic("02_puzzle",false, 1.0f, 0.0f, 10, false); 
  GiveItemFromFile("key_tomb_1", "key_tomb.ent");
+  StopPropMovement("ceiling_machinery_cog_2");
+  StopPropMovement("ceiling_machinery_cog_3");
 }
 }
 void Otworz_Drzwi_Act4(string &in asItem, string &in asEntity) {

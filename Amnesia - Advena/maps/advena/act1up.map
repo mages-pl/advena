@@ -89,7 +89,7 @@
                 <File Id="25" Path="entities/bottle/wine_row/wine_row.ent" />
                 <File Id="26" Path="entities/bottle/wine_stack/wine_stack.ent" />
                 <File Id="27" Path="entities/ration/rotten_apple_pile/rotten_apple_pile.ent" />
-                <File Id="28" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="28" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="29" Path="entities/kitchen/plate/plate.ent" />
                 <File Id="30" Path="entities/ration/bag_small/bag_small.ent" />
                 <File Id="31" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />

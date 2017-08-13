@@ -96,7 +96,7 @@
                 <File Id="47" Path="entities/equipment/rope_beam/rope_beam01.ent" />
                 <File Id="48" Path="entities/container/wood_box01/wood_box01_breakable.ent" />
                 <File Id="49" Path="entities/container/wood_box02/wood_box02.ent" />
-                <File Id="50" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="50" Path="entities/container/wood_box_small01/wood_box_advena.ent" />
                 <File Id="51" Path="entities/furniture/table_metal_small/table_metal_small.ent" />
                 <File Id="52" Path="entities/lamp/candlestick02/candlestick02.ent" />
                 <File Id="53" Path="entities/lamp/hanging_lantern/hanging_lantern_ceiling.ent" />
