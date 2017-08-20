@@ -38,6 +38,11 @@ FadeOut(0);
  AddLocalVarInt("rozdzial3",1);
  AddTimer("",5,"EndFade_Rozdzial");
  }
+      AddTimer("",42,"NowyTrackAmb");  
+}
+
+void NowyTrackAmb(string &in asTimer) {
+    PlayMusic("ending_alexander.ogg",true, 0.5,0.7,1,true);
 }
 void show_song1(string &in asEntity, int alState) {
     if(alState == 1) { 

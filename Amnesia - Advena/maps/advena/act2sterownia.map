@@ -2,16 +2,16 @@
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
         <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="0.5 1.75 160.875" CameraTarget="0.5 1.75 -19.125" CameraZoom="0" GridHeight="-19.125" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="180.5 1.75 -19.125" CameraTarget="0.5 1.75 -19.125" CameraZoom="0" GridHeight="0.5" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-0.233356 181.75 -19.125" CameraTarget="-0.233356 1.75 -19.125" CameraZoom="0" GridHeight="1.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="15.7332 3.92337 0.166779" CameraTarget="18.1079 1.75 -0.33117" CameraZoom="2.73109" GridHeight="1.75" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="12.28 -3.89583 184.895" CameraTarget="12.28 -3.89583 4.89461" CameraZoom="2.67384" GridHeight="4.89461" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="192.28 -3.89583 4.89461" CameraTarget="12.28 -3.89583 4.89461" CameraZoom="2.55862" GridHeight="12.28" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="12.5386 175.54 4.82533" CameraTarget="12.5386 -4.46046 4.82533" CameraZoom="2.55862" GridHeight="-4.46046" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="10.8316 11.1106 -0.232427" CameraTarget="4.4581 -4.46046 3.40231" CameraZoom="1.06635" GridHeight="-4.46046" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
         </Groups>
     </EditorSession>
-    <MapData FogActive="true" FogColor="0 0.1 0.2 0.2" FogCulling="true" FogEnd="11" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="">
+    <MapData FogActive="true" FogColor="0 0.1 0.2 0.2" FogCulling="true" FogEnd="11" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../../">
         <MapContents>
             <FileIndex_StaticObjects NumOfFiles="39">
                 <File Id="0" Path="static_objects/castlebase/wall/default_worn.dae" />
@@ -54,12 +54,12 @@
                 <File Id="37" Path="static_objects/debris/rock/stone_large02_brown.dae" />
                 <File Id="38" Path="static_objects/debris/wood/plank_2.5m.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="34">
+            <FileIndex_Entities NumOfFiles="33">
                 <File Id="0" Path="entities/gameplay/ladder/ladder_broken_debris.ent" />
                 <File Id="1" Path="entities/gameplay/ladder/ladder4m_tileable.ent" />
                 <File Id="2" Path="entities/item/potion_oil/potion_oil.ent" />
                 <File Id="3" Path="entities/gameplay/chest_small/chest_small.ent" />
-                <File Id="4" Path="entities/organic/corpse_male/corpse_male_arm.ent" />
+                <File Id="4" Path="entities/item/potion_sanity/potion_sanity.ent" />
                 <File Id="5" Path="entities/item/tinderbox/tinderbox.ent" />
                 <File Id="6" Path="entities/gameplay/crank_wood/crank_wood_no_mount_item.ent" />
                 <File Id="7" Path="entities/lamp/hanging_lantern/hanging_lantern_ceiling_chain.ent" />
@@ -88,7 +88,6 @@
                 <File Id="30" Path="entities/technical/block_box/block_box.ent" />
                 <File Id="31" Path="entities/gameplay/ladder_moveable/ladder_static.ent" />
                 <File Id="32" Path="entities/item/potion_health/potion_health.ent" />
-                <File Id="33" Path="entities/item/potion_sanity/potion_sanity.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="1">
                 <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
@@ -337,8 +336,8 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="0.625 0" Corner4UV="0.625 4.125" EndCorner="1.25 0 8.25" Group="0" ID="155" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_23" Rotation="-3.14159 0 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.5 -1.25 5.25" />
                 <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="2.75 2.625" Corner2UV="2.75 -1.5" Corner3UV="-0.75 -1.5" Corner4UV="-0.75 2.625" EndCorner="7 0 8.25" Group="0" ID="156" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_24" Rotation="0 0 3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.5 -1.25 -3" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="0.625 0" Corner4UV="0.625 4.125" EndCorner="1.25 0 8.25" Group="0" ID="157" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_25" Rotation="1.57079 0 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.5 -1.25 -2.75" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="1 0" Corner4UV="1 4.125" EndCorner="2 0 8.25" Group="0" ID="158" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_26" Rotation="-2.35619 -1.5708 -0.785403" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.5 -1.25 -4.75" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="1 0" Corner4UV="1 4.125" EndCorner="2 0 8.25" Group="0" ID="166" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_29" Rotation="3.06415 1.5708 -0.0774325" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="13.25 -1.25 7" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="1 0" Corner4UV="1 4.125" EndCorner="2 0 8.25" Group="0" ID="158" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_26" Rotation="0.785403 -1.5708 2.35619" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.5 -1.25 -4.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="1 0" Corner4UV="1 4.125" EndCorner="2 0 8.25" Group="0" ID="166" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_29" Rotation="-0.0774426 1.5708 3.06416" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="13.25 -1.25 7" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.125" Corner2UV="0 0" Corner3UV="0.625 0" Corner4UV="0.625 4.125" EndCorner="1.25 0 8.25" Group="0" ID="167" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/dungeonbase/dungeonbase_floor.mat" Name="Plane_30" Rotation="-1.5708 3.89425e-007 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="13.25 -1.25 5" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 2.94083" Corner2UV="0 0" Corner3UV="2.88063 0" Corner4UV="2.88063 2.94083" EndCorner="9.6021 0 9.80277" Group="0" ID="169" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/static_objects/cellarbase/floor/cellarbase_floor_rough.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.3 1 0.3" TileOffset="0 0 0" WorldPos="4.39157 -4 -3.51609" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="false" Corner1UV="0 2.94083" Corner2UV="0 0" Corner3UV="2.88063 0" Corner4UV="2.88063 2.94083" EndCorner="9.6021 0 9.80277" Group="0" ID="170" Material="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/textures/water/water_waterbucket.mat" Name="Plane_27" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.3 1 0.3" TileOffset="0 0 0" WorldPos="4.5 -3.5 -3.5" />
@@ -872,25 +871,6 @@
                         <Var Name="MiddleAngleAmount" Value="0" />
                         <Var Name="AutoMoveToAngle" Value="True" />
                         <Var Name="AutoMoveGoal" Value="Middle" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="true" FileIndex="4" Group="0" ID="178" Name="corpse_male_arm_1" Rotation="2.99405 0.243852 2.99835" Scale="1 1 1" Tag="" WorldPos="12.4836 -3.28414 4.68995">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
                 <Entity Active="true" FileIndex="5" Group="0" ID="179" Name="tinderbox_1" Rotation="-3.07926 0.268809 3.0338" Scale="1 1 1" Tag="" WorldPos="12.7586 -3.34874 4.65434">
@@ -1613,7 +1593,7 @@
                         <Var Name="SpinDir" Value="BothWays" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="305" MaxDistance="8" MinDistance="4.5" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-2.25 1.25 -21" />
+                <Sound Active="true" Group="0" ID="305" MaxDistance="8" MinDistance="4.5" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-2.25 1.25 -21" />
                 <Entity Active="true" FileIndex="19" Group="0" ID="306" Name="barrier_machine_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.94598 -0.00479913 -20.1142">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -1659,8 +1639,8 @@
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_drop_single.ps" Group="0" ID="371" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="8.20464 4.35387 -0.835593" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_drop_single.ps" Group="0" ID="372" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="6.76938 4.35387 2.09179" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_drop_single.ps" Group="0" ID="373" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_6" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="10.6139 4.36893 3.7844" />
-                <Sound Active="true" Group="0" ID="389" MaxDistance="7" MinDistance="3" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip_quick.snt" Tag="" UseDefault="false" Volume="1" WorldPos="9.646 0 0.11959" />
-                <Sound Active="true" Group="0" ID="390" MaxDistance="6" MinDistance="3" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="false" Volume="1" WorldPos="7.17667 0 3.25077" />
+                <Sound Active="true" Group="0" ID="389" MaxDistance="7" MinDistance="3" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_water_drip_quick.snt" Tag="" UseDefault="false" Volume="1" WorldPos="9.646 0 0.11959" />
+                <Sound Active="true" Group="0" ID="390" MaxDistance="6" MinDistance="3" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="false" Volume="1" WorldPos="7.17667 0 3.25077" />
                 <Entity Active="true" FileIndex="20" Group="0" ID="401" Name="level_cistern_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="19.6354 0.10203 -0.977365">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -2235,7 +2215,7 @@
                         <Var Name="CustomSubItemTypeName" Value="" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="33" Group="0" ID="617" Name="potion_sanity_1" Rotation="0 9.94838 0" Scale="1 1 1" Tag="" WorldPos="11.3686 4.75 -3.74514">
+                <Entity Active="true" FileIndex="4" Group="0" ID="617" Name="potion_sanity_1" Rotation="0 9.94838 0" Scale="1 1 1" Tag="" WorldPos="11.3686 4.75 -3.74514">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2332,15 +2312,15 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="626" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/16/16_water_stream_drips.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-7.5 0.651299 -13.5" />
+                <Sound Active="true" Group="0" ID="626" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/16/16_water_stream_drips.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-7.5 0.651299 -13.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_stream_bucket.ps" Group="0" ID="627" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_14" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-7.49788 4 -13.448" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_water_stream_bucket.ps" Group="0" ID="628" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_15" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-7.49788 4 -13.448" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="D:/Program Files/Frictional Games/Amnesia - Mroczny Obled/particles/ps_light_dust_large.ps" Group="0" ID="629" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_16" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-7.5 2 -13.25" />
-                <Sound Active="true" Group="0" ID="630" MaxDistance="45" MinDistance="40" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="false" Volume="1" WorldPos="-14.5 0.75 3.25" />
-                <Sound Active="true" Group="0" ID="631" MaxDistance="45" MinDistance="40" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="false" Volume="1" WorldPos="9.5 0.75 -12.75" />
-                <Sound Active="true" Group="0" ID="632" MaxDistance="8" MinDistance="4.5" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-0.25 1.25 -19" />
-                <Sound Active="true" Group="0" ID="633" MaxDistance="8" MinDistance="4.5" Name="Sound_8" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-0.25 1.25 -16.5" />
-                <Sound Active="true" Group="0" ID="634" MaxDistance="8" MinDistance="4.5" Name="Sound_9" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-5 1.25 -21.25" />
+                <Sound Active="true" Group="0" ID="630" MaxDistance="45" MinDistance="40" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/ambience/ambience_cave.snt" Tag="" UseDefault="false" Volume="1" WorldPos="-14.5 0.75 3.25" />
+                <Sound Active="true" Group="0" ID="631" MaxDistance="45" MinDistance="40" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/ambience/ambience_cave.snt" Tag="" UseDefault="false" Volume="1" WorldPos="9.5 0.75 -12.75" />
+                <Sound Active="true" Group="0" ID="632" MaxDistance="8" MinDistance="4.5" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-0.25 1.25 -19" />
+                <Sound Active="true" Group="0" ID="633" MaxDistance="8" MinDistance="4.5" Name="Sound_8" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-0.25 1.25 -16.5" />
+                <Sound Active="true" Group="0" ID="634" MaxDistance="8" MinDistance="4.5" Name="Sound_9" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-5 1.25 -21.25" />
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="159" Name="Compound_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="5.5 -1.25 -3.75">

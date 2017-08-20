@@ -79,9 +79,12 @@ AddLocalVarInt("brute_cellar",1);
   }
   AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_5", 0, "");  
   AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_6", 0, "");  
-  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_8", 0, "");  
-  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_9", 0, "");  
-  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_7", 0, "");  
+  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_8", 0, ""); 
+  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_6", 0, "");  
+  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_9", 0, ""); 
+  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_6", 0, "");  
+  AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_7", 0, "");
+AddEnemyPatrolNode("servant_brute_1", "PathNodeArea_6", 0, "");    
 }
 void Poloz_Raczke(string &in asItem, string &in asEntity) {
 SetEntityActive("hand_drill_part01_static_1",true);
@@ -102,10 +105,10 @@ RemoveItem("key_tomb_rusty_1");
 AddLocalVarInt("NewKey",1);
 RotatePropToSpeed("ceiling_machinery_cog_3", 1.0f, 1.0f, 0.0f, 0.0f,1.0f, true, "ScriptArea_11");
 RotatePropToSpeed("ceiling_machinery_cog_2", 1.0f, 1.0f, 0.0f, 0.0f,1.0f, true, "ScriptArea_10");
-AddTimmer("",15,"klucz_gotowy");
+AddTimer("",15,"klucz_gotowy");
 
 }
-void klucz_gotowy(string &in asTimmer) {
+void klucz_gotowy(string &in asTimer) {
 if(GetLocalVarInt("NewKey") == 2) {
 SetSwingDoorLocked("hatch_ceiling_1", false, false);
  SetSwingDoorDisableAutoClose("hatch_ceiling_1", false);

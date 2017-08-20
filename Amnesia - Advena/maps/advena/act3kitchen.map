@@ -5,7 +5,7 @@
             <Viewport CameraPosition="-27.25 0 166.249" CameraTarget="-27.25 0 -13.75" CameraZoom="0" GridHeight="-13.75" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="152.751 0 -13.75" CameraTarget="-27.25 0 -13.75" CameraZoom="0" GridHeight="-27.25" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-17.25 179.999 -5.625" CameraTarget="-17.25 0 -5.625" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="2.98936 4.57588 0.929665" CameraTarget="11.6983 0 -1.33341" CameraZoom="1.6" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-22.6266 2.48532 20.0841" CameraTarget="-19.5322 0 21.1294" CameraZoom="2.5" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -1036,7 +1036,7 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="Locked" Value="false" />
-                        <Var Name="OpenAmount" Value="0" />
+                        <Var Name="OpenAmount" Value="1" />
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>

@@ -1,13 +1,4 @@
 void OnStart() {
-AddEntityCollideCallback("Player","strach1","strach1",true,1);
-AddEntityCollideCallback("Player","strach2","strach2",true,1);
-AddEntityCollideCallback("Player","strach3","strach3",true,-1);
-AddEntityCollideCallback("Player","Level_door_script1","Level_door_script1",true,-1);
-AddEntityCollideCallback("Player","strach4","strach4",true,1);
-AddEntityCollideCallback("storage_box_wood01_*","Ciezar1","Ciezar1",false,0);
-AddEntityCollideCallback("storage_box_wood01_*","Ciezar2","Ciezar2",false,0);
-SetEntityPlayerInteractCallback("dotyk_ksiegi","dotyk_ksiegi",false);
-SetEntityPlayerInteractCallback("dotyk_piedestalu","dotyk_piedestalu",true);
 
 }
 void Level_door_script1(string &in asParent, string &in asChild, int alState) {
@@ -21,7 +12,7 @@ PlayGuiSound("react_breath.snt",1);
 void strach2(string &in asParent, string &in asChild, int alState) {
 GiveSanityDamage(5,false);
  PlayGuiSound("react_pant.snt",1);
-	PlaySoundAtEntity("scare2", "24_bang.snt", "strach2", 0, false); 
+	PlaySoundAtEntity("scare2", "23_saw1.ogg", "strach2", 0, false); 
 }
 void strach3(string &in asParent, string &in asChild, int alState) {
 GiveSanityDamage(10,false);
@@ -136,6 +127,26 @@ StopMusic(2,2.0f);
 void OnEnter() {
      AutoSave();
 AddTimer("scare_sound",RandInt(15,60),"scare_sound");
+
+
+AddEntityCollideCallback("Player","strach1","strach1",true,1);
+AddEntityCollideCallback("Player","strach2","strach2",true,1);
+AddEntityCollideCallback("Player","strach3","strach3",true,-1);
+AddEntityCollideCallback("Player","Level_door_script1","Level_door_script1",true,-1);
+AddEntityCollideCallback("Player","strach4","strach4",true,1);
+AddEntityCollideCallback("storage_box_wood01_*","Ciezar1","Ciezar1",false,0);
+AddEntityCollideCallback("storage_box_wood01_*","Ciezar2","Ciezar2",false,0);
+SetEntityPlayerInteractCallback("dotyk_ksiegi","dotyk_ksiegi",false);
+SetEntityPlayerInteractCallback("dotyk_piedestalu","dotyk_piedestalu",true);
+
+AddEntityCollideCallback("Player","ScriptArea_3","ScriptArea_3",true,1);
+AddEntityCollideCallback("Player","ScriptArea_2","ScriptArea_2",true,1);
+AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",true,1);
+
+ PlayMusic("04_amb.ogg", true, 0.85f, 1.0f, 1, false);
+
+        
+       
 }
 void scare_sound(string &in asTimer) {
 RemoveTimer(asTimer);
@@ -154,7 +165,12 @@ if(GetLocalVarInt("open_gate") == 2) {
 else { 
 AddLocalVarInt("open_gate",-1);
  SetMoveObjectState("castle_portcullis_1", 0.0f);
+ PlayMusic("04_puzzle_acid.ogg",false, 0.85f, 1.0f, 1, false);
+ AddTimer("",30,"amb_music");
 }
+}
+void amb_music(string &in asTimer) { 
+     PlayMusic("04_amb.ogg", true, 0.85f, 1.0f, 1, false);
 }
 void Ciezar2(string &in asParent, string &in asChild, int alState) {
 if(alState == 1) {
@@ -197,8 +213,8 @@ SetGlobalVarInt("szyfr",0);
     SetLeverStuckState("Ogien", 0, false);
     SetLeverStuckState("Wiatr", 0, false);
 
- 
-AddPlayerSanity(1);
+  // nie udalo sie :/
+//AddPlayerSanity(1);
 } 
 else {
  
@@ -232,8 +248,8 @@ SetGlobalVarInt("szyfr",0);
     SetLeverStuckState("Ogien", 0, false);
     SetLeverStuckState("Wiatr", 0, false);
 
- 
-AddPlayerSanity(1);
+ // nie udalo sie :/
+//AddPlayerSanity(1);
 }
 else { 
   
@@ -265,9 +281,8 @@ else if((alState == -1)  ) {
     SetLeverStuckState("Woda", 0, false);
     SetLeverStuckState("Ogien", 0, false);
     SetLeverStuckState("Wiatr", 0, false);
-
- 
-AddPlayerSanity(1);
+ // nie udalo sie :/
+//AddPlayerSanity(1);
 }
 else {
     
@@ -302,8 +317,8 @@ else if(alState == -1) {
     SetLeverStuckState("Ogien", 0, false);
     SetLeverStuckState("Wiatr", 0, false);
 
- 
-AddPlayerSanity(1);
+ // nie udalo sie :/
+//AddPlayerSanity(1);  
 }
 else { 
     
@@ -326,4 +341,24 @@ void dotyk_piedestalu(string &in asEntity) {
 AddPlayerSanity(1);
 AddPlayerHealth(1);
  
+/* ustawienie na full zdrowia i sanity*/
+SetPlayerSanity(100);
+SetPlayerHealth(100);
+}
+
+void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
+GiveSanityDamage(10,false);
+ 
+	PlaySoundAtEntity("", "23_saw_voice3.ogg", "antidote_corpse_1", 0, false); 
+}
+
+void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
+
+ 
+	PlaySoundAtEntity("", "23_saw2.ogg", "ScriptArea_3", 0, false); 
+}
+void ScriptArea_3(string &in asParent, string &in asChild, int alState) {
+
+ 
+	PlaySoundAtEntity("", "23_saw3.ogg", "ScriptArea_2", 0, false); 
 }

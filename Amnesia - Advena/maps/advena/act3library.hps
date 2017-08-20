@@ -22,7 +22,7 @@ StopMusic(2.0f,1);
  AddLocalVarInt("dotknij_drzwi",1);
 AddTimer("",1,"Paper_music");
 }
-void spojrz_sekret_bibl(string &in asParent, string &in asChild, int alState) {
+void spojrz_sekret_bibl(string &in asEntity, int alState) {
   if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
 GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
 }
@@ -42,8 +42,9 @@ SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlob
    
 }
 void Paper_music(string &in asTimer) {
-PlayMusic("01_paper_self",false, 0.8, 0.1, 1,false);
-AddTimer("",30,"amb_safe");
+//PlayMusic("05_paper_transformation",true, 0.8, 0.1, 1,true);
+    PlayMusic("03_amb_library",true, 0.8, 0.1, 1,true);
+//AddTimer("",30,"amb_safe");
 }
 void amb_safe(string &in asTimer) {
 //PlayMusic("02_amb_safe",true, 0.8, 0.1, 1,true);

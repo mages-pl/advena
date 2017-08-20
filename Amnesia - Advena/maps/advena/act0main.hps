@@ -1,5 +1,6 @@
  
 void OnStart() {
+    SetSanityDrainDisabled(true);
 FadeSepiaColorTo(0.75f, 1.0f);
 AddEntityCollideCallback("Player", "ScriptArea_5", "START_INTRO", true, 1);
 AddEntityCollideCallback("Player", "ScriptArea_1", "ScriptArea_1", true, 1);
@@ -10,8 +11,10 @@ SetPlayerMoveSpeedMul(0.25f);
 SetPlayerRunSpeedMul(0.0f);
 SetPlayerLookSpeedMul(0.2f);
 SetPlayerActive(false);
+ SetPlayerLampOil(0.0f);
 PlayMusic("ending_alexander.ogg",false, 0.5,0.7,1,false);
 }
+
 void START_INTRO(string &in asParent, string &in asChild, int alState)
 {
 FadeOut(0);

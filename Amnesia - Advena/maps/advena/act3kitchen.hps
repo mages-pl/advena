@@ -127,6 +127,8 @@ GivePlayerDamage(5, "BloodSplash", false, false);
 PlayGuiSound("puzzle_add_chemical.snt",1);
 }
 void ScriptArea_9(string &in asParent, string &in asChild, int alState) {
+     CheckPoint ("Check_point_end_kitchen", "PlayerStartArea_4", "ScriptArea_13", "", "");
+
 PlaySoundAtEntity("", "scare_baby_cry.snt", "ScriptArea_9", 0, false);
 }
 void ScriptArea_10(string &in asParent, string &in asChild, int alState) {

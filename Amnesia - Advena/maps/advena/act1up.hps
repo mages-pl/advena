@@ -3,7 +3,7 @@ void OnStart() {
 SetLocalVarInt("intro_cell_sequence",0); // OK 
  
 //####### COLLIDE #############
-AddEntityCollideCallback("Player", "ScriptArea_6", "ScriptArea_6", false, 0);  // OK
+AddEntityCollideCallback("Player", "ScriptArea_6", "ScriptArea_6", false, 1);  // OK
 AddEntityCollideCallback("Player", "ScriptArea_7", "ScriptArea_7", false, 1);  // OK
 AddEntityCollideCallback("Player", "ScriptArea_13", "ScriptArea_13", true, 1); // OK
 //AddEntityCollideCallback("Player", "ScriptArea_3", "DezActive_Man", true, 1); // OK
@@ -176,7 +176,9 @@ AddTimer("quest_1_w",1,"quest_1_w_timer");
 void quest_1_w_timer(string &in asTimer) {
 AddQuest("wiezien_q_1", "wiezien_q_1");
 AddLocalVarInt("wiezien_q1_q",1);
-AddEntityCollideCallback("chlebek1", "ScriptArea_15", "wiezien_najedzony", true, 1);
+AddEntityCollideCallback("chlebek_*", "ScriptArea_15", "wiezien_najedzony", true, 1);
+
+//zmienić instancje w mapie
 }
 void wiezien_najedzony(string &in asParent, string &in asChild, int alState) {
  FadeOut(3);

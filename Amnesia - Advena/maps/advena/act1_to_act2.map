@@ -5,7 +5,7 @@
             <Viewport CameraPosition="5.73919 11.0951 189.551" CameraTarget="5.73919 11.0951 9.55117" CameraZoom="0" GridHeight="9.55117" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="185.739 11.0951 9.55117" CameraTarget="5.73919 11.0951 9.55117" CameraZoom="0" GridHeight="5.73919" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="5.73919 190.818 9.55117" CameraTarget="5.73919 10.8175 9.55117" CameraZoom="0" GridHeight="10.8175" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-38.9199 10.6412 0.511023" CameraTarget="-34.5569 -2.25 -5.45441" CameraZoom="1.21338" GridHeight="-2.25" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-36.3229 7.27386 -4.30331" CameraTarget="-46.8878 -4 5.2199" CameraZoom="1.01337" GridHeight="-4" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -114,7 +114,7 @@
                 <File Id="97" Path="static_objects/dungeonbase/ceiling/default_round_hole.dae" />
                 <File Id="98" Path="static_objects/castlebase/wall/prisonbars_door_way.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="80">
+            <FileIndex_Entities NumOfFiles="81">
                 <File Id="0" Path="entities/door/level_dungeon/level_dungeon.ent" />
                 <File Id="1" Path="entities/door/cellar_wood01/cellar_wood01.ent" />
                 <File Id="2" Path="entities/door/hatch_large/hatch_large.ent" />
@@ -179,7 +179,7 @@
                 <File Id="61" Path="entities/item/potion_oil/potion_oil_large.ent" />
                 <File Id="62" Path="entities/item/potion_sanity/potion_sanity.ent" />
                 <File Id="63" Path="entities/lab/test_tube_rack/test_tube_rack.ent" />
-                <File Id="64" Path="entities/door/castle_arched01/castle_arched01.ent" />
+                <File Id="64" Path="entities/door/castle_arched01/castle_arched_no_grav01.ent" />
                 <File Id="65" Path="entities/lab/funnel/funnel.ent" />
                 <File Id="66" Path="entities/door/level_cistern/level_cistern.ent" />
                 <File Id="67" Path="entities/item/note_paper01/note_paper01.ent" />
@@ -195,6 +195,7 @@
                 <File Id="77" Path="entities/lamp/candlestick02/candlestick02.ent" />
                 <File Id="78" Path="entities/gameplay/wooden_boards_block/wooden_boards_block_broken.ent" />
                 <File Id="79" Path="entities/gameplay/lift_wood/lift_wood.ent" />
+                <File Id="80" Path="entities/door/castle_arched01/castle_arched01_damage2.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="2">
                 <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
@@ -6071,7 +6072,7 @@
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="TextEntry" Value="act2main" />
                         <Var Name="StartPos" Value="Z_act1_to_act2" />
-                        <Var Name="MapFile" Value="D:/Game-Amnesia/Amnesia/maps/advena/act2main.map" />
+                        <Var Name="MapFile" Value="I:/Pulpit/redist/custom_stories/Amnesia - Advena/maps/advena/act2main.map" />
                         <Var Name="Locked" Value="false" />
                         <Var Name="LockedSound" Value="" />
                         <Var Name="LockedTextCat" Value="" />
@@ -7018,7 +7019,7 @@
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="64" Group="0" ID="1853" Name="castle_arched01_2" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="25.7782 7.00922 9.25">
+                <Entity Active="true" FileIndex="80" Group="0" ID="1853" Name="castle_arched01_2" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="25.7782 7.00922 9.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -8693,6 +8694,128 @@
                 </Entity>
                 <Sound Active="true" Group="0" ID="2558" MaxDistance="78" MinDistance="77" Name="Sound_16" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="false" Volume="0.8" WorldPos="-6.52273 -3.92965 -10.1415" />
                 <Sound Active="true" Group="0" ID="2559" MaxDistance="5" MinDistance="1" Name="Sound_17" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/scare/scare_breath.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-25 7.5 -9.75" />
+                <Area Active="true" AreaType="Script" Group="0" ID="2562" Mesh="" Name="ScriptArea_20" Rotation="0 0 0" Scale="3.84213 3.06548 2.61877" Tag="" WorldPos="-45.9328 -1.96726 9.28537">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="2563" Mesh="" Name="ScriptArea_21" Rotation="0 0 0" Scale="1.49551 3.20154 4.74322" Tag="" WorldPos="-28.2151 -2.39923 9.62011">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="false" AreaType="Liquid" Group="0" ID="2569" Mesh="" Name="LiquidArea_13" Rotation="0 0 0" Scale="2.75 0.25 1.55063" Tag="" WorldPos="-38.1 4.65 -2.08792">
+                    <UserVariables>
+                        <Var Name="Density" Value="100" />
+                        <Var Name="LinearViscosity" Value="0.1" />
+                        <Var Name="AngularViscosity" Value="0.1" />
+                        <Var Name="HasWaves" Value="true" />
+                        <Var Name="WaveAmp" Value="0.04" />
+                        <Var Name="WaveFreq" Value="3" />
+                        <Var Name="PlayerSpeedMul" Value="0.8" />
+                        <Var Name="MaxWaveDistance" Value="25" />
+                        <Var Name="PhysicsMaterial" Value="Water" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="PathNode" Group="0" ID="2570" Mesh="" Name="PathNodeArea_7" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="-30.34 -3.75 -2.28691">
+                    <UserVariables />
+                </Area>
+                <Area Active="false" AreaType="Liquid" Group="0" ID="2571" Mesh="" Name="LiquidArea_14" Rotation="0 0 0" Scale="2.75 0.25 1.55063" Tag="" WorldPos="-38.1 4.65 -5.26426">
+                    <UserVariables>
+                        <Var Name="Density" Value="100" />
+                        <Var Name="LinearViscosity" Value="0.1" />
+                        <Var Name="AngularViscosity" Value="0.1" />
+                        <Var Name="HasWaves" Value="true" />
+                        <Var Name="WaveAmp" Value="0.04" />
+                        <Var Name="WaveFreq" Value="3" />
+                        <Var Name="PlayerSpeedMul" Value="0.8" />
+                        <Var Name="MaxWaveDistance" Value="25" />
+                        <Var Name="PhysicsMaterial" Value="Water" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="PathNode" Group="0" ID="2572" Mesh="" Name="PathNodeArea_8" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="-30.34 -3.75 -5.46325">
+                    <UserVariables />
+                </Area>
+                <Area Active="false" AreaType="Liquid" Group="0" ID="2573" Mesh="" Name="LiquidArea_15" Rotation="0 0 0" Scale="2.75 2.35 1.25" Tag="" WorldPos="-38.1 4.86238 -3.67463">
+                    <UserVariables>
+                        <Var Name="Density" Value="100" />
+                        <Var Name="LinearViscosity" Value="0.1" />
+                        <Var Name="AngularViscosity" Value="0.1" />
+                        <Var Name="HasWaves" Value="true" />
+                        <Var Name="WaveAmp" Value="0.04" />
+                        <Var Name="WaveFreq" Value="3" />
+                        <Var Name="PlayerSpeedMul" Value="0.8" />
+                        <Var Name="MaxWaveDistance" Value="25" />
+                        <Var Name="PhysicsMaterial" Value="Water" />
+                    </UserVariables>
+                </Area>
+                <Entity Active="false" FileIndex="45" Group="0" ID="2574" Name="water_level3_1" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-38.1428 4.83954 -5.366">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="false" FileIndex="45" Group="0" ID="2575" Name="water_level1_1" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.309761 1 0.174087" Tag="" WorldPos="-38.188 4.84255 -1.899">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="false" FileIndex="45" Group="0" ID="2576" Name="water_level2_1" Rotation="-2.53518e-006 6.42712e-012 2.53517e-006" Scale="0.337498 1 0.174087" Tag="" WorldPos="-37.608 5.921 -3.616">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="1960" Name="Compound_1" Rotation="0 0 0" Scale="1 1 0.5" Tag="" WorldPos="-25 6.25 -9">

@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="5.13109 0.0470217 218.317" CameraTarget="5.13109 0.0470217 38.3157" CameraZoom="0" GridHeight="38.3157" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="185.131 0.0470217 38.3157" CameraTarget="5.13109 0.0470217 38.3157" CameraZoom="0" GridHeight="5.13109" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="5.13109 180.036 38.3157" CameraTarget="5.13109 0.0356822 38.3157" CameraZoom="0" GridHeight="0.0356822" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="5.43761 2.72813 39.3344" CameraTarget="10.9219 0.0356822 39.7362" CameraZoom="2.1" GridHeight="0.0356822" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-32.0251 2.43556 42.4443" CameraTarget="-28.7227 0 42.5267" CameraZoom="2.50001" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -2314,8 +2314,8 @@
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="Locked" Value="false" />
-                        <Var Name="OpenAmount" Value="0.9" />
+                        <Var Name="Locked" Value="true" />
+                        <Var Name="OpenAmount" Value="1" />
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>
@@ -22132,6 +22132,18 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="" Group="0" ID="3569" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-21.5 -8.214 49.25" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="" Group="0" ID="3570" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_15" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-21.75 -8.214 49.5" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="" Group="0" ID="3571" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_16" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-22.25 -8.214 49.5" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="" Group="0" ID="3572" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_17" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.25 -8.214 49.25" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="" Group="0" ID="3573" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_23" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.25 -8.214 49.25" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="I:/Pulpit/redist/particles/ps_fire_smoke_stove_small.ps" Group="0" ID="3580" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_25" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-34.8496 -7.01863 51.1402" />
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3581" Mesh="" Name="PlayerStartArea_1" Rotation="0 0.523598 0" Scale="1 1 1" Tag="" WorldPos="-24 0.75 39">
+                    <UserVariables />
+                </Area>
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="3582" Mesh="" Name="PlayerStartArea_6" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="-15.25 0.5 41.25">
+                    <UserVariables />
+                </Area>
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="1352" Name="Compound_2" Rotation="3.14159 -4.44253e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.2612 0 -0.557225" />

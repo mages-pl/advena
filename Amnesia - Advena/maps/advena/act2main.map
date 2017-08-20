@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="-26.4285 7.89148 179.771" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="0" GridHeight="-0.229155" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="153.571 7.89148 -0.229155" CameraTarget="-26.4285 7.89148 -0.229155" CameraZoom="0" GridHeight="-26.4285" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-26.3395 188 -0.0748411" CameraTarget="-26.3395 8 -0.0748411" CameraZoom="0" GridHeight="8" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-7.92452 8.50777 -27.5426" CameraTarget="-10.0074 3.5 -31.7745" CameraZoom="1.9835" GridHeight="3.5" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-6.44262 7.059 136.068" CameraTarget="-6.44262 7.059 -43.9319" CameraZoom="0" GridHeight="-43.9319" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="173.557 7.059 -43.9319" CameraTarget="-6.44262 7.059 -43.9319" CameraZoom="0" GridHeight="-6.44262" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-6.355 187.783 -43.9315" CameraTarget="-6.355 7.78314 -43.9315" CameraZoom="0" GridHeight="7.78314" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-21.0915 5.39523 -23.5747" CameraTarget="-19.4318 1.533 -28.429" CameraZoom="2.05237" GridHeight="1.533" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -84,7 +84,7 @@
                 <File Id="67" Path="static_objects/debris/wood/plank_2.5m_broken.dae" />
                 <File Id="68" Path="static_objects/castlebase/wall/door_frame_arched.dae" />
                 <File Id="69" Path="static_objects/debris/wood/plank02_4.5m.dae" />
-                <File Id="70" Path="static_objects/cisternbase/pillars/stone_broken.dae" />
+                <File Id="70" Path="static_objects/machine/pipes/thick_straight_medium.dae" />
                 <File Id="71" Path="static_objects/dungeonbase/wall/welder_stone.dae" />
                 <File Id="72" Path="static_objects/dungeonbase/wall/default02_short.dae" />
                 <File Id="73" Path="static_objects/dungeonbase/wall/default02.dae" />
@@ -99,9 +99,9 @@
                 <File Id="82" Path="static_objects/machine/pipes/thick_straight_short.dae" />
                 <File Id="83" Path="static_objects/machine/pipes/thick_straight_short_end.dae" />
                 <File Id="84" Path="static_objects/machine/pipes/thick_three_cross.dae" />
-                <File Id="85" Path="static_objects/machine/pipes/thick_straight_medium.dae" />
+                <File Id="85" Path="static_objects/castlebase/ceiling/corridor.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="75">
+            <FileIndex_Entities NumOfFiles="76">
                 <File Id="0" Path="entities/ptest/cogwheel_machineroom/cogwheel_spokes.ent" />
                 <File Id="1" Path="entities/ptest/crush_wall/crush_wall_vertical.ent" />
                 <File Id="2" Path="entities/door/level_engine/level_engine.ent" />
@@ -177,6 +177,7 @@
                 <File Id="72" Path="entities/item/note_paper01/note_paper01.ent" />
                 <File Id="73" Path="entities/equipment/cogwheels/cogwheel_small_broken02.ent" />
                 <File Id="74" Path="entities/equipment/cogwheels/cogwheel_small_broken01.ent" />
+                <File Id="75" Path="entities/equipment/chain_pipe/chain_pipe02.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="7">
                 <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
@@ -939,11 +940,11 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1765" Name="ceiling_concave_26" Rotation="3.14159 3.01202e-006 3.14159" Scale="1.2426 1 1" Tag="" WorldPos="-13.5967 8 4.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1766" Name="ceiling_concave_27" Rotation="3.14159 3.01202e-006 3.14159" Scale="1.2426 1 1" Tag="" WorldPos="-18.5669 8 4.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1767" Name="ceiling_concave_28" Rotation="3.14159 3.01202e-006 3.14159" Scale="1.2426 1 1" Tag="" WorldPos="-8.64505 8 4.75" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1784" Name="ceiling_concave_29" Rotation="0 -1.5708 0" Scale="1.5 1 1" Tag="" WorldPos="-2.5 7.5 -50.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1785" Name="ceiling_concave_30" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-6.5 7.5 -49.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1784" Name="ceiling_concave_29" Rotation="0 -1.5708 0" Scale="1.5 1 1" Tag="" WorldPos="-2.5 7.4875 -50.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1785" Name="ceiling_concave_30" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-6.5 7.48962 -49.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1786" Name="ceiling_concave_31" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-6.5 7.5 -45.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1787" Name="ceiling_concave_32" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-2.5 7.5 -45.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1788" Name="ceiling_concave_33" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-6.5 7.5 -41.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1788" Name="ceiling_concave_33" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-6.5 7.48849 -41.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1789" Name="ceiling_concave_34" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-2.5 7.5 -41.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1790" Name="ceiling_concave_35" Rotation="0 1.5708 0" Scale="1.09998 1 1" Tag="" WorldPos="-6.5 7.5 -37.404" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="53" Group="0" ID="1791" Name="ceiling_concave_36" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-2.5 7.5 -37.5" />
@@ -1217,7 +1218,6 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="2810" Name="floor_platform_corner_9" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="3 0 -58" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="2811" Name="floor_platform_end_broken_22" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="3 0 -57" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="2812" Name="floor_platform_end_broken_23" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="3 0 -55.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="2814" Name="pillars_stone_broken_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-19.5 0 -20.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="2816" Name="stairs_platform_normal_8" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-18 0.00610018 -6" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="2817" Name="floor_platform_intersection_10" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-16 0 -9" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="2818" Name="floor_platform_corner_10" Rotation="0 1.74846e-007 0" Scale="1 1 1" Tag="" WorldPos="-18 0 -9" />
@@ -1449,29 +1449,32 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="82" Group="0" ID="3214" Name="pipes_thick_straight_short_3" Rotation="8.74228e-008 1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-19.75 3.34059 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="83" Group="0" ID="3215" Name="pipes_thick_straight_short_end_1" Rotation="8.74228e-008 1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-19.75 3.34059 -45.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="84" Group="0" ID="3218" Name="pipes_thick_three_cross_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-18.5 2.84059 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3219" Name="pipes_thick_straight_medium_1" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-18.5 2.84059 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3220" Name="pipes_thick_straight_medium_2" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-16.5 2.84059 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3221" Name="pipes_thick_straight_medium_3" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.75 2.84059 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3222" Name="pipes_thick_straight_medium_4" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-23.75 2.84059 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3219" Name="pipes_thick_straight_medium_1" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-18.5 2.84059 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3220" Name="pipes_thick_straight_medium_2" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-16.5 2.84059 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3221" Name="pipes_thick_straight_medium_3" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.75 2.84059 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3222" Name="pipes_thick_straight_medium_4" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-23.75 2.84059 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="82" Group="0" ID="3224" Name="pipes_thick_straight_short_4" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-24.75 2.84059 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="83" Group="0" ID="3226" Name="pipes_thick_straight_short_end_2" Rotation="-3.14159 -8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-25 2.84059 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="83" Group="0" ID="3228" Name="pipes_thick_straight_short_end_3" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-25 4.23526 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="82" Group="0" ID="3229" Name="pipes_thick_straight_short_5" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-24.75 4.23526 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3230" Name="pipes_thick_straight_medium_5" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-23.75 4.23526 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3231" Name="pipes_thick_straight_medium_6" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.75 4.23526 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3230" Name="pipes_thick_straight_medium_5" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-23.75 4.23526 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3231" Name="pipes_thick_straight_medium_6" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.75 4.23526 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="84" Group="0" ID="3232" Name="pipes_thick_three_cross_2" Rotation="-3.14159 0 0" Scale="1 1 1" Tag="" WorldPos="-18.5 4.23526 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3233" Name="pipes_thick_straight_medium_7" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-18.5 4.23526 -46.5" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3234" Name="pipes_thick_straight_medium_8" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-16.5 4.23526 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3233" Name="pipes_thick_straight_medium_7" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-18.5 4.23526 -46.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3234" Name="pipes_thick_straight_medium_8" Rotation="-4.29153e-006 8.74221e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-16.5 4.23526 -46.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="83" Group="0" ID="3236" Name="pipes_thick_straight_short_end_4" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-14.75 2.84059 -47.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="82" Group="0" ID="3237" Name="pipes_thick_straight_short_6" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-15 2.84059 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3238" Name="pipes_thick_straight_medium_9" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-16 2.84059 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3239" Name="pipes_thick_straight_medium_10" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-18 2.84059 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3238" Name="pipes_thick_straight_medium_9" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-16 2.84059 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3239" Name="pipes_thick_straight_medium_10" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-18 2.84059 -47.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="84" Group="0" ID="3240" Name="pipes_thick_three_cross_3" Rotation="-3.14159 4.44253e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.25 2.84059 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3241" Name="pipes_thick_straight_medium_11" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-21.25 2.84059 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3242" Name="pipes_thick_straight_medium_12" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-23.25 2.84059 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3244" Name="pipes_thick_straight_medium_13" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1 1 1" Tag="" WorldPos="-20.5596 3.51491 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3245" Name="pipes_thick_straight_medium_14" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1 1 1" Tag="" WorldPos="-20.5596 5.50765 -47.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3246" Name="pipes_thick_straight_medium_15" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1.3 1 1" Tag="" WorldPos="-20.5596 7.48035 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3241" Name="pipes_thick_straight_medium_11" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-21.25 2.84059 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3242" Name="pipes_thick_straight_medium_12" Rotation="6.35737e-008 -4.35511e-006 -6.3573e-008" Scale="1 1 1" Tag="" WorldPos="-23.25 2.84059 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3244" Name="pipes_thick_straight_medium_13" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1 1 1" Tag="" WorldPos="-20.5596 3.51491 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3245" Name="pipes_thick_straight_medium_14" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1 1 1" Tag="" WorldPos="-20.5596 5.50765 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="70" Group="0" ID="3246" Name="pipes_thick_straight_medium_15" Rotation="3.14159 -8.7423e-008 -1.5708" Scale="1.3 1 1" Tag="" WorldPos="-20.5596 7.48035 -47.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3281" Name="ceiling_corridor_1" Rotation="0 -4.35511e-006 0" Scale="1 1 1" Tag="" WorldPos="-7.19416 7.48976 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3282" Name="ceiling_corridor_2" Rotation="0 -4.35511e-006 0" Scale="1 1 1" Tag="" WorldPos="-7.19416 7.4952 -44.9813" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="85" Group="0" ID="3283" Name="ceiling_corridor_3" Rotation="0 -4.35511e-006 0" Scale="1 1 1" Tag="" WorldPos="-7.19416 7.51644 -47.9658" />
             </StaticObjects>
             <Primitives>
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.8" Corner2UV="0 0" Corner3UV="1.1 0" Corner4UV="1.1 4.8" EndCorner="2.75 0 12" Group="0" ID="218" Material="C:/Program Files/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-61.5 3.5 2.25" />
@@ -2903,7 +2906,7 @@
                     </UserVariables>
                 </Entity>
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.1 0.2 0.5 1" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="0.4 0.2 0.5 1" FlickerOffFadeMaxLength="5" FlickerOffFadeMinLength="5" FlickerOffMaxLength="0.0999999" FlickerOffMinLength="0.0999999" FlickerOffPS="" FlickerOffRadius="5" FlickerOffSound="" FlickerOnFadeMaxLength="5" FlickerOnFadeMinLength="5" FlickerOnMaxLength="0.0999999" FlickerOnMinLength="0.0999999" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="612" Name="PointLight_1" Radius="5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-64 6.5 23" />
-                <Entity Active="true" FileIndex="13" Group="0" ID="627" Name="torch_static01_nolight_1" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5.75 -39">
+                <Entity Active="true" FileIndex="13" Group="0" ID="627" Name="torch_static01_nolight_1" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5 -39">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2923,7 +2926,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="628" Name="torch_static01_nolight_2" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5.75 -53.75">
+                <Entity Active="true" FileIndex="13" Group="0" ID="628" Name="torch_static01_nolight_2" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5 -53.75">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2943,7 +2946,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="629" Name="torch_static01_nolight_3" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5.75 -50.5">
+                <Entity Active="true" FileIndex="13" Group="0" ID="629" Name="torch_static01_nolight_3" Rotation="-1.57079 1.5708 -1.57078" Scale="1 1 1" Tag="" WorldPos="-6.5 5 -50.5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2963,7 +2966,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="630" Name="torch_static01_nolight_4" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5.75 -39">
+                <Entity Active="true" FileIndex="13" Group="0" ID="630" Name="torch_static01_nolight_4" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5 -39">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -2983,7 +2986,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="631" Name="torch_static01_nolight_5" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5.75 -50.5">
+                <Entity Active="true" FileIndex="13" Group="0" ID="631" Name="torch_static01_nolight_5" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5 -50.5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -3003,7 +3006,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="632" Name="torch_static01_nolight_6" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5.75 -45">
+                <Entity Active="true" FileIndex="13" Group="0" ID="632" Name="torch_static01_nolight_6" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5 -45">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -3023,7 +3026,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="13" Group="0" ID="634" Name="torch_static01_nolight_8" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5.75 -42.25">
+                <Entity Active="true" FileIndex="13" Group="0" ID="634" Name="torch_static01_nolight_8" Rotation="3.13175 -1.5708 -3.13174" Scale="1 1 1" Tag="" WorldPos="-2.5 5 -42.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -4639,22 +4642,22 @@
                 <ParticleSystem Active="true" Color="0.555 0.755 0.655 0.4" FadeAtDistance="true" File="C:/Program Files/Amnesia - The Dark Descent/redist/particles/ps_area_fog_sewer.ps" Group="0" ID="1486" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_64" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-32.9259 1.75 -40.7178" />
                 <ParticleSystem Active="true" Color="0.555 0.755 0.655 0.4" FadeAtDistance="true" File="C:/Program Files/Amnesia - The Dark Descent/redist/particles/ps_area_fog_sewer.ps" Group="0" ID="1489" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_67" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-40.6529 2.5 -40.982" />
                 <ParticleSystem Active="true" Color="0.555 0.755 0.655 1" FadeAtDistance="true" File="C:/Program Files/Amnesia - The Dark Descent/redist/particles/ps_area_fog_sewer.ps" Group="0" ID="1490" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_68" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-39.7144 2.5 -44.1993" />
-                <Sound Active="true" Group="0" ID="1491" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-5.25 6.25 17.75" />
-                <Sound Active="true" Group="0" ID="1492" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-12.204 6.31086 0.0280704" />
-                <Sound Active="true" Group="0" ID="1493" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.9944 6.31086 -38.6006" />
-                <Sound Active="true" Group="0" ID="1495" MaxDistance="5" MinDistance="1" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-72.8379 6.31086 4.54235" />
-                <Sound Active="true" Group="0" ID="1496" MaxDistance="5" MinDistance="1" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-72.8379 6.31086 4.54235" />
-                <Sound Active="true" Group="0" ID="1497" MaxDistance="5" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="6.5908 6.31086 -33.4025" />
-                <Sound Active="true" Group="0" ID="1498" MaxDistance="5" MinDistance="1" Name="Sound_8" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.7637 3.7686 -31.25" />
-                <Sound Active="true" Group="0" ID="1499" MaxDistance="5" MinDistance="0.5" Name="Sound_9" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.484618 2.5 17.6746" />
-                <Sound Active="true" Group="0" ID="1500" MaxDistance="5" MinDistance="0.5" Name="Sound_10" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-7.81565 2.5 0.468151" />
-                <Sound Active="true" Group="0" ID="1501" MaxDistance="5" MinDistance="0.5" Name="Sound_11" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-36.9301 2.5 -20.0044" />
-                <Sound Active="true" Group="0" ID="1502" MaxDistance="5" MinDistance="0.5" Name="Sound_12" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip_quick.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-52.3001 2.5 -6.40447" />
-                <Sound Active="true" Group="0" ID="1503" MaxDistance="5" MinDistance="0.5" Name="Sound_13" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-77.798 5.24567 -3.67259" />
-                <Sound Active="true" Group="0" ID="1505" MaxDistance="5" MinDistance="0.5" Name="Sound_15" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-39.5 5.25 -40.25" />
-                <Sound Active="true" Group="0" ID="1506" MaxDistance="5" MinDistance="0.5" Name="Sound_16" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-3.95162 5.24567 -20.5184" />
-                <Sound Active="true" Group="0" ID="1507" MaxDistance="5" MinDistance="0.5" Name="Sound_17" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="14.0998 5.24567 -34.6469" />
-                <Sound Active="true" Group="0" ID="1509" MaxDistance="5" MinDistance="0.5" Name="Sound_19" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="31.8597 5.24567 -32.0776" />
+                <Sound Active="true" Group="0" ID="1491" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-5.25 6.25 17.75" />
+                <Sound Active="true" Group="0" ID="1492" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-12.204 6.31086 0.0280704" />
+                <Sound Active="true" Group="0" ID="1493" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.9944 6.31086 -38.6006" />
+                <Sound Active="true" Group="0" ID="1495" MaxDistance="5" MinDistance="1" Name="Sound_5" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-72.8379 6.31086 4.54235" />
+                <Sound Active="true" Group="0" ID="1496" MaxDistance="5" MinDistance="1" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-72.8379 6.31086 4.54235" />
+                <Sound Active="true" Group="0" ID="1497" MaxDistance="5" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="6.5908 6.31086 -33.4025" />
+                <Sound Active="true" Group="0" ID="1498" MaxDistance="5" MinDistance="1" Name="Sound_8" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.7637 3.7686 -31.25" />
+                <Sound Active="true" Group="0" ID="1499" MaxDistance="5" MinDistance="0.5" Name="Sound_9" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.484618 2.5 17.6746" />
+                <Sound Active="true" Group="0" ID="1500" MaxDistance="5" MinDistance="0.5" Name="Sound_10" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-7.81565 2.5 0.468151" />
+                <Sound Active="true" Group="0" ID="1501" MaxDistance="5" MinDistance="0.5" Name="Sound_11" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-36.9301 2.5 -20.0044" />
+                <Sound Active="true" Group="0" ID="1502" MaxDistance="5" MinDistance="0.5" Name="Sound_12" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip_quick.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-52.3001 2.5 -6.40447" />
+                <Sound Active="true" Group="0" ID="1503" MaxDistance="5" MinDistance="0.5" Name="Sound_13" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-77.798 5.24567 -3.67259" />
+                <Sound Active="true" Group="0" ID="1505" MaxDistance="5" MinDistance="0.5" Name="Sound_15" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-39.5 5.25 -40.25" />
+                <Sound Active="true" Group="0" ID="1506" MaxDistance="5" MinDistance="0.5" Name="Sound_16" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-3.95162 5.24567 -20.5184" />
+                <Sound Active="true" Group="0" ID="1507" MaxDistance="5" MinDistance="0.5" Name="Sound_17" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="14.0998 5.24567 -34.6469" />
+                <Sound Active="true" Group="0" ID="1509" MaxDistance="5" MinDistance="0.5" Name="Sound_19" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="31.8597 5.24567 -32.0776" />
                 <Entity Active="true" FileIndex="43" Group="0" ID="1517" Name="block_box_1" Rotation="0 1.08404 0" Scale="1.4 0.05 4.45207" Tag="" WorldPos="1.39784 2.60143 6.25536">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -7619,8 +7622,8 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="2590" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-61.75 6.25 19.5" />
-                <Sound Active="true" Group="0" ID="2591" MaxDistance="5" MinDistance="1" Name="Sound_20" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-60.5 6.25 19.25" />
+                <Sound Active="true" Group="0" ID="2590" MaxDistance="5" MinDistance="1" Name="Sound_4" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_bat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-61.75 6.25 19.5" />
+                <Sound Active="true" Group="0" ID="2591" MaxDistance="5" MinDistance="1" Name="Sound_20" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-60.5 6.25 19.25" />
                 <Entity Active="true" FileIndex="35" Group="0" ID="2735" Name="barrel01_24" Rotation="1.57079 0 0" Scale="1 1 1" Tag="" WorldPos="-35.3795 2.8116 -10.2987">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -8613,7 +8616,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="3178" MaxDistance="5" MinDistance="1" Name="Sound_21" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/03/03_wind.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-20.266 15.0892 -0.873748" />
+                <Sound Active="true" Group="0" ID="3178" MaxDistance="5" MinDistance="1" Name="Sound_21" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/03/03_wind.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-20.266 15.0892 -0.873748" />
                 <FogArea Active="true" Color="0.4 0.6 0.6 0.6" End="11" FalloffExp="1" Group="0" ID="3180" Name="FogArea_3" Rotation="0 0 0" Scale="4 8.5 4.25" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="1" Tag="" WorldPos="-20.5 14.5 -1" />
                 <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="0.0999999 0.2 0.2 0.3" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="0.2 0.3 0.3 0.3" FlickerOffFadeMaxLength="1" FlickerOffFadeMinLength="1" FlickerOffMaxLength="0.5" FlickerOffMinLength="0.3" FlickerOffPS="" FlickerOffRadius="7" FlickerOffSound="" FlickerOnFadeMaxLength="1" FlickerOnFadeMinLength="1" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.3" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3181" Name="BoxLight_2" Radius="1" Rotation="0 0 0" Scale="5 8.5 5" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="5 8.5 5" Tag="" WorldPos="-20.25 14.2751 -0.75" />
                 <SpotLight Active="true" Aspect="1" CastShadows="false" DiffuseColor="0.3 0.5 0.5 0.3" FOV="1.0472" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="0.2 0.4 0.3 0.3" FlickerOffFadeMaxLength="1" FlickerOffFadeMinLength="1" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.3" FlickerOffPS="" FlickerOffRadius="7" FlickerOffSound="" FlickerOnFadeMaxLength="1" FlickerOnFadeMinLength="1" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.3" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3182" Name="SpotLight_1" NearClipPlane="0.1" Radius="7" Rotation="-1.57079 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="-20.25 10.75 -1" />
@@ -8630,10 +8633,10 @@
                 <Area Active="true" AreaType="Rope" Group="0" ID="3184" Mesh="" Name="RopeArea_8" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="-8.413 13.53 -30.799">
                     <UserVariables>
                         <Var Name="EndPosNode" Value="PosNodeArea_8" />
-                        <Var Name="StartBody" Value="RopeArea_8" />
-                        <Var Name="EndBody" Value="PosNodeArea_8" />
+                        <Var Name="StartBody" Value="" />
+                        <Var Name="EndBody" Value="" />
                         <Var Name="MinTotalLength" Value="0.5" />
-                        <Var Name="MaxTotalLength" Value="2" />
+                        <Var Name="MaxTotalLength" Value="1.5" />
                         <Var Name="AutoMove" Value="true" />
                         <Var Name="AutoMoveAcc" Value="5" />
                         <Var Name="AutoMoveMaxSpeed" Value="3" />
@@ -8726,7 +8729,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="3192" MaxDistance="99" MinDistance="99" Name="Sound_22" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_sewer_drip_no3d.snt" Tag="" UseDefault="false" Volume="0.9" WorldPos="-19.558 2.52241 -20.1186" />
+                <Sound Active="true" Group="0" ID="3192" MaxDistance="99" MinDistance="99" Name="Sound_22" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_sewer_drip_no3d.snt" Tag="" UseDefault="false" Volume="0.9" WorldPos="-19.558 2.52241 -20.1186" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3193" Name="PointLight_2" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-32.5271 2.06704 -4.40136" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3194" Name="PointLight_5" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-47.9706 2.06704 -3.27144" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3195" Name="PointLight_8" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-64.0011 2.06704 -3.75014" />
@@ -8741,14 +8744,14 @@
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3204" Name="PointLight_18" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="43.3751 4.02309 -31.9445" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3205" Name="PointLight_19" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0.578309 4.02309 1.73779" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3206" Name="PointLight_20" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-45.3726 4.02309 -19.5252" />
-                <Sound Active="true" Group="0" ID="3208" MaxDistance="5" MinDistance="1" Name="Sound_24" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-38.3044 9.75 -71.0821" />
-                <Sound Active="true" Group="0" ID="3209" MaxDistance="5" MinDistance="1" Name="Sound_25" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="13.4759 4.72765 25.0044" />
+                <Sound Active="true" Group="0" ID="3208" MaxDistance="5" MinDistance="1" Name="Sound_24" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-38.3044 9.75 -71.0821" />
+                <Sound Active="true" Group="0" ID="3209" MaxDistance="5" MinDistance="1" Name="Sound_25" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_cave.snt" Tag="" UseDefault="true" Volume="1" WorldPos="13.4759 4.72765 25.0044" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3210" Name="PointLight_23" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-32.1213 4.02309 -40.3254" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.065 0.098 0.15 0.3" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.1 0.14 0.14 0.3" FlickerOffFadeMaxLength="0.9" FlickerOffFadeMinLength="0.9" FlickerOffMaxLength="0.4" FlickerOffMinLength="0.4" FlickerOffPS="" FlickerOffRadius="6" FlickerOffSound="" FlickerOnFadeMaxLength="0.9" FlickerOnFadeMinLength="0.9" FlickerOnMaxLength="0.4" FlickerOnMinLength="0.4" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3211" Name="PointLight_24" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-19.8079 4.02309 -45.5753" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - The Dark Descent/particles/ps_childsnake_water_stream.ps" Group="0" ID="3251" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_60" Rotation="0 0.202265 0" Scale="1 1 1" Tag="" WorldPos="-19.8472 3.17517 -45.0109" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/Program Files/Frictional Games/Amnesia - The Dark Descent/particles/ps_childsnake_water_stream.ps" Group="0" ID="3252" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_61" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-19.616 3.17517 -45.0151" />
-                <Sound Active="true" Group="0" ID="3253" MaxDistance="5" MinDistance="1" Name="Sound_26" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/12/12_epoxy_flow.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.7326 0.726883 -44.7498" />
-                <Sound Active="true" Group="0" ID="3254" MaxDistance="5" MinDistance="1" Name="Sound_27" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-9.7667 3.34059 -37.8986" />
+                <Sound Active="true" Group="0" ID="3253" MaxDistance="5" MinDistance="1" Name="Sound_26" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/12/12_epoxy_flow.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-19.7326 0.726883 -44.7498" />
+                <Sound Active="true" Group="0" ID="3254" MaxDistance="5" MinDistance="1" Name="Sound_27" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/13/13_steam.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-9.7667 3.34059 -37.8986" />
                 <Entity Active="true" FileIndex="73" Group="0" ID="3255" Name="cogwheel_small_broken02_1" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-26.1835 8.65036 -3.96845">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -8972,12 +8975,31 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="3277" MaxDistance="5" MinDistance="1" Name="Sound_23" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-66.3203 3.5 -3.61343" />
-                <Sound Active="true" Group="0" ID="3278" MaxDistance="5" MinDistance="0.5" Name="Sound_28" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.94396 3.08798 -54.3621" />
-                <Sound Active="true" Group="0" ID="3279" MaxDistance="2" MinDistance="0.5" Name="Sound_18" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="sounds/general/general_chain_rattle_single.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-8.99642 10.9422 -30.8118" />
+                <Sound Active="true" Group="0" ID="3277" MaxDistance="5" MinDistance="1" Name="Sound_23" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/ambience/ambience_water.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-66.3203 3.5 -3.61343" />
+                <Sound Active="true" Group="0" ID="3278" MaxDistance="5" MinDistance="0.5" Name="Sound_28" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_water_drip.snt" Tag="" UseDefault="true" Volume="1" WorldPos="5.94396 3.08798 -54.3621" />
+                <Sound Active="true" Group="0" ID="3279" MaxDistance="2" MinDistance="0.5" Name="Sound_18" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/general/general_chain_rattle_single.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-8.99642 10.9422 -30.8118" />
                 <Area Active="true" AreaType="PlayerStart" Group="0" ID="3280" Mesh="" Name="PlayerStartArea_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-9.5 4 -29.75">
                     <UserVariables />
                 </Area>
+                <Entity Active="true" FileIndex="75" Group="0" ID="3285" Name="chain_pipe02_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-8.413 13.256 -30.799">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="2416" Name="Compound_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-36.5 0 -3.5">

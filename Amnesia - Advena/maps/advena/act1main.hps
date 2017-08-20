@@ -163,6 +163,9 @@ AddTimer("",predkosc,"INTRO_SEQUENCE_START");
 void poloz_sloik(string &in asItem, string &in asEntity) {
 //SetEntityActive("glass_container_quest_end",true);
 RemoveItem(asItem);
+
+ PlaySoundAtEntity("", "06_pull_wood.snt", "invisible_box_mass_3", 1.0f, false);
+     
 AddAttachedPropToProp("invisible_box_mass_3", "glass_container_quest_end", "glass_container_filled.ent", 0,0,0, 0,0,0);
 AddLocalVarInt("sloik_polozony",1);
 }
@@ -199,7 +202,15 @@ if(alState == 1) {
 	
 		 PlaySoundAtEntity("gaz","13_steam","valve_iron_slow02_1", 0 , false);
 		 PlaySoundAtEntity("ogien","general_fire_burning","valve_iron_slow02_1", 0 , false);
-	}
+	
+SetSwingDoorLocked("piec_close1", false, false);
+ PlayMusic("04_event_stairs.ogg", false, 0.8f, 1.0f, 1, false);
+
+  
+
+}
+
+
 }
 //############## FALLING THE FIRETORCH#######################################
 void ScriptArea_58(string &in asParent, string &in asChild, int alState) { 
@@ -297,8 +308,13 @@ if(alState == 1) {
 if(GetLocalVarInt("Lina") == 1) {
     if(GetLocalVarInt("sloik_polozony") == 1) { 
 RemoveAttachedPropFromProp("invisible_box_mass_3", "glass_container_quest_end");
-AddPlayerSanity(1);
+AddPlayerSanity(20);
  SetEntityActive("glass_container_quest_end",true);
+ 
+ PlaySoundAtEntity("", "04_water_puff.snt", "ScriptArea_8", 1.0f, false);
+ 
+ //
+  
  SetLocalVarInt("sloik_polozony",0);
     } 
 	//GiveItemFromFile("glass_container_quest_end", "glass_container_filled.ent");
@@ -355,9 +371,33 @@ GiveSanityDamage(100,true);
      SetEntityActive("enemy_suitor_2",true);
 	  for(int d=9;d<=15;d++) {      AddEnemyPatrolNode("enemy_suitor_2", "PathNodeArea_"+d, 0, ""); }
 	   AddEnemyPatrolNode("enemy_suitor_2", "PathNodeArea_21", 0, "");
-	  AddTimer("",60,"EndSummon");
+	  
+           AddTimer("",20,"BFirstScreen");
+           
+           AddTimer("",55,"EndSummon");
 	  
 } 
+  void BFirstScreen(string &in asTimer) {
+      FadeIn(1);
+       TeleportPlayer("PlayerStartArea_1");
+       AddTimer("",2,"FirstScreen");
+           
+  }
+  void FirstScreen(string &in asTimer) {
+      FadeOut(1);
+       AddTimer("",15,"BSecondScreen");
+           
+  }
+  void BSecondScreen(string &in asTimer) {
+    FadeIn(1);
+     TeleportPlayer("PlayerStartArea_6");
+     AddTimer("",2,"SecondScreen");
+  }
+  void SecondScreen(string &in asTimer) {
+    FadeOut(1);
+      
+  }
+    
 void EndFadeSumm(string &in asTimer) {
 FadeIn(1);
 }
@@ -473,7 +513,16 @@ void igla_open(string &in asItem, string &in asEntity) {
 SetSwingDoorDisableAutoClose("castle_arched01_2", true);
   SetSwingDoorClosed("castle_arched01_2", false,false);
  SetSwingDoorLocked("castle_arched01_2", false, true);
+ 
+ 
+  PlayMusic("02_puzzle", false, 0.8f, 1.0f, 1, false);
+
+  AddTimer("",30,"ContinueAmb_1");
+  
    AddPlayerSanity(5);
+}
+void ContinueAmb_1(string &in asTimer) {
+ PlayMusic("22_amb",true, 0.8, 0.1, 10, true);  
 }
 /*
 //###### saw wood from the door #######################
@@ -554,6 +603,7 @@ void ScriptArea_11(string &in asParent, string &in asChild, int alState) {
   AddTimer("",10,"Stop_Sound_Wood");
 }
 void Stop_look_Area11(string &in asTimer) {
+   StartPlayerLookAt("level_wood_1", 2, 2, ""); 
  StopPlayerLookAt(); 
 }
 void Stop_Sound_Wood(string &in asTimer) {
