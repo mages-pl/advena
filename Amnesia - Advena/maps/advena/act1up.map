@@ -1,17 +1,17 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="-9.50183 0.6475 165.746" CameraTarget="-9.50183 0.6475 -14.2542" CameraZoom="2.55066" GridHeight="-14.2542" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="170.498 0.6475 -14.2542" CameraTarget="-9.50183 0.6475 -14.2542" CameraZoom="2.55105" GridHeight="-9.50183" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-9.504 180 -14.2515" CameraTarget="-9.504 0 -14.2515" CameraZoom="2.55066" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-12.8624 21.4929 -4.70967" CameraTarget="-5.66583 9.53674e-007 -11.2658" CameraZoom="0.750994" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-9.50183 0.6475 165.746" CameraTarget="-9.50183 0.6475 -14.2542" CameraZoom="0" GridHeight="-14.2542" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="170.498 0.6475 -14.2542" CameraTarget="-9.50183 0.6475 -14.2542" CameraZoom="0" GridHeight="-9.50183" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="13.5831 180 -30.3448" CameraTarget="13.5831 0 -30.3448" CameraZoom="1" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="9.46562 9.59068 -26.2166" CameraTarget="11.5198 9.53674e-007 -30.2413" CameraZoom="1.55099" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
         </Groups>
     </EditorSession>
-    <MapData FogActive="true" FogColor="0 0.1 0.2 0.3" FogCulling="true" FogEnd="11" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../../">
+    <MapData FogActive="true" FogColor="0 0.1 0.2 0.3" FogCulling="true" FogEnd="11" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="">
         <MapContents>
             <FileIndex_StaticObjects NumOfFiles="47">
                 <File Id="0" Path="static_objects/dungeonbase/wall/default.dae" />
@@ -62,7 +62,7 @@
                 <File Id="45" Path="static_objects/technical/plane_black/plane_black.dae" />
                 <File Id="46" Path="static_objects/dungeonbase/wall/corridor.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="47">
+            <FileIndex_Entities NumOfFiles="46">
                 <File Id="0" Path="entities/door/level_dungeon/level_dungeon.ent" />
                 <File Id="1" Path="entities/door/prison/prison_silent.ent" />
                 <File Id="2" Path="entities/lamp/torch_static01/torch_static01.ent" />
@@ -109,7 +109,6 @@
                 <File Id="43" Path="entities/ration/bag02/bag02.ent" />
                 <File Id="44" Path="entities/storage/storage_box_wood01/storage_box_wood01.ent" />
                 <File Id="45" Path="entities/ration/bag01/bag01.ent" />
-                <File Id="46" Path="entities/special/childsnake_floor_water/childsnake_floor_water_blood_advena.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="4">
                 <File Id="0" Path="textures/decals/hay.mat" />
@@ -385,8 +384,8 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="545" Name="ceiling_corridor_arched_22" Rotation="3.14159 1.5708 3.14159" Scale="1.35007 1 1" Tag="" WorldPos="-6.75 3.75 9.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="569" Name="wall_default_broken03_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="11.75 0 -29" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="570" Name="wall_default_broken03_2" Rotation="0 0 -3.14159" Scale="1 1 1" Tag="" WorldPos="11.75 4 -29.0134" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="572" Name="wall_default_broken03_3" Rotation="1.58063 1.5708 -1.56095" Scale="1 1 1" Tag="" WorldPos="14.0067 4 -31.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="573" Name="wall_default_broken03_4" Rotation="-3.14159 -1.5708 -3.14159" Scale="1 1 1" Tag="" WorldPos="13.9933 0 -31.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="572" Name="wall_default_broken03_3" Rotation="-1.56096 1.5708 1.58064" Scale="1 1 1" Tag="" WorldPos="14.0067 4 -31.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="573" Name="wall_default_broken03_4" Rotation="2.53518e-006 -1.5708 2.53518e-006" Scale="1 1 1" Tag="" WorldPos="13.9933 0 -31.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="15" Group="0" ID="575" Name="wall_welder_wood_22" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="10.75 0 -29" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="15" Group="0" ID="577" Name="wall_welder_wood_23" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="12.75 0 -29" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="15" Group="0" ID="578" Name="wall_welder_wood_24" Rotation="0 0 -1.57079" Scale="1 0.483204 1" Tag="" WorldPos="10.75 1.5 -29.0072" />
@@ -6053,7 +6052,7 @@
                         <Var Name="UseNarration" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="Script" Group="0" ID="941" Mesh="" Name="ScriptArea_15" Rotation="0 0 0" Scale="5.50404 1.2793 4.73678" Tag="" WorldPos="13.0206 0.40719 -31.3482">
+                <Area Active="true" AreaType="Script" Group="0" ID="941" Mesh="" Name="ScriptArea_15" Rotation="0 0 0" Scale="8.25 1.25 4.25" Tag="" WorldPos="14.0937 0.40719 -31.3482">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
@@ -6381,22 +6380,6 @@
                 <Area Active="true" AreaType="PlayerStart" Group="0" ID="973" Mesh="" Name="PlayerStartArea_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="19 0.75 -26.5">
                     <UserVariables />
                 </Area>
-                <Entity Active="true" FileIndex="46" Group="0" ID="974" Name="childsnake_floor_water_blood_advena_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.80335 0.420262 12.2752">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="AngularOffsetArea" Value="" />
-                    </UserVariables>
-                </Entity>
                 <Area Active="true" AreaType="Liquid" Group="0" ID="975" Mesh="" Name="LiquidArea_1" Rotation="0 0 0" Scale="5.30481 0.639713 5.19191" Tag="" WorldPos="-0.343789 0.179031 13.8225">
                     <UserVariables>
                         <Var Name="Density" Value="100" />
