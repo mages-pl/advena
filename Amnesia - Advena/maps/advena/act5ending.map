@@ -2661,16 +2661,16 @@
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />
-                        <Var Name="Hallucination" Value="false" />
-                        <Var Name="HallucinationEndDist" Value="3" />
+                        <Var Name="Hallucination" Value="true" />
+                        <Var Name="HallucinationEndDist" Value="1" />
                     </UserVariables>
                 </Entity>
                 <Entity Active="false" FileIndex="8" Group="0" ID="354" Name="servant_brute_2" Rotation="0 12.5664 0" Scale="1 1 1" Tag="" WorldPos="-85.3567 2 3.36265">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />
-                        <Var Name="Hallucination" Value="false" />
-                        <Var Name="HallucinationEndDist" Value="3" />
+                        <Var Name="Hallucination" Value="true" />
+                        <Var Name="HallucinationEndDist" Value="1" />
                     </UserVariables>
                 </Entity>
                 <Entity Active="true" FileIndex="0" Group="0" ID="357" Name="bridge_metal_vert_10" Rotation="0 4.71239 0" Scale="1 1 0.454221" Tag="" WorldPos="-34 5.75 -1.75">
