@@ -1,0 +1,36 @@
+1. Sprawdziæ czy jest ambient jakiœ dany w skrypcie w katakumbach 1 i 2, jak jest to wywaliæ.
+
+2. Rozwi¹zanie zagadki w katakumbach tej z dŸwigniami ¿ywio³ami daje muzyczke 00_event_gallery  OGG +
+
+3.Do skryptu Regeneracja1 (chyba tak siê zwie) w pomieszczeniu bo otwirzeniu œciany w katakumbach jest takie kropid³o i przy interakcji ze skryptem postaæ powinna siê leczyæ psychicznie na max. +
+
+4. Po "przeczytaniu" ksiêgi ¿ywio³ów w katakumbach ma byæ NAG£E przygaœniêcie jak z w oryginale z Lurkerem albo po wyjœciu z Maszynowni przy windzie +
+
+5. Przy tej samej ksi¹¿ce sprawdŸ czemu podana muzyczka nie odpala³a siê (te co pisa³em Ci w notatniku) +
+
+6. W ka¿dym sekrecie dŸwiêk +
+
+7. Po zawaleniu siê w act2main (mokra robota) postaæ ma upaœæ. +
+
+8. SprawdŸ co trzeba zrobiæ by uzyskaæ wejœcie w alternatywie w act2main a jak nic nie ma albo pomys³ dziwny to rzut ko³em ¿ebatym ma powodowaæ zniszczenie œciany. +
+
+9. Po wejœciu do komnaty gdzie by³a ksiêga Animus Advena daæ muze 12_puzzle_cavein   OGG trwaj¹c¹ 0:30 s +
+
+10. Po z³o¿eniu maszyny w act2main daæ muze 13_puzzle_machine   OGG trwaj¹c¹ 0:21 s +
+
+11. Po wejœciu do act3main tj rozpoczêciu ma byæ odegrany kawa³ek amb_extra01  OGG trwaj¹cy 0:42 s a ta muza co jest ci¹gle to wypierdzieliæ +
+
+
+12. Po zagraniu utworu na pianinie i otworzeniu klapy ma byæ odegrane 10_puzzle02  OGG  trwa 0:17 s +
+
+13. Ogarn¹æ skrypty w kapliczce i sypialniach (act3main) . Nie wiem jakie tam boxy s¹ zaskryptowane to coœ wymyœl tam gdzie s¹ strach(liczba).
+
+14. W spalarni w act1main trzeba udoskonaliæ sekwencje przed po¿arem i daæ w czacie po¿aru act1burning na ca³y obszar dolny minimalne obra¿enia które tylko maj¹ wywo³aæ kaszel.+
+
+15. Po wejœciu do pieca act5 (?) daæ muzyczke 08_amb_success ogg trwaj¹c¹ 0:16 +
+
+16. Piec i te spadaj¹ce deski. Po wejœciu w area strach1 aktywuj deski o nazwach ups1 ups2 ups3 ups4 +
+
+17. Cykliczne wstrz¹sy w piecu po odkrêceniu wszystkich zaworów. +
+
+18. Area strach2 gdy w ni¹ wejdziesz to ma emitowaæ dŸwiêk 24_bang  ogg albo snt.+

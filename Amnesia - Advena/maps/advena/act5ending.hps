@@ -269,11 +269,14 @@ CreateParticleSystemAtEntity("gazek", "ps_stream_deadly", "ScriptArea_6", false)
  void przekrec_kolowrot1(string &in asEntity, int alState) {
  if(alState == 1) {
  AddLocalVarInt("kolowrot",1);
+ AutoSave();
  //TeleportPlayer("PlayerStartArea_4");
  if(GetLocalVarInt("kolowrot") == 2) {
+   AutoSave();
 Shake_Effect_Random();
  }
   if(GetLocalVarInt("kolowrot") == 3) {
+    AutoSave();
 AddPlayerSanity(20);
 AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",false,1);
  }
@@ -290,19 +293,23 @@ StartScreenShake(RandFloat(0.05f,0.2f),RandFloat(0.5f,2), RandFloat(0.2f,1.0f),R
  }
   void przekrec_kolowrot3(string &in asEntity, int alState) {
  if(alState == 1) {
+   AutoSave();
  AddLocalVarInt("kolowrot",1);
   // TeleportPlayer("PlayerStartArea_3");
   if(GetLocalVarInt("kolowrot") == 2) {
 Shake_Effect_Random();
+AutoSave();
  }
   if(GetLocalVarInt("kolowrot") == 3) {
 AddPlayerSanity(20);
+AutoSave();
 AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",false,1);
  }
  } 
  }
   void przekrec_kolowrot2(string &in asEntity, int alState) {
  if(alState == 1) {
+   AutoSave();
  SetEntityActive("servant_brute_1",true);
  SetEntityActive("servant_brute_2",true);
  ShowEnemyPlayerPosition("servant_brute_1");
@@ -310,9 +317,11 @@ AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",false,1);
  AddLocalVarInt("kolowrot",1);
   if(GetLocalVarInt("kolowrot") == 2) {
 Shake_Effect_Random();
+AutoSave();
  }
   if(GetLocalVarInt("kolowrot") == 3) {
 AddPlayerSanity(20);
+AutoSave();
 AddEntityCollideCallback("Player","ScriptArea_4","ScriptArea_4",false,1);
  }
  } 
@@ -417,7 +426,7 @@ AddTimer("Koniec_Teleport_Secret",2.5f,"Koniec_Teleport_Secret");
  }
 void OnEnter() {
      AutoSave();
- PlayMusic("08_amb_success",false, 0.8, 0.1, 1,false);
+ PlayMusic("04Fire.ogg",false, 0.8, 0.1, 1,false);
  
 }
  void OnLeave() {

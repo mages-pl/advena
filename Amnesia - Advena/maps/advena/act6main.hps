@@ -77,7 +77,7 @@ AddTimer("koniec_gry",15,"koniec");
 void koniec(string &in asTimer) {
 FadeOut(3);
 AutoSave();
-StartCredits("amb_extra01.ogg",false,"Credits","Napisy_koncowe", -1);
+StartCredits("ending_good_advena.ogg",false,"Credits","Napisy_koncowe", -1);
 if((GetLocalVarInt("kamienie") == 3)) {
 ChangeMap("actXeasterII.map", "PlayerStartArea_1", "", "");
 }

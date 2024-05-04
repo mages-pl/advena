@@ -143,8 +143,8 @@ AddEntityCollideCallback("Player","ScriptArea_3","ScriptArea_3",true,1);
 AddEntityCollideCallback("Player","ScriptArea_2","ScriptArea_2",true,1);
 AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",true,1);
 
- PlayMusic("04_amb.ogg", true, 0.85f, 1.0f, 1, false);
-
+ //PlayMusic("04_amb.ogg", true, 0.85f, 1.0f, 1, false);
+PlayMusic("02Catacombs.ogg", true, 0.85f, 1.0f, 1, false);
         
        
 }

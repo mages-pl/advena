@@ -7,7 +7,7 @@
 //#################################################################################
 void OnEnter() {	
 	AutoSave();	
-	 PlayMusic("22_amb",true, 0.8, 0.1, 10, true);
+	 PlayMusic("01RustedCage.ogg",true, 0.8, 0.1, 10, true);
 	 if(GetLocalVarInt("rozdzial1") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "1", 3.0f);
