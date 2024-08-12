@@ -1,8 +1,0 @@
-<Main
-	Name="Amnesia - Advena"
-	Author="Pur and Tasjen"
-	ImgFile=""
- 
-	StartMap="act0main.map"
-	Pos = "PlayerStartArea_1" 
-/>
