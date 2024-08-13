@@ -1,35 +1,50 @@
  
 void OnStart() {
     SetSanityDrainDisabled(true);
-FadeSepiaColorTo(0.75f, 1.0f);
-AddEntityCollideCallback("Player", "ScriptArea_5", "START_INTRO", true, 1);
-AddEntityCollideCallback("Player", "ScriptArea_1", "ScriptArea_1", true, 1);
-AddEntityCollideCallback("Player", "ScriptArea_2", "ScriptArea_2", true, 1);
-AddEntityCollideCallback("Player", "ScriptArea_9", "ScriptArea_9", true, 1);
-AddEntityCollideCallback("Player", "ScriptArea_3", "ScriptArea_3", true, 1);
-SetPlayerMoveSpeedMul(0.25f);
-SetPlayerRunSpeedMul(0.0f);
-SetPlayerLookSpeedMul(0.2f);
-SetPlayerActive(false);
- SetPlayerLampOil(0.0f);
-PlayMusic("ending_alexander.ogg",false, 0.5,0.7,1,false);
+	FadeSepiaColorTo(0.75f, 1.0f);
+	AddEntityCollideCallback("Player", "ScriptArea_5", "START_INTRO", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_1", "ScriptArea_1", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_2", "ScriptArea_2", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_9", "ScriptArea_9", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_3", "ScriptArea_3", true, 1);
+	SetPlayerMoveSpeedMul(0.25f);
+	SetPlayerRunSpeedMul(0.2f);
+	SetPlayerLookSpeedMul(0.2f);
+	SetPlayerActive(true);
+ 	SetPlayerLampOil(0.0f);
+	PlayMusic("ending_alexander.ogg",false, 0.5,0.7,1,false);
 }
 
 void START_INTRO(string &in asParent, string &in asChild, int alState)
 {
-FadeOut(0);
-SetMessage("Rozdzial", "Prolog", 2.0f);
-AddTimer("Start",15,"Start_Game");
-Idz();
+	FadeOut(0);
+	SetMessage("Rozdzial", "Prolog", 2.0f);
+	AddTimer("Start",2,"Start_Game");
+	Idz();
 }
 void Start_Game(string &in asTimer) {
-FadeIn(0.5f);
-AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",true, "Player", 0.0f, 10.0f);
-AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",true, "Player", 0.0f, 10.0f);
-AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_3",true, "Player", 0.0f, 10.0f);
-AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_4",true, "Player", 0.0f, 10.0f);
-AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",true, "Player", 0.0f, 10.0f);
-AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_6",true, "Player", 0.0f, 10.0f);
+	FadeIn(0.5f);
+	/**
+	nagarnia z https://elevenlabs.io/
+	Lektor Damian PL
+	**/
+
+	/**
+	asVoiceFile - the voice to play
+	asEffectFile - the effect to play
+	asTextCat - the category in the .lang file
+	asTextEntry - the text entry in the .lang file
+	abUsePosition - plays using 3D from the entity, or without 3D
+	asPosEntity - the entity at which the effect appears
+	afMinDistance - minimum distance to see the effect
+	afMaxDistance - maximum distance to see the effect
+	*/
+	AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",false, "Player", 0.0f, 5.0f);
+	AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 10.0f);
+	AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 10.0f);
+	AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 10.0f);
+	//AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",true, "Player", 0.0f, 10.0f);
+	//AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_6",true, "Player", 0.0f, 10.0f);
 }
 void Idz() {
 	SetPlayerJumpDisabled(true);
@@ -46,7 +61,7 @@ void StartWalking(string &in asTimer) {
 	AddTimer("walking", 0.016f, "TimerMoveForward");
 } 
 void TimerMoveForward(string &in asTimer) {
-	MovePlayerForward(2.0f);
+	//MovePlayerForward(2.0f); // -> zwraca błąd
 	AddTimer("automove", 0.016f, "TimerMoveForward");
 } 
 void FadeWalking(string &in asTimer) {
@@ -65,8 +80,8 @@ void EndWalking(string &in asTimer) {
 	SetPlayerActive(true);
 	ChangeMap("act1katakumby.map", "Z_act0main", "","");
 	SetPlayerMoveSpeedMul(1.0f);
-SetPlayerRunSpeedMul(1.0f);
-SetPlayerLookSpeedMul(1.0f);
+	SetPlayerRunSpeedMul(1.0f);
+	SetPlayerLookSpeedMul(1.0f);
 } 
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 StartPlayerLookAt("ScriptArea_10", 1, 1, "");

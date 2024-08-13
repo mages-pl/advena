@@ -21,7 +21,7 @@ void OnEnter() {
     
              AddEntityCollideCallback("Player","ScriptArea_10","ScriptArea_10",true,1);
          
-     if(GetLocalVarInt("Act1Katakumby1" == 0)) {
+     if(GetLocalVarInt("Act1Katakumby1") == 0) {
 	AddEntityCollideCallback("Player","GruntPojawienie","GruntPojawienie",false,1); 
         }
  //PlaySoundAtEntity("","scare_whine_loop.snt", "Dzwieki1", 0, true);

@@ -153,22 +153,29 @@ RemoveTimer(asTimer);
 PlaySoundAtEntity("scare2", "04_hole_squeal.snt", "Player", 0, false); 
 AddTimer("scare_sound",RandInt(30,60),"scare_sound");
 }
+
 void Ciezar1(string &in asParent, string &in asChild, int alState) {
 if(alState == 1) {
 PlayGuiSound("scrape_rock",1);
 AddLocalVarInt("open_gate",1);
 if(GetLocalVarInt("open_gate") == 2) {
- SetMoveObjectState("castle_portcullis_1", 1.0f);
- CompleteQuest("Journal", "act1katakumby2_1");
+	SetMoveObjectState("castle_portcullis_1", 1.0f);
+	CompleteQuest("Journal", "act1katakumby2_1");
+	
+	PlayMusic("04_puzzle_acid.ogg",false, 0.85f, 1.0f, 1, false);
+ 	AddTimer("",30,"amb_music");
+
+	StopSound("ScriptArea_3",2.0f); 
+	StopSound("ScriptArea_2",2.0f);
+	StopSound("antidote_corpse_1",2.0f);
 }
 }
 else { 
-AddLocalVarInt("open_gate",-1);
- SetMoveObjectState("castle_portcullis_1", 0.0f);
- PlayMusic("04_puzzle_acid.ogg",false, 0.85f, 1.0f, 1, false);
- AddTimer("",30,"amb_music");
+	AddLocalVarInt("open_gate",-1);
+ 	SetMoveObjectState("castle_portcullis_1", 0.0f);
 }
 }
+
 void amb_music(string &in asTimer) { 
      PlayMusic("04_amb.ogg", true, 0.85f, 1.0f, 1, false);
 }
@@ -177,8 +184,16 @@ if(alState == 1) {
 PlayGuiSound("scrape_rock",1);
 AddLocalVarInt("open_gate",1);
 if(GetLocalVarInt("open_gate") == 2) {
- SetMoveObjectState("castle_portcullis_1", 1.0f);
-  CompleteQuest("Journal", "act1katakumby2_1");
+ 	SetMoveObjectState("castle_portcullis_1", 1.0f);
+  	CompleteQuest("Journal", "act1katakumby2_1");
+
+	PlayMusic("04_puzzle_acid.ogg",false, 0.85f, 1.0f, 1, false);
+ 	AddTimer("",30,"amb_music");
+
+	StopSound("ScriptArea_3",2.0f); 
+	StopSound("ScriptArea_2",2.0f);
+	StopSound("antidote_corpse_1",2.0f);
+	 
 }
 }
 else {
@@ -186,6 +201,7 @@ AddLocalVarInt("open_gate",-1);
 SetMoveObjectState("castle_portcullis_1", 0.0f);
 }
 }
+
 void zmien_lever_1(string &in asEntity, int alState) {
 if((alState == 1)  )  {
 if(GetGlobalVarInt("szyfr") == 0) {
@@ -200,8 +216,7 @@ else  {
     SetLeverStuckState("Woda", 0, false);
     SetLeverStuckState("Ogien", 0, false);
     SetLeverStuckState("Wiatr", 0, false);
-    
-    
+       
 }
 
 

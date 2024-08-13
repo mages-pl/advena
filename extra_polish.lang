@@ -160,12 +160,10 @@
     <Entry Name="EPILOG_BAD_1_1"></Entry>
     <Entry Name="EPILOG_NEUTRAL_1_1"></Entry>
     <Entry Name="EPILOG_GOOD_1_1"></Entry>
-    <Entry Name="PROLOG_1_6">Muszę się stąd wydostać, dostać szansę, by zrozumieć istotę mojej amnezji.</Entry>
-    <Entry Name="PROLOG_1_5">Błagam Cię, litościwy Panie, nie osądzaj mnie pochopnie...</Entry>
-    <Entry Name="PROLOG_1_4">Czyżby nie było już odwrotu?</Entry>
-    <Entry Name="PROLOG_1_3">Cóżem złego uczynił, że dotknął mnie tak okrutny los?</Entry>
-    <Entry Name="PROLOG_1_2">Moje myśli kształtują obraz utraconej rodziny, przeszłości, której nie jestem w stanie już odzyskać.</Entry>
-    <Entry Name="PROLOG_1_1">Cholera, gdzie ja jestem?! - Kim lub czym jestem? - I Co ja tu właściwie robię? </Entry>
+    <Entry Name="PROLOG_1_4">Każdy krok jest teraz walką z niepewnością i strachem. Muszę iść naprzód, choćby po omacku. Nie wiem, dokąd prowadzi ta droga, ale wiem jedno – nie mogę tutaj zostać.</Entry>
+    <Entry Name="PROLOG_1_3">Czuję rosnący niepokój, który powoli przeradza się w czysty strach. Jestem tu sam. Sam w miejscu, które przypomina labirynt podziemnych korytarzy. Może to jakieś stare katakumby? Może lochy? Jedno jest pewne – muszę znaleźć drogę na powierzchnię. Ale czy ktoś mnie tu sprowadził z premedytacją? A jeśli tak, co planuje?</Entry>
+    <Entry Name="PROLOG_1_2">Podnoszę się powoli, czując każdy centymetr mojego ciała, które protestuje przy każdym ruchu. Zmuszam się do wstania. Wiem, że muszę znaleźć wyjście, ale gdzie ono jest? Jak się tu znalazłem?</Entry>
+    <Entry Name="PROLOG_1_1">Ahh... moja głowa... Czuje się... Czuje się, jakby wyrwany z głębokiego snu, ale zamiast w moim łóżku, znalazłem się w miejscu zupełnie obcym. Wszędzie wokół mnie panuje ciemność, tylko gdzieś w oddali migotała słaba poświata. Głowa cały czas pulsuje przeszywającym bólem. Muszę się stąd wydostać... dostać szansę... by zrozumieć skąd i jak tu trafiłem... </Entry>
     <Entry Name="DIA_1_Q1">Nie wyglądasz mi na kogoś kto z uśmiechem na ustach wbiłby miecz w me podbrzusze.[br]</Entry>
     <Entry Name="DIA_2_Q1">a więc mówisz, że udało Ci się pozbierać własne myśli?[br]</Entry>
     <Entry Name="DIA_3_Q1">Nie wiem czy mogł bym Ciebie prosić o przysługę, ale jeśli byś natknął się na coś do przegryzienia, jakiś chleb, czy bułka, może być nawet zczerstwiały - nie pogardzę. [br]</Entry>
