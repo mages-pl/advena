@@ -97,7 +97,7 @@
                 <File Id="13" Path="entities/container/wood_box03/wood_box03.ent" />
                 <File Id="14" Path="entities/critter/rat/rat.ent" />
                 <File Id="15" Path="entities/item/tinderbox/tinderbox.ent" />
-                <File Id="16" Path="entities/enemy/servant_grunt/servant_grunt.ent" />
+                <File Id="16" Path="entities/ptest/enemy_suitor/enemy_suitor.ent" />
                 <File Id="17" Path="entities/door/level_dungeon/level_dungeon.ent" />
                 <File Id="18" Path="entities/item/note_generic/note_generic.ent" />
                 <File Id="19" Path="entities/technical/block_box/block_box.ent" />
@@ -4863,7 +4863,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Entity Active="false" FileIndex="16" Group="0" ID="1908" Name="servant_grunt_1" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8.04501 0 16.75">
+                <Entity Active="false" FileIndex="16" Group="0" ID="1908" Name="enemy_suitor_1" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8.04501 0 16.75">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />

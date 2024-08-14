@@ -4,5 +4,5 @@
       <Sound File="PROLOG_1_2.ogg" />
    	</Main>
    </SOUNDS>
-   <PROPERTIES Volume="5" MinDistance="1" MaxDistance="50" Random="0" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="false" Blockable="False" BlockVolumeMul="0.7" Priority="5" />
+   <PROPERTIES Volume="9" MinDistance="1" MaxDistance="50" Random="0" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="false" Blockable="False" BlockVolumeMul="0.7" Priority="5" />
 </SOUNDENTITY>

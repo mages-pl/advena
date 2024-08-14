@@ -35,7 +35,7 @@
     <Entry Name="Powietrze">Powietrze</Entry>
   </CATEGORY>
   <CATEGORY Name="Credits">
-    <Entry Name="Napisy_koncowe">Amnesia - Advena[br][br][br]copyright(c) 2012 - 2014[br][br][br][br][br][br][br]Scenariusz[br]Michał Jendraszczyk	[br]Tomasz Wochna[br][br][br][br][br][br]Level Design[br]Tomasz Wochna[br][br][br][br][br]Skrypty[br]Michał Jendraszczyk[br][br][br][br][br][br]Muzyka &amp; Dźwięk[br]Tomasz Wochna[br][br][br][br][br]Concept Arts[br]Michał Jendraszczyk[br][br][br][br][br]Testy[br][br]Michał Jendraszczyk[br]Tomasz Wochna[br][br][br][br][br][br][br]Pozdrowienia dla wszystkich graczy, oraz wszelkie inne czynniki determinujące skończenie po 2 latach tej modyfikacji. </Entry>
+    <Entry Name="Napisy_koncowe">Amnesia - Advena[br][br][br]copyright(c) 2012 - 2024[br][br][br][br][br][br][br]Scenariusz[br]Michał Jendraszczyk	[br]Tomasz Wochna[br][br][br][br][br][br]Level Design[br]Tomasz Wochna[br][br][br][br][br]Skrypty[br]Michał Jendraszczyk[br][br][br][br][br][br]Muzyka &amp; Dźwięk[br]Tomasz Wochna[br][br][br][br][br]Concept Arts[br]Michał Jendraszczyk[br][br][br][br][br]Testy[br][br]Michał Jendraszczyk[br]Tomasz Wochna[br][br][br][br][br][br][br]Pozdrowienia dla wszystkich graczy, oraz wszelkie inne czynniki determinujące skończenie po 2 latach tej modyfikacji. </Entry>
   </CATEGORY>
   <CATEGORY Name="EASTER_EGG">
     <Entry Name="Runda_I">Runda I</Entry>
@@ -57,6 +57,8 @@
     <Entry Name="ItemName_key_office">Klucz do piwnicy</Entry>
   </CATEGORY>
   <CATEGORY Name="Journal">
+    <Entry Name="Quest_act1up_Name">Dobry Samarytanin</Entry>
+    <Entry Name="Quest_act1up_Text">Idąc więziennym korytarzem napotkałem jednego z osadzonych, który błagającym głosem poprosił mnie o to, aby przynieść mu coś do jedzenia. Piętro niżej znajduje się niewielki składzik więzienny i to właśnie tam powinienem rozpocząć poszukiwania prowiantu.</Entry>
     <Entry Name="Note_act2mechanizm_Name">Siłownik pneumatyczny</Entry>
     <Entry Name="Note_act2mechanizm_Text">Przechadzają pośród mrocznych czeluści, gdzieś wgłąb kanałów natrafiłem na potężny system sterujący siłownikami przy użyciu pneumatyki. Przyglądając się bliżej tej potwornej maszynie dostrzegłem jednak pewne ubytki konstrukcyjne. Część z zębatek przepadła, lub po prostu owe urządzenie nigdy nie zostało na tyle skończone aby w pełni móc z niego korzystać. Słysząc ciśnienie idące w rurach stwierdziłbym nieco śpieszno, że jedyny brakującym ogniwem do w pełni funkcjonalnego działania pozostają te zębatki. Może uda mi się gdzieś w pobliżu znaleźć coś co mogłoby posłużyć jako zamiennik. </Entry>
     <Entry Name="Note_act2ksiegaadvena_Name">Prace remontowe</Entry>
@@ -70,7 +72,7 @@
     <Entry Name="Quest_act1main_summon_Name">Magiczne sztuczki</Entry>
     <Entry Name="Quest_act1main_summon_Text">Aby dostać się do wodociągów potrzebowałbym wpierw znaleźć sposób na dostanie się w dół pomieszczeń jakie skrywają te kazamaty. Ryzykownym, ale jedynym wyjściem jest ucieczka do magii. Spróbuję, więc poeksperymentować na podstawie prastarych zapisek z księgi alchemicznej.</Entry>
     <Entry Name="Note_act1katakumby1_1_Name">Gorzkie wspomnienia</Entry>
-    <Entry Name="Note_act1katakumby1_1_Text">Kolejna burzowa noc na mym dziedzińcu i zarazem kolejna okazja na chwilę refleksji. Chociaż, nie sądzę, aby był na to dobry moment, kiedy to moją jakże krótką egzystencje przepełnia grom nieszczęść. Lada dzień a dane mi będzie gościć w mych progach moich najbliższych z okazji moich urodzin, lecz cóż to właściwie zmieni w moim życiu? - W jaki sposób ta chwila sztucznej euforii wywołanej jakby z poczucia konserwatywnych zasad miała wpłynąć na ucieczkę od przeszłości. Minęła już dobre ćwierćwiecza odkąd to się stało – a cały czas mam ten obraz uchodzących wspomnień niczym miałoby to miejsce ledwie wczoraj. Każdej nocy sen przerywa mi koszmar widoku brutalnie gwałconej żony, która z poderżniętymi ścięgnami stóp świadomie czekała na swój koniec. Nie próbowała nawet stawiać oporu, widząc porozrzucane po komnacie wykrwawione już zwłoki ledwie kilku letnich dzieci. A ja... - Ja nie mogłem zrobić z tym nic. Kompletnie nic. Czemu więc kiedy mnie zobaczył popełnił samobójstwo? Zemsta? – Zazdrość? – Czymże oni wadzili i komu, za co zasługiwaliby na taki koniec? - Nie wiem...   I prawdopodobnie nigdy się już nie dowiem. Nie miałem okazji nawet wymierzyć sprawiedliwości, która ku głębszemu zastanowieniu nie byłaby nawet w najmniejszym stopniu miarodajna w stosunku do tego, co dotknęło mnie... Gdzie w jednej chwili straciłem całe życie...</Entry>
+    <Entry Name="Note_act1katakumby1_1_Text">Zawsze zaczynałem od starannego planowania. Każdy szczegół musiał być dopracowany, by nikt nie wpadł na mój ślad. Kiedy wszystko było gotowe, działałem szybko i bez wahania. Zwłoki musiały być starannie oczyszczone, by nie pozostawić żadnych śladów. Wybrałem katakumby, bo to miejsce wydawało się odpowiednie – labirynty korytarzy, ciemność, spokój. Tam, głęboko pod ziemią, umieszczałem ciała. Każde z nich miało swoje miejsce, starannie przemyślane. Z czasem stało się to jak rytuał – ułożenie, przykrycie, zabezpieczenie. Wiedziałem, że nikt ich tam nie znajdzie. Katakumby stały się moim sekretnym cmentarzyskiem..</Entry>
     <Entry Name="Quest_act1katakumby22_Name">Tajemnica run</Entry>
     <Entry Name="Quest_act1katakumby22_Text">Piętro niżej idąc wolnym krokiem korytarzem uchodzącym do ogromnej,  okalanej z całej swej okazałości mrokiem komnaty, ujrzałem tajemniczy mechanizm emanujący magią żywiołaków. Wygląda mi to na jakiś szyfr, jakby zagadkę. Powinienem dokładniej rozejrzeć się wokół w poszukiwaniu wskazówek, które w jakiś sposób pomogłyby złamać mi to zaklęcie.</Entry>
     <Entry Name="Quest_act1katakumby2_1_Name">Siła ciężkości</Entry>
@@ -118,7 +120,7 @@
     <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Issac'a (30 pazdziernika 1878r.) </Entry>
     <Entry Name="Note_tasjen_note_test_Text">Przemierzając przesączone stęchlizną kanały sądziłem, że znajdę coś co doprowadzi mnie do posiadłości Issac'a. [br][br]Zamiast tego trafiłem do jakiejś dalszej części odpływu kanałowego. [br][br]Zaraz... te ściany przede mną wydają się być głuche. [br]Może to jest właśnie to co stoi mi na drodze.</Entry>
     <Entry Name="Quest_act1main2_Name">"Ślepy zaułek"</Entry>
-    <Entry Name="Quest_act1main2_Text">Schodząc w dół z ledwie dającą jasnego płomienia latarnią spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
+    <Entry Name="Quest_act1main2_Text">Schodząc w dół spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
     <Entry Name="Quest_act1main3_Name"></Entry>
     <Entry Name="Quest_act1main3_Text">W końcu mym oczom ukazało się światełko cichej nadzieji. Ten korytarz wygląda sprawia równie antypatyczne wrażenie -  jak pozostałość z komnat. No cóż, imo wydaje się to jedyną drogą - tak więc nie pozostaje mi nic innego jak się tam udać.</Entry>
     <Entry Name="Quest_act3_q1_Name">Podisiadłość Issac'a[br]</Entry>
@@ -163,18 +165,23 @@
     <Entry Name="EPILOG_BAD_1_1"></Entry>
     <Entry Name="EPILOG_NEUTRAL_1_1"></Entry>
     <Entry Name="EPILOG_GOOD_1_1"></Entry>
-     <Entry Name="ACT1_KATAKUMBY2_3">To miejsce wygląda na jakąś zapomnianą niszę... Powinienem się tu dokładniej rozejrzeć... Być może znajduje się tuż obok sąsiednia komnata...</Entry>
-    <Entry Name="ACT1_KATAKUMBY2_2">Wygląda na to, że z dolnej kondygnacji czuć dobiegający świst powietrza... Muszę znaleźć sposób, aby otworzyć tę cholerną bramę...</Entry>
-    <Entry Name="ACT1_KATAKUMBY2_1">Ugh, co za smród... </Entry>
+    <Entry Name="ACT1MAIN_2">Te ściany miałby być okazję świadkiem niezliczonych cierpień nieszczęśników, których poddawano tu pseudoeksprymentom medycznym </Entry>
+    <Entry Name="ACT1MAIN_1">Ten orientalny posążek z bliskiego wschodu na piedestale wygląda jak by nie trafił tu przypsadkiem...</Entry>
+     <Entry Name="ACT1_KATAKUMBY2_2">To miejsce wygląda na jakąś zapomnianą niszę... Powinienem się tu dokładniej rozejrzeć... Być może znajduje się tuż obok sąsiednia komnata...</Entry>
+    <Entry Name="ACT1_KATAKUMBY2_1">Z dolnej kondygnacji czuć dobiegający świst powietrza... Muszę znaleźć sposób, aby otworzyć tę cholerną bramę...</Entry>
     <Entry Name="ACT1_KATAKUMBY_1">Wygląda mi to na stare, zapomniane miejsce, którego nie dotknęło światło dzienne od wieków... Muszę się mieć na baczności...</Entry>
-    <Entry Name="PROLOG_1_4">Każdy krok jest teraz walką z niepewnością i strachem. Muszę iść naprzód, choćby po omacku. Nie wiem, dokąd prowadzi ta droga, ale wiem jedno – nie mogę tutaj zostać.</Entry>
-    <Entry Name="PROLOG_1_3">Czuję rosnący niepokój, który powoli przeradza się w czysty strach. Jestem tu sam. Sam w miejscu, które przypomina labirynt podziemnych korytarzy. Może to jakieś stare katakumby? Może lochy? Jedno jest pewne – muszę znaleźć drogę na powierzchnię. Ale czy ktoś mnie tu sprowadził z premedytacją? A jeśli tak, co planuje?</Entry>
-    <Entry Name="PROLOG_1_2">Podnoszę się powoli, czując każdy centymetr mojego ciała, które protestuje przy każdym ruchu. Zmuszam się do wstania. Wiem, że muszę znaleźć wyjście, ale gdzie ono jest? Jak się tu znalazłem?</Entry>
-    <Entry Name="PROLOG_1_1">Ahh... moja głowa... Czuje się, jakby wyrwany z głębokiego snu, ale zamiast w moim łóżku, znalazłem się w miejscu dla mnie zupełnie obcym. Wszędzie wokół mnie panuje ciemność, tylko gdzieś w oddali migotała słaba poświata. Głowa cały czas pulsuje przeszywającym bólem. Muszę się stąd wydostać... </Entry>
-    <Entry Name="DIA_1_Q1">Nie wyglądasz mi na kogoś kto z uśmiechem na ustach wbiłby miecz w me podbrzusze.[br]</Entry>
-    <Entry Name="DIA_2_Q1">a więc mówisz, że udało Ci się pozbierać własne myśli?[br]</Entry>
-    <Entry Name="DIA_3_Q1">Nie wiem czy mogł bym Ciebie prosić o przysługę, ale jeśli byś natknął się na coś do przegryzienia, jakiś chleb, czy bułka, może być nawet zczerstwiały - nie pogardzę. [br]</Entry>
-    <Entry Name="DIA_4_Q1">Przetrwałem długo więc chyba jeszcze dam radę. Idź już. Nie chcę zawracać Ci głowy.[br]</Entry>
+    <Entry Name="PROLOG_1_8">Nie mam zamiaru uciekać. Stawię czoła każdemu z was, ale wiedzcie jedno – prawda zawsze wyjdzie na jaw. A wtedy zobaczymy, kto naprawdę był winny.</Entry>
+    <Entry Name="PROLOG_1_7">Nie ma już dla ciebie ucieczki!</Entry>
+    <Entry Name="PROLOG_1_6">Przestań kłamać! Widzieliśmy, co zrobiłeś!</Entry>
+    <Entry Name="PROLOG_1_5">Wszystko to, co mówicie... to kłamstwa.  Wyciągnęliście pochopne wnioski, bez dowodów, bez zrozumienia.</Entry>
+    <Entry Name="PROLOG_1_4">Jesteś kłamcą i oszustem! Zapłacisz za to wszystko!</Entry>
+    <Entry Name="PROLOG_1_3">Złodziej! Ukradłeś nasze pieniądze i zaufanie!</Entry>
+    <Entry Name="PROLOG_1_2">Oszukałeś nas wszystkich!</Entry>
+    <Entry Name="PROLOG_1_1">Jesteś Morderca! Zabiłeś ich bez wahania!</Entry>
+    <Entry Name="DIA_1_Q1">Pomóz mi... [br]</Entry>
+    <Entry Name="DIA_2_Q1">To Ty... Nie sądziłem, że jeszcze kiedykolwiek cię zobaczę... ...ale los bywa przewrotny, prawda? To przez ciebie jestem tutaj...  ...wszystko mi zabrałeś, wolność, godność... A teraz i życie zbliża się do końca...[br]</Entry>
+    <Entry Name="DIA_3_Q1">Wiem, że nie powinienem prosić... że nie mam prawa, ale...  ...błagam daj konającemu choć kawałek chleba. Nie proszę o litość, tylko o chwilę więcej, o moment, który pozwoli mi jeszcze raz poczuć smak… czegokolwiek. [br]</Entry>
+    <Entry Name="DIA_4_Q1">Jeśli masz w sobie choć odrobinę człowieczeństwa... proszę... tylko kromkę chleba...[br]</Entry>
     <Entry Name="DIA_5_Q1">Dzięki Ci mój Panie, proszę, weź ten oto kamień. Nie pytaj co to takiego. Gwarantuję Ci że będziesz miał okazję go wykorzystać.</Entry>
   </CATEGORY>
 </LANGUAGE>

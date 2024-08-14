@@ -507,7 +507,11 @@ AddQuest("act1main_summon","act1main_summon");
    for(int z=1;z<=3;z++) {
    AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_"+z, 0, "");
    }
+   AddTimer("dialogue_2", 10, "dialogue_2");
 } 
+void dialogue_2() {
+  AddEffectVoice("ACT1MAIN_2", "", "Dialogue", "ACT1MAIN_2",false, "Player", 0.0f, 10.0f);
+}
 //###### open the door with the needle #################
 void igla_open(string &in asItem, string &in asEntity) {
 SetSwingDoorDisableAutoClose("castle_arched01_2", true);
@@ -687,6 +691,7 @@ void ScriptArea_5(string &in asParent, string &in asChild, int alState) {
 	SetEntityActive("ScriptArea_3",true);
 	 CheckPoint ("Checkpoint_libray", "PlayerStartArea_2", "", "", "");	 
 	AddQuest("act1main2","act1main2");
+  AddEffectVoice("ACT1MAIN_1", "", "Dialogue", "ACT1MAIN_1",false, "Player", 0.0f, 10.0f);
 	}
 //######### Steep on the shelf ########################################
 void ScriptArea_6(string &in asParent, string &in asChild, int alState) {

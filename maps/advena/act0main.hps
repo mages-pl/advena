@@ -1,4 +1,11 @@
- 
+/**
+Nagarnia z https://elevenlabs.io/
+PRISON: (person1) VOICE: CALLUM
+PLAYER: (name: ISSAC) VOICE: CHRIS
+LURKER: (person2) VOICE: WILL
+DEADMAN: (person3) VOICE: DANIEL
+**/
+
 void OnStart() {
     SetSanityDrainDisabled(true);
 	FadeSepiaColorTo(0.75f, 1.0f);
@@ -12,9 +19,26 @@ void OnStart() {
 	SetPlayerLookSpeedMul(0.2f);
 	SetPlayerActive(true);
  	SetPlayerLampOil(0.0f);
-	PlayMusic("01RustedCage.ogg",false, 0.5,0.7,1,false);
+	PlayMusic("01RustedCage.ogg",false, 0.5,0.7,1,true);
 }
 
+void EndProlog(string &in asTimer) { 
+
+	RemoveTimer("walking");
+	RemoveTimer("automove");
+	FadeImageTrailTo(0.0f, 1.0f);
+	FadeSepiaColorTo(0.0f, 1.0f);
+	FadeRadialBlurTo(0.0f, 1.0f);
+	StopPlayerLookAt();
+	SetPlayerJumpDisabled(false);
+	SetPlayerCrouchDisabled(false);
+	SetInventoryDisabled(false);
+	SetPlayerActive(true);
+	ChangeMap("act1katakumby.map", "Z_act0main", "","");
+	SetPlayerMoveSpeedMul(1.0f);
+	SetPlayerRunSpeedMul(1.0f);
+	SetPlayerLookSpeedMul(1.0f);
+}
 void START_INTRO(string &in asParent, string &in asChild, int alState)
 {
 	FadeOut(0);
@@ -26,27 +50,34 @@ void Start_Game(string &in asTimer) {
 	FadeIn(0.5f);
 	/**
 	nagarnia z https://elevenlabs.io/
-	Lektor Damian PL
-	NOWA WERSJA: CALLUM
+	PRISON: (person1) VOICE: CALLUM
+	PLAYER: (name: ISSAC) VOICE: BRIAN
+	LURKER: (person2) VOICE: WILL
+	DEADMAN: (person3) VOICE: DANIEL
 	**/
 
-	/**
-	asVoiceFile - the voice to play
-	asEffectFile - the effect to play
-	asTextCat - the category in the .lang file
-	asTextEntry - the text entry in the .lang file
-	abUsePosition - plays using 3D from the entity, or without 3D
-	asPosEntity - the entity at which the effect appears
-	afMinDistance - minimum distance to see the effect
-	afMaxDistance - maximum distance to see the effect
-	*/
+	// Jesteś Morderca! Zabiłeś ich bez wahania! (DANIEL)
+	// Oszukałeś nas wszystkich! (WILL)
+	// Złodziej! Ukradłeś nasze pieniądze i zaufanie! (CALLUM)
+	// Jesteś kłamcą i oszustem! Zapłacisz za to wszystko! (WILL)
 
-	AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",false, "Player", 0.0f, 5.0f);
-	// AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 10.0f);
-	// AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 10.0f);
-	// AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 10.0f);
-	//AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",true, "Player", 0.0f, 10.0f);
-	//AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_6",true, "Player", 0.0f, 10.0f);
+	// Wszystko to, co mówicie... to kłamstwa.  Wyciągnęliście pochopne wnioski, bez dowodów, bez zrozumienia. (CHRIS)
+
+	// Przestań kłamać! Widzieliśmy, co zrobiłeś! (WILL)
+	// Nie ma już dla ciebie ucieczki! (CALLUM)
+
+	// Główny bohater (zdeterminowany, z narastającą frustracją):
+	// Nie mam zamiaru uciekać. Stawię czoła każdemu z was, ale wiedzcie jedno – prawda zawsze wyjdzie na jaw. A wtedy zobaczymy, kto naprawdę był winny. (CHRIS)
+
+	AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",false, "Player", 0.0f, 10.0f);
+	AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 15.0f);
+	AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 20.0f);
+	AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 25.0f);
+	AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",false, "Player", 0.0f, 30.0f);
+	AddEffectVoice("PROLOG_1_6", "", "Dialogue", "PROLOG_1_6",false, "Player", 0.0f, 35.0f);
+	AddEffectVoice("PROLOG_1_7", "", "Dialogue", "PROLOG_1_7",false, "Player", 0.0f, 45.0f);
+	AddEffectVoice("PROLOG_1_8", "", "Dialogue", "PROLOG_1_8",false, "Player", 0.0f, 55.0f);
+	AddTimer("EndProlog",15,"EndProlog");
 }
 void Idz() {
 	SetPlayerJumpDisabled(true);
@@ -54,8 +85,8 @@ void Idz() {
 	SetInventoryDisabled(true);
 	StartPlayerLookAt("ScriptArea_4", 4, 4, "");
 	AddTimer("1", 0.5f, "StartWalking");
-	AddTimer("",40.0f,"FadeWalking");
-	AddTimer("", 55.0f, "EndWalking");
+	AddTimer("",15.0f,"FadeWalking");
+	AddTimer("", 35.0f, "EndWalking");
 }
 
 void StartWalking(string &in asTimer) {

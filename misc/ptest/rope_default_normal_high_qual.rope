@@ -1,0 +1,13 @@
+<Rope
+	SegmentLength="0.1"
+	Damping="0.001" 
+	Strength="200"
+	Stiffness="3"
+	Material="textures/ropes/default.mat"
+	Radius="0.025"
+	LengthTileAmount="1"
+	LengthTileSize="0.5"
+	Sound = ""
+	SoundStartSpeed="0.49"
+	SoundStopSpeed="0.45"
+/>

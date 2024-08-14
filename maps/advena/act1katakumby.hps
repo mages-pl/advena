@@ -12,6 +12,7 @@ void make_dialogue1(string &in asTimer) {
 void OnEnter() {
 
       // Wygląda mi to na stare, zapomniane miejsce, którego nie dotknęło światło dzienne od wieków... Muszę się mieć na baczności...
+      PlayMusic("02Catacombs.ogg", true, 0.85f, 1.0f, 1, true);
       AddTimer("",10,"make_dialogue1");
 
       AddLocalVarInt("losuj_czy_duch",RandInt(1,2));
@@ -57,13 +58,13 @@ void GruntPojawienie(string &in asParent, string &in asChild, int alState)  {
     
        if(GetLocalVarInt("losuj_czy_duch") == 1) {
             PlayGuiSound("react_pant.snt",1);
-            SetEntityActive("servant_grunt_1", true);
-            for(int d=1;d<=30;d++) {      AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_"+d, 0, ""); }  
+            SetEntityActive("enemy_suitor_1", true);
+            for(int d=5;d>=1;d--) {      AddEnemyPatrolNode("enemy_suitor_1", "PathNodeArea_"+d, 0, ""); }  
 
        } else {
             PlayGuiSound("react_pant.snt",1);
-            SetEntityActive("servant_grunt_2", true);
-            for(int d=1;d<=30;d++) {      AddEnemyPatrolNode("servant_grunt_2", "PathNodeArea_"+d, 0, ""); }  
+            SetEntityActive("enemy_suitor_2", true);
+            for(int d=5;d>=1;d--) {      AddEnemyPatrolNode("enemy_suitor_2", "PathNodeArea_"+d, 0, ""); }  
 
        }
 

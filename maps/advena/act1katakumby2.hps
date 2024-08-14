@@ -12,13 +12,12 @@ void strach1(string &in asParent, string &in asChild, int alState) {
 void strach2(string &in asParent, string &in asChild, int alState) {
 	GiveSanityDamage(5,false);
 	PlayGuiSound("react_pant.snt",1);
-	PlaySoundAtEntity("scare2", "advena_23_saw1.ogg", "strach2", 0, false); 
+	PlaySoundAtEntity("scare2", "advena_23_saw1.ogg", "strach2", 0, true); 
 }
 void strach3(string &in asParent, string &in asChild, int alState) {
 	GiveSanityDamage(10,false);
 	AddQuest("Journal", "act1katakumby2_1");
-	
-	AddEffectVoice("ACT1_KATAKUMBY2_2", "", "Dialogue", "ACT1_KATAKUMBY2_2",false, "Player", 0.0f, 5.0f);
+
 
 	PlayGuiSound("react_breath.snt",1);
 	PlaySoundAtEntity("scare3", "05_event_bottles.snt", "strach3", 0, false); 
@@ -37,7 +36,7 @@ void quest_2_active(string &in asTimer) {
 	RemoveTimer(asTimer);
 	AddQuest("Journal", "act1katakumby22");
 
-	AddEffectVoice("ACT1_KATAKUMBY2_3", "", "Dialogue", "ACT1_KATAKUMBY2_3",false, "Player", 0.0f, 5.0f);
+	AddEffectVoice("ACT1_KATAKUMBY2_2", "", "Dialogue", "ACT1_KATAKUMBY2_2",false, "Player", 0.0f, 5.0f);
 }
 void dotyk_ksiegi(string &in asEntity) {
 	if(GetGlobalVarInt("szyfr") == 4) {
@@ -373,7 +372,7 @@ void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
 	GiveSanityDamage(10,false);
  
  	if(GetLocalVarInt("saw_scare") == 0) {
-		PlaySoundAtEntity("antidote_corpse_1_sound", "advena_23_saw_voice3.ogg", "antidote_corpse_1", 0, false);
+		PlaySoundAtEntity("antidote_corpse_1_sound", "advena_23_saw_voice3.ogg", "antidote_corpse_1", 0, true);
 		SetLocalVarInt("saw_scare",1);
 		AddTimer("stop_ScriptArea_1",10,"stop_ScriptArea_1");
 	}
@@ -384,7 +383,7 @@ void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 
  	if(GetLocalVarInt("saw_scare") == 1) {
-		PlaySoundAtEntity("ScriptArea_3_sound", "advena_23_saw2.ogg", "ScriptArea_3", 0, false);
+		PlaySoundAtEntity("ScriptArea_3_sound", "advena_23_saw2.ogg", "ScriptArea_3", 0, true);
 		SetLocalVarInt("saw_scare",2);
 		AddTimer("stop_ScriptArea_1",10,"stop_ScriptArea_1");
 	}
@@ -395,7 +394,7 @@ void ScriptArea_3(string &in asParent, string &in asChild, int alState) {
 
  
  	if(GetLocalVarInt("saw_scare") == 2) {
-		PlaySoundAtEntity("ScriptArea_2_sound", "advena_23_saw3.ogg", "ScriptArea_2", 0, false);
+		PlaySoundAtEntity("ScriptArea_2_sound", "advena_23_saw3.ogg", "ScriptArea_2", 0, true);
 		SetLocalVarInt("saw_scare",3);
 		AddTimer("stop_ScriptArea_3",10,"stop_ScriptArea_3");
 	}

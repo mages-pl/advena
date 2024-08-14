@@ -52,10 +52,11 @@ FadeOut(1);
 break; // przej�cie ekranu do czerni mo�na doda� efekt os�abienia
 case 2:
     SetEntityActive("enemy_suitor_1",true);
-ShowEnemyPlayerPosition("enemy_suitor_1"); 
-szybkosc = 1;
- TeleportPlayer("PlayerStartArea_2");
-  SetSwingDoorLocked("prison_silent_6", false, false);
+    //ShowEnemyPlayerPosition("enemy_suitor_1"); 
+    AddEnemyPatrolNode("enemy_suitor_1", "PlayerStartArea_2", 0, "");
+    szybkosc = 1;
+    TeleportPlayer("PlayerStartArea_2");
+    SetSwingDoorLocked("prison_silent_6", false, false);
   
     SetMoveObjectState("childsnake_floor_water_blood_advena_1", 1.0f);
     
@@ -122,15 +123,15 @@ void prisoner_closed_room(string &in asTimer) {
 }
 //############### ON ENTER #############3
 void OnEnter() {
-PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
-AutoSave();
+  PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
+  AutoSave();
 }
 //############ PODNIE� OLIWE ##############
 void oil_take_act1up(string &in asEntity, string &in type) {
   	GiveSanityDamage(15, true);
     CreateParticleSystemAtEntityExt( "", "ps_green_wind_breeze.ps", "ScriptArea_21", false, 0.7f, 0.8f, 0.8f, 0.7f, true, 0, 2, 100, 110);
- 	PlaySoundAtEntity("","scare_whine_loop4.ogg", "ScriptArea_21", 0, false);	
- 	AddTimer("",2,"StopLook_wind");
+ 	  PlaySoundAtEntity("","scare_whine_loop4.ogg", "ScriptArea_21", 0, false);	
+ 	  AddTimer("",2,"StopLook_wind");
 }
 void StopLook_wind(string &in asTimer) {
 	PlayGuiSound("react_pant2.ogg",1);		
@@ -150,79 +151,89 @@ void StopLook_wind(string &in asTimer) {
 //}
  
 void OnLeave() {
-StopMusic(1,1.0f);
+  StopMusic(1,1.0f);
 }
+
+// Prison (callum)
+// PL: Pomóz mi... 
+// EN: Help me...
+// PL:To Ty... Nie sądziłem, że jeszcze kiedykolwiek cię zobaczę… kaszle …ale los bywa przewrotny, prawda? To przez ciebie jestem tutaj…  …wszystko mi zabrałeś, wolność, godność... A teraz i życie zbliża się do końca...
+// EN: It's you... I didn't think I'd ever see you again... coughs... but fate can be fickle, right? It's because of you that I'm here... ...you took everything from me, my freedom, my dignity... And now my life is coming to an end...
+// PL:Wiem, że nie powinienem prosić… że nie mam prawa, ale…  ...błagam daj konającemu choć kawałek chleba. Nie proszę o litość, tylko o chwilę więcej, o moment, który pozwoli mi jeszcze raz poczuć smak… czegokolwiek.
+// EN: I know I shouldn't ask... that I have no right, but... ...I beg you, give the dying man at least a piece of bread. I'm not asking for mercy, just for a moment longer, for a moment that will allow me to taste once more... anything.
+// PL: Jeśli masz w sobie choć odrobinę człowieczeństwa… proszę… tylko kromkę chleba…
+// EN: If you have any humanity left in you… please… just a slice of bread…
 
 void ScriptArea_16(string &in asParent, string &in asChild, int alState) {
-if(GetLocalVarInt("wiezien_q1_q") == 0) {
-if(alState == 1) {
-AddEffectVoice("15_help", "", "Dialogue", "DIA_1_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
-AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "DIA_2_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
-AddEffectVoice("CH02L21_Agrippa_Strained_02", "", "Dialogue", "DIA_3_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+  if(GetLocalVarInt("wiezien_q1_q") == 0) {
+    if(alState == 1) {
+      AddEffectVoice("DIA_1_Q1", "", "Dialogue", "DIA_1_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_2_Q1", "", "Dialogue", "DIA_2_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_3_Q1", "", "Dialogue", "DIA_3_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
 
-AddTimer("wiezien_q",10,"wiezien_q_t");
-//SetEffectVoiceOverCallback("koniec_gadania_q1");
-}
-if(alState == -1) {
-RemoveTimer("wiezien_q");
-RemoveTimer("next_dialoge");
-AddEffectVoice("CH02L21_Agrippa_Strained_04", "", "Dialogue", "DIA_4_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
-}
-}
+      AddTimer("wiezien_q",10,"wiezien_q_t");
+      //SetEffectVoiceOverCallback("koniec_gadania_q1");
+    }
+    if(alState == -1) {
+      RemoveTimer("wiezien_q");
+      RemoveTimer("next_dialoge");
+      AddEffectVoice("DIA_4_Q1", "", "Dialogue", "DIA_4_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+    }
+  }
 }
 void wiezien_q_t(string &in asTimer) {
-AddTimer("quest_1_w",1,"quest_1_w_timer");
+  AddTimer("quest_1_w",1,"quest_1_w_timer");
 }
 void quest_1_w_timer(string &in asTimer) {
-AddQuest("wiezien_q_1", "wiezien_q_1");
-AddLocalVarInt("wiezien_q1_q",1);
-AddEntityCollideCallback("chlebek_*", "ScriptArea_15", "wiezien_najedzony", true, 1);
+  AddQuest("Journal", "act1up");
+  AddLocalVarInt("wiezien_q1_q",1);
+  AddEntityCollideCallback("chlebek_*", "ScriptArea_15", "wiezien_najedzony", true, 1);
 
 //zmienić instancje w mapie
 }
 void wiezien_najedzony(string &in asParent, string &in asChild, int alState) {
  FadeOut(3);
- AddEffectVoice("CH02L21_Agrippa_Strained_03", "", "Dialogue", "DIA_5_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+ AddEffectVoice("DIA_5_Q1", "", "Dialogue", "DIA_5_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
  
  AddTimer("",6,"end_fade_wiezien_q1");
 }
 void end_fade_wiezien_q1(string &in asTimer) {
 FadeIn(3);
-CompleteQuest("wiezien_q_1", "wiezien_q_1");
-StopMusic(2,1.0f);
+  CompleteQuest("Journal", "act1up");
+  StopMusic(2,1.0f);
  AddTimer("",1,"play_music_wiezien_q1"); // 
 }
 void play_music_wiezien_q1(string &in asTimer) {
-SetEntityActive("orbpiece_obsidian_1",true);
- AddPropImpulse("orbpiece_obsidian_1", 0, 0, 1, "World");
-AddPlayerSanity(35);
+  SetEntityActive("orbpiece_obsidian_1",true);
+  AddPropImpulse("orbpiece_obsidian_1", 0, 0, 1, "World");
+  AddPlayerSanity(35);
   PlayMusic("12_puzzle_cavein.ogg", false, 0.7, 0.1, 10, false);
   SetEntityActive("chlebek1",false);
   AddTimer("",30,"play_ambient_music"); // 30
   AddGlobalVarInt("wiezien_chleb_result",1);
 }
 void play_ambient_music(string &in asTimer) {
-StopMusic(2,1.0f);
-PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
+  StopMusic(2,1.0f);
+  PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
 }
 
 void ScriptArea_18(string &in asParent, string &in asChild, int alState) {
-AddTimer("robaki",1,"pokaz_robaki");
+  AddTimer("robaki",1,"pokaz_robaki");
 }
 void pokaz_robaki(string &in asTimer) {
-for(int y=1;y<=9;y++) {
-SetPropActiveAndFade("cockroach_"+y,true,0.5f);
-}
-StopMusic(2,1.0f);
- PlayMusic("01_event_critters.ogg", false, 0.7, 0.1, 10, false);
-GiveSanityDamage(10,false);
-AddTimer("",10,"end_critters");
+  for(int y=1;y<=9;y++) {
+    SetPropActiveAndFade("cockroach_"+y,true,0.5f);
+  }
+  StopMusic(2,1.0f);
+  PlayMusic("01_event_critters.ogg", false, 0.7, 0.1, 10, false);
+  GiveSanityDamage(10,false);
+  AddTimer("",10,"end_critters");
 }  
 void end_critters(string &in asTimer) {
-StopMusic(2,1.0f);
-PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
+  StopMusic(2,1.0f);
+  PlayMusic("23_amb.ogg",true, 0.85,1.0,1,true);
 }
 void ScriptArea_7(string &in asParent, string &in asChild, int alState) {
-PlaySoundAtEntity("","insanity_babe_cry.snt", "ScriptArea_10", 0, false);
+  PlaySoundAtEntity("","insanity_babe_cry.snt", "ScriptArea_10", 0, false);
 }
 

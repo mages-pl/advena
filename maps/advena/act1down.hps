@@ -24,19 +24,19 @@ void ScriptArea_3(string &in asParent, string &in asChild, int alState) {
 
 }
 void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
-PlaySoundAtEntity("15_prisoner", "15_prisoner"+RandInt(1,5), "ScriptArea_2", 0, false);
-PlaySoundAtEntity("wind", "scare_wind_reverse", "ScriptArea_2", 0, false);
-AddPropImpulse("castle_arched01_2", 0, 0, -1, "World");
-AddTimer("",1,"react_1");
-CreateParticleSystemAtEntity("wind","ps_dust_impact_vert.ps" ,"ScriptArea_8", false);
+    PlaySoundAtEntity("15_prisoner", "15_prisoner"+RandInt(1,5), "ScriptArea_2", 0, false);
+    PlaySoundAtEntity("wind", "scare_wind_reverse", "ScriptArea_2", 0, false);
+    AddPropImpulse("castle_arched01_2", 0, 0, -1, "World");
+    AddTimer("",1,"react_1");
+    CreateParticleSystemAtEntity("wind","ps_dust_impact_vert.ps" ,"ScriptArea_8", false);
 }
 void react_1(string &in asTimer) { 
 	PlayGuiSound("react_scare1.ogg",1);
 	GiveSanityDamage(5, true);
 }
 void OnEnter() { 
-     AutoSave();
-PlayMusic("25_amb.ogg", true, 0.5, 1.0, 1, true);
+    AutoSave();
+    PlayMusic("25_amb.ogg", true, 0.5, 1.0, 1, true);
 }
 void OnLeave() { 
 }
