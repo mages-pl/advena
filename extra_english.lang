@@ -3,11 +3,14 @@
     <Directory Path="fonts/eng"/>
     <Directory Path="lang/eng"/>
   </RESOURCES>
+  <CATEGORY Name="CustomStoryMain">
+    <Entry Name="Description">Amnesia - Advena to modyfikacja do gry Amnesia: The Dark Descent, która opowiada historię Issaca, bohatera, który na łożu śmierci przeżywa serię koszmarów, będących odzwierciedleniem jego trudnego życia. Gracz wciela się w Issaca, który musi stawić czoła własnym demonom, przemierzając mroczne i niepokojące miejsca pełne zagadek oraz niebezpieczeństw. Modyfikacja kładzie nacisk na narrację, klimat oraz psychologiczne aspekty horroru, tworząc głęboką i przerażającą podróż przez umysł człowieka dręczonego przez własną przeszłość.</Entry>
+  </CATEGORY>
   <CATEGORY Name="Act1">
     <Entry Name="Error_Przelacznik">Mechanizm ten wygląda na popsuty</Entry>
     <Entry Name="Przelacznik_Info">Wygląda mi to na jakiś mechnizm przełączająćy.</Entry>
   </CATEGORY>
-    <CATEGORY Name="Death_Category">
+  <CATEGORY Name="Death_Category">
         <Entry Name="Act1BruningDeath">Pożar pochłonął Twoją duszę</Entry>
           <Entry Name="Act1ToAct2Smoke">Trujący gaz pozbawił Cię życia</Entry>
              <Entry Name="Act1ToAct2Water">Zginąłeś w mrocznych czeluściach</Entry>
@@ -112,15 +115,15 @@
     <Entry Name="Note_tasjen_note_test_2_Text">Moja ciekawość bywa zwodna. I tym razem nie było wyjątku.  [br][br]Od kilku godzin stoję w jakiejś skrytce wypełnionej po kolana wody  szukając bezradnie wyjścia. Wydaje się być to jakaś skrytka na dokumenty. Chyba powinienem przejrzeć dokładnie leżące tutaj zwoje.[br][br] </Entry>
     <Entry Name="Note_tasjen_note_test_3_Name">Kieszonkowa zguba (2 listopada 1878r.)</Entry>
     <Entry Name="Note_tasjen_note_test_3_Text">Te drzwi prowadzace na górę wygladaja na zamknięte od zewnątrz. Najwyraźniej właściciel tej posiadłości nie zbyt  był lubieć w swoim gabinecie nieproszonych gości.[br][br] Jego przebiegłość mnie coraz bardziej zaskakuje. Muszę w końcu zacząć myśleć logicznie. To jedyny 'klucz' do sukcesu.[br][br]Nie wydaje się być tutaj zbyt wiele kryjówek tę "maleństwo".</Entry>
-    <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Rotterdama (30 pazdziernika 1878r.) </Entry>
-    <Entry Name="Note_tasjen_note_test_Text">Przemierzając przesączone stęchlizną kanały sądziłem, że znajdę coś co doprowadzi mnie do posiadłości Rotterdama. [br][br]Zamiast tego trafiłem do jakiejś dalszej części odpływu kanałowego. [br][br]Zaraz... te ściany przede mną wydają się być głuche. [br]Może to jest właśnie to co stoi mi na drodze.</Entry>
+    <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Issac'a (30 pazdziernika 1878r.) </Entry>
+    <Entry Name="Note_tasjen_note_test_Text">Przemierzając przesączone stęchlizną kanały sądziłem, że znajdę coś co doprowadzi mnie do posiadłości Issac'a. [br][br]Zamiast tego trafiłem do jakiejś dalszej części odpływu kanałowego. [br][br]Zaraz... te ściany przede mną wydają się być głuche. [br]Może to jest właśnie to co stoi mi na drodze.</Entry>
     <Entry Name="Quest_act1main2_Name">"Ślepy zaułek"</Entry>
     <Entry Name="Quest_act1main2_Text">Schodząc w dół z ledwie dającą jasnego płomienia latarnią spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
     <Entry Name="Quest_act1main3_Name"></Entry>
     <Entry Name="Quest_act1main3_Text">W końcu mym oczom ukazało się światełko cichej nadzieji. Ten korytarz wygląda sprawia równie antypatyczne wrażenie -  jak pozostałość z komnat. No cóż, imo wydaje się to jedyną drogą - tak więc nie pozostaje mi nic innego jak się tam udać.</Entry>
-    <Entry Name="Quest_act3_q1_Name">Podisiadłość Rotterdama[br]</Entry>
-    <Entry Name="Quest_act3_q1_Text">Muszę znaleźć przejście do posiadłości Rotterdama. Te kanały wedlug moich analiz odprowadzają część ścieków z jego domu. [br][br]Muszę być wyczulony na nawet najdrobniejsze szczegóły.</Entry>
-    <Entry Name="Quest_act3_q2_Name">Znajdź biuro Rotterdama</Entry>
+    <Entry Name="Quest_act3_q1_Name">Podisiadłość Issac'a[br]</Entry>
+    <Entry Name="Quest_act3_q1_Text">Muszę znaleźć przejście do posiadłości Issac'a. Te kanały wedlug moich analiz odprowadzają część ścieków z jego domu. [br][br]Muszę być wyczulony na nawet najdrobniejsze szczegóły.</Entry>
+    <Entry Name="Quest_act3_q2_Name">Znajdź biuro Issac'a</Entry>
     <Entry Name="Quest_act3_q2_Text">Rotterdam wiekszosc swojego czasu poswiecal na swoich pracach naukowych. Stad tez byc moze jego biuro moze okazac sie miejscem, gdzie uzyskam wiecej informacji na temat projektu X78, w wyniku ktorego jestem tutaj jako... lagodnie mowiac 'ludzki defekt'.</Entry>
     <Entry Name="Quest_act4resident1_Name">Kieszonkowa zguba</Entry>
     <Entry Name="Quest_act4resident1_Text">Te drzwi prowadzace na dół wygladaja na zamknięte od zewnątrz. Jak widać Issac potrafił skutecznie uniemożliwić dostęp do każdego miejsca na jego posiadłości.[br][br]Jednak, skoro zamek zamknięty jest od zewnątrz to klucz jest gdzieś tutaj. Powinienem dokładniej się rozejrzeć. Może trafię na jakieś wskazówki.[br]</Entry>
@@ -160,14 +163,18 @@
     <Entry Name="EPILOG_BAD_1_1"></Entry>
     <Entry Name="EPILOG_NEUTRAL_1_1"></Entry>
     <Entry Name="EPILOG_GOOD_1_1"></Entry>
+     <Entry Name="ACT1_KATAKUMBY2_3">To miejsce wygląda na jakąś zapomnianą niszę... Powinienem się tu dokładniej rozejrzeć... Być może znajduje się tuż obok sąsiednia komnata...</Entry>
+    <Entry Name="ACT1_KATAKUMBY2_2">Wygląda na to, że z dolnej kondygnacji czuć dobiegający świst powietrza... Muszę znaleźć sposób, aby otworzyć tę cholerną bramę...</Entry>
+    <Entry Name="ACT1_KATAKUMBY2_1">Ugh, co za smród... </Entry>
+    <Entry Name="ACT1_KATAKUMBY_1">Wygląda mi to na stare, zapomniane miejsce, którego nie dotknęło światło dzienne od wieków... Muszę się mieć na baczności...</Entry>
     <Entry Name="PROLOG_1_4">Każdy krok jest teraz walką z niepewnością i strachem. Muszę iść naprzód, choćby po omacku. Nie wiem, dokąd prowadzi ta droga, ale wiem jedno – nie mogę tutaj zostać.</Entry>
     <Entry Name="PROLOG_1_3">Czuję rosnący niepokój, który powoli przeradza się w czysty strach. Jestem tu sam. Sam w miejscu, które przypomina labirynt podziemnych korytarzy. Może to jakieś stare katakumby? Może lochy? Jedno jest pewne – muszę znaleźć drogę na powierzchnię. Ale czy ktoś mnie tu sprowadził z premedytacją? A jeśli tak, co planuje?</Entry>
     <Entry Name="PROLOG_1_2">Podnoszę się powoli, czując każdy centymetr mojego ciała, które protestuje przy każdym ruchu. Zmuszam się do wstania. Wiem, że muszę znaleźć wyjście, ale gdzie ono jest? Jak się tu znalazłem?</Entry>
-    <Entry Name="PROLOG_1_1">Ahh... moja głowa... Czuje się... Czuje się, jakby wyrwany z głębokiego snu, ale zamiast w moim łóżku, znalazłem się w miejscu zupełnie obcym. Wszędzie wokół mnie panuje ciemność, tylko gdzieś w oddali migotała słaba poświata. Głowa cały czas pulsuje przeszywającym bólem. Muszę się stąd wydostać... dostać szansę... by zrozumieć skąd i jak tu trafiłem... </Entry>
+    <Entry Name="PROLOG_1_1">Ahh... moja głowa... Czuje się, jakby wyrwany z głębokiego snu, ale zamiast w moim łóżku, znalazłem się w miejscu dla mnie zupełnie obcym. Wszędzie wokół mnie panuje ciemność, tylko gdzieś w oddali migotała słaba poświata. Głowa cały czas pulsuje przeszywającym bólem. Muszę się stąd wydostać... </Entry>
     <Entry Name="DIA_1_Q1">Nie wyglądasz mi na kogoś kto z uśmiechem na ustach wbiłby miecz w me podbrzusze.[br]</Entry>
     <Entry Name="DIA_2_Q1">a więc mówisz, że udało Ci się pozbierać własne myśli?[br]</Entry>
     <Entry Name="DIA_3_Q1">Nie wiem czy mogł bym Ciebie prosić o przysługę, ale jeśli byś natknął się na coś do przegryzienia, jakiś chleb, czy bułka, może być nawet zczerstwiały - nie pogardzę. [br]</Entry>
     <Entry Name="DIA_4_Q1">Przetrwałem długo więc chyba jeszcze dam radę. Idź już. Nie chcę zawracać Ci głowy.[br]</Entry>
-    <Entry Name="DIA_5_Q1">Jestem Twoim dłużnikiem, proszę, weź ten oto kamień. Nie pytaj co to, gwarantuję Ci że będziesz miał okazję go wykorzystać.</Entry>
+    <Entry Name="DIA_5_Q1">Dzięki Ci mój Panie, proszę, weź ten oto kamień. Nie pytaj co to takiego. Gwarantuję Ci że będziesz miał okazję go wykorzystać.</Entry>
   </CATEGORY>
 </LANGUAGE>

@@ -12,7 +12,7 @@ void OnStart() {
 	SetPlayerLookSpeedMul(0.2f);
 	SetPlayerActive(true);
  	SetPlayerLampOil(0.0f);
-	PlayMusic("ending_alexander.ogg",false, 0.5,0.7,1,false);
+	PlayMusic("01RustedCage.ogg",false, 0.5,0.7,1,false);
 }
 
 void START_INTRO(string &in asParent, string &in asChild, int alState)
@@ -27,6 +27,7 @@ void Start_Game(string &in asTimer) {
 	/**
 	nagarnia z https://elevenlabs.io/
 	Lektor Damian PL
+	NOWA WERSJA: CALLUM
 	**/
 
 	/**
@@ -39,10 +40,11 @@ void Start_Game(string &in asTimer) {
 	afMinDistance - minimum distance to see the effect
 	afMaxDistance - maximum distance to see the effect
 	*/
+
 	AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",false, "Player", 0.0f, 5.0f);
-	AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 10.0f);
-	AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 10.0f);
-	AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 10.0f);
+	// AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 10.0f);
+	// AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 10.0f);
+	// AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 10.0f);
 	//AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",true, "Player", 0.0f, 10.0f);
 	//AddEffectVoice("CH02L21_Agrippa_Strained_01", "", "Dialogue", "PROLOG_1_6",true, "Player", 0.0f, 10.0f);
 }
@@ -84,29 +86,29 @@ void EndWalking(string &in asTimer) {
 	SetPlayerLookSpeedMul(1.0f);
 } 
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
-StartPlayerLookAt("ScriptArea_10", 1, 1, "");
-AddTimer("",3,"Look_Forward");
-PlaySoundAtEntity("","scare_wind","ScriptArea_1", 0 , false);
-for(int p=1;p<=56;p++) { 	 SetLampLit("candle_floor_small_"+p, false, true); }
+	StartPlayerLookAt("ScriptArea_10", 1, 1, "");
+	AddTimer("",3,"Look_Forward");
+	PlaySoundAtEntity("","scare_wind","ScriptArea_1", 0 , false);
+	for(int p=1;p<=56;p++) { 	 SetLampLit("candle_floor_small_"+p, false, true); }
 }
 void Look_Forward(string &in asTimer) {
-StartPlayerLookAt("ScriptArea_4", 1, 1, "");
+	StartPlayerLookAt("ScriptArea_4", 1, 1, "");
 }
 void ScriptArea_2(string &in asParent, string &in asChild, int alState) {
  
-AddTimer("",4,"Look_Forward");
-PlaySoundAtEntity("","scare_wind_reverse","ScriptArea_2", 0 , false);
-for(int m=56;m<=87;m++) { 	 SetLampLit("candle_floor_small_"+m, false, true); }
+	AddTimer("",4,"Look_Forward");
+	PlaySoundAtEntity("","scare_wind_reverse","ScriptArea_2", 0 , false);
+	for(int m=56;m<=87;m++) { 	 SetLampLit("candle_floor_small_"+m, false, true); }
 }
 void ScriptArea_3(string &in asParent, string &in asChild, int alState)  {
  
-AddTimer("",3,"Look_Forward");
-PlaySoundAtEntity("","scare_wind","ScriptArea_3", 0 , false);
-PlayGuiSound("react_breath_slow.snt",1);
-for(int l=88;l<=107;l++) { 	 SetLampLit("candle_floor_small_"+l, false, true); }
+	AddTimer("",3,"Look_Forward");
+	PlaySoundAtEntity("","scare_wind","ScriptArea_3", 0 , false);
+	PlayGuiSound("react_breath_slow.snt",1);
+	for(int l=88;l<=107;l++) { 	 SetLampLit("candle_floor_small_"+l, false, true); }
 }
 void ScriptArea_9(string &in asParent, string &in asChild, int alState) {
-AddTimer("",6,"Look_Forward");
+	AddTimer("",6,"Look_Forward");
 }
 /*
 void End_Intro(string &in asParent, string &in asChild, int alState)
@@ -119,7 +121,7 @@ void OnEnter() {
 }
   */
  void OnLeave() {
- StopMusic(2,2.0f);
+ 	StopMusic(2,2.0f);
  }
 
 
