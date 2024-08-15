@@ -40,6 +40,13 @@ void OnEnter() {
 }
 void OnLeave() { 
 }
+
+void takeLatern(string &in asEntity, string &in Type) {
+    if(GetLocalVarInt("takeLaternByPlayer") == 0) {
+        AddEffectVoice("ACT1DOWN_1_LATERN", "", "Dialogue", "ACT1DOWN_1_LATERN",false, "Player", 0.0f, 10.0f);
+        SetLocalVarInt("takeLaternByPlayer", 1);
+    }
+}
 void odkrec_zawor1(string &in asEntity, int alState) {
     
     // zmiana na zawór lewostronny 

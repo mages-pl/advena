@@ -3262,7 +3262,7 @@
                         <Var Name="FullGameSave" Value="false" />
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallback" Value="interactCloseDoorAct01main" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="Locked" Value="true" />
                         <Var Name="OpenAmount" Value="0" />

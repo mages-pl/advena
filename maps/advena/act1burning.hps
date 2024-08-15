@@ -27,6 +27,8 @@ AddEntityCollideCallback("rock_stone_small01_brown_*","ScriptArea_1","zniszczeni
     
     AddUseItemCallback("", "key_tomb_1", "otworz_act1toact2", "otworz_act1toact2", true);
 
+    // Dodaj monolog
+    AddEffectVoice("ACT1BURNING_1", "", "Dialogue", "ACT1BURNING_1",true, "Player", 0.0f, 10.0f);
 
     PlayMusic("04Fire.ogg", true, 0.75, 0.1, 10, false);
     if (GetLocalVarInt("q_pozar") == 0) {

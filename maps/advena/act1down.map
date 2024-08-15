@@ -1883,7 +1883,7 @@
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
                         <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="CallbackFunc" Value="takeLatern" />
                         <Var Name="ConnectedProps" Value="" />
                         <Var Name="ConnectionStateChangeCallback" Value="" />
                         <Var Name="FullGameSave" Value="false" />

@@ -4863,7 +4863,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Entity Active="false" FileIndex="16" Group="0" ID="1908" Name="enemy_suitor_1" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8.04501 0 16.75">
+                <Entity Active="false" FileIndex="16" Group="0" ID="1908" Name="enemy_suitor_1" Rotation="180 75 180" Scale="1 1 1" Tag="" WorldPos="8 0 0.5">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />
@@ -5354,7 +5354,7 @@
                         <Var Name="ShowStats" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="false" FileIndex="16" Group="0" ID="2087" Name="servant_grunt_2" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="8 0 16.75">
+                <Entity Active="false" FileIndex="16" Group="0" ID="2087" Name="enemy_suitor_2" Rotation="180 75 180" Scale="1 1 1" Tag="" WorldPos="8 0 0.5">
                     <UserVariables>
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="DisableTriggers" Value="false" />

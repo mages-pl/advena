@@ -196,6 +196,12 @@ PlayMusic("04_amb",true, 0.75, 0.1, 1,true);
 //####### SMOKING DAMAGE ########################
 void Smoking(string &in asParent, string &in asChild, int alState) {
 if(alState == 1) {
+
+	if(GetGlobalVarInt('smoking_dialogue_problem') == 0) {
+		    AddEffectVoice("ACT1_TO_ACT2_3", "", "Dialogue", "ACT1_TO_ACT2_3",false, "Player", 0.0f, 10.0f);
+
+		AddLocalVarInt("smoking_dialogue_problem", 1);
+	}
 	SetLocalVarInt("enter_area_smoke",1);
 	GivePlayerDamage(1, "BloodSplash", false, false);
 	PlaySoundAtEntity("smooker", "13_steam.snt", "Smoking", 0, true); // or 18_steam_release
@@ -402,6 +408,8 @@ void ScriptArea_2(string &in asParent,string &in asChild, int alState) {
 	PlaySoundAtEntity("", "04_scream.snt", "ScriptArea_5", 0, false);
 	GiveSanityDamage(10, false);
 	AddQuest("Journal","act1toact2");
+
+	AddEffectVoice("ACT1_TO_ACT2_1", "", "Dialogue", "ACT1_TO_ACT2_1",false, "Player", 0.0f, 30.0f);
 }
 //####################### FIRE DAMAGE ######################################
 void Dotnij_ogien(string &in asEntity) {
@@ -415,6 +423,12 @@ void ScriptArea_1(string &in asParent,string &in asChild, int alState) {
 	PlayGuiSound("ui_fire_damage.ogg", 0.7f);
 }
 void ScriptArea_25(string &in asParent, string &in asChild, int alState) {
+
+	if(GetLocalVarInt("LOCKED_SEWERS_DIALOGUE") == 0) {
+		AddEffectVoice("ACT1_TO_ACT2_2", "", "Dialogue", "ACT1_TO_ACT2_2",false, "Player", 0.0f, 30.0f);
+		AddLocalVarInt("LOCKED_SEWERS_DIALOGUE", 1);
+	}
+
 if(alState == 1) {
 AddTimer("",0.5,"Sound_Scare1"); 
 }

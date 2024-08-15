@@ -35,7 +35,9 @@ void particle_door(string &in asTimer) {
  
 //##### PODNIE� IG�� ###############
 void dotyk1(string &in asEntity, string &in Type) {
-AddTimer("",0.5,"Teleport_Cell");
+  
+   AddEffectVoice("ACT1UP_1_NEEDLE", "", "Dialogue", "ACT1UP_1_NEEDLE",false, "Player", 0.0f, 10.0f);
+AddTimer("",3,"Teleport_Cell");
 }
 //######### INTRO SEQUENCE ###################
 void Teleport_Cell(string &in asTimer) {
@@ -53,7 +55,7 @@ break; // przej�cie ekranu do czerni mo�na doda� efekt os�abienia
 case 2:
     SetEntityActive("enemy_suitor_1",true);
     //ShowEnemyPlayerPosition("enemy_suitor_1"); 
-    AddEnemyPatrolNode("enemy_suitor_1", "PlayerStartArea_2", 0, "");
+    AddEnemyPatrolNode("enemy_suitor_1", "PathNodeArea_6", 0, "");
     szybkosc = 1;
     TeleportPlayer("PlayerStartArea_2");
     SetSwingDoorLocked("prison_silent_6", false, false);

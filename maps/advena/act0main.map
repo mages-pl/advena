@@ -3119,6 +3119,15 @@
                 <Area Active="true" AreaType="PathNode" Group="0" ID="422" Mesh="" Name="PathNodeArea_8" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="0.0189591 0 0.752024">
                     <UserVariables />
                 </Area>
+
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="4131" Mesh="" Name="act0main_teleport1" Rotation="-3.14159 4.52995e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="0.0189591 0 0.752024">
+                    <UserVariables />
+                </Area>
+
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="4132" Mesh="" Name="act0main_teleport2" Rotation="-3.14159 4.52995e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="0.240261 0 -9.76514">
+                    <UserVariables />
+                </Area>
+
                 <Area Active="true" AreaType="PathNode" Group="0" ID="424" Mesh="" Name="PathNodeArea_9" Rotation="0 0 0" Scale="0.5 0.5 0.5" Tag="" WorldPos="0.140381 0 -2.7539">
                     <UserVariables />
                 </Area>

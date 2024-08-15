@@ -38,8 +38,19 @@ void ScriptArea_8(string &in asParent, string &in asChild, int alState) {
 AddEnemyPatrolNode("servant_brute_5", "PathNodeArea_13", 0, "");
 }
 void ScriptArea_19(string &in asParent, string &in asChild, int alState) {
+
+  AddTimer("dialogue_act2_main_3",3,"dialogue_act2_main_3");
     AddEntityCollideCallback("Player", "brute_2_strach", "brute_2_strach", true, 1);  
     
+}
+
+void dialogue_act2_main_3(string &in asTimer) { 
+    if(GetGlobalVarInt("dialogue_act2_main_3_var") == 0) {
+      
+      AddEffectVoice("ACT1_TO_ACT2_3", "", "Dialogue", "ACT1_TO_ACT2_3",false, "Player", 0.0f, 10.0f);
+
+      AddLocalVarInt("dialogue_act2_main_3_var", 1);
+    }
 }
 void brute_2_strach(string &in asParent, string &in asChild, int alState) {
     SetEntityActive("servant_brute_4",true);
@@ -75,6 +86,10 @@ void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 }
 //#### Zawalenie g�az�w ######## 
 void ScriptArea_2(string &in asParent,string &in asChild, int alState) {
+
+
+  AddEffectVoice("ACT2_MAIN_1", "", "Dialogue", "ACT2_MAIN_1",false, "Player", 0.0f, 10.0f);
+ 
 SetEntityActive("cave_in_destroyed_1",true);
 SetEntityActive("cave_in_1",true);	
 StartScreenShake(0.3, 1, 1,2);
@@ -227,6 +242,9 @@ void OnLeave() {
 StopMusic(1,1.0f);
 }
 void dotknij_topielca(string &in asEntity) {
+
+   AddEffectVoice("ACT2_MAIN_3", "", "Dialogue", "ACT2_MAIN_3",false, "Player", 0.0f, 10.0f);
+
 SetEntityActive("orbpiece_indigo_1",true);
 SetEntityActive("waterlurker_1",true);
   AddQuest("wiezien_q_2", "wiezien_q_2");

@@ -64,11 +64,17 @@ AddEntityCollideCallback("Player","ScriptArea_12","ScriptArea_12",true,1);
 AddEntityCollideCallback("Player","ScriptArea_14","ScriptArea_14",true,1);
 
 AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",true,1);
+
+AddEntityCollideCallback("Player","ScriptArea_36","ScriptArea_36",true,1);
+
 AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);
 AddEntityCollideCallback("Player","ScriptArea_9","ScriptArea_9",true,1);
 AddEntityCollideCallback("Player","ScriptArea_3","ScriptArea_3",true,1);
 AddEntityCollideCallback("Player","ScriptArea_2","ScriptArea_2",true,1);
 AddEntityCollideCallback("Player","ScriptArea_13","ScriptArea_13",true,1);
+
+AddEntityCollideCallback("Player","ScriptArea_26","ScriptArea_26",true,1);
+
 AddEntityCollideCallback("Player","ScriptArea_5","ScriptArea_5",true,1);
 AddEntityCollideCallback("Player","ScriptArea_7","ScriptArea_7",true,1);
 AddEntityCollideCallback("Player","ScriptArea_1","ScriptArea_1",true,1);
@@ -183,6 +189,10 @@ SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlob
     
 }
 
+void ScriptArea_26(string &in asParent, string &in asChild, int alState) { 
+  // Monolog do Victora ws realizowanych eksperymentów
+    AddEffectVoice("ACT1MAIN_5", "", "Dialogue", "ACT1MAIN_5",false, "Player", 0.0f, 10.0f);
+}
 void Skrytki(string &in asParent, string &in asChild, int alState) {
 if(GetGlobalVarInt("OdkryteSkrytki") == 0) {
 GiveHint("Hint_Skrytki", "Skrytki", "Hint_Skrytki", 5);
@@ -211,6 +221,16 @@ SetSwingDoorLocked("piec_close1", false, false);
 }
 
 
+}
+
+void interactCloseDoorAct01main(string &in asEntity) { 
+   if(GetLocalVarInt("CloseDoorAct01main") == 0) {
+          AddEffectVoice("ACT1MAIN_3", "", "Dialogue", "ACT1MAIN_3",false, "Player", 0.0f, 10.0f);
+          SetLocalVarInt("CloseDoorAct01main", 1);
+		 }
+}
+void ScriptArea_36(string &in asParent, string &in asChild, int alState) { 
+  AddEffectVoice("ACT1MAIN_2", "", "Dialogue", "ACT1MAIN_2",false, "Player", 0.0f, 10.0f);
 }
 //############## FALLING THE FIRETORCH#######################################
 void ScriptArea_58(string &in asParent, string &in asChild, int alState) { 
@@ -507,11 +527,8 @@ AddQuest("act1main_summon","act1main_summon");
    for(int z=1;z<=3;z++) {
    AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_"+z, 0, "");
    }
-   AddTimer("dialogue_2", 10, "dialogue_2");
 } 
-void dialogue_2() {
-  AddEffectVoice("ACT1MAIN_2", "", "Dialogue", "ACT1MAIN_2",false, "Player", 0.0f, 10.0f);
-}
+ 
 //###### open the door with the needle #################
 void igla_open(string &in asItem, string &in asEntity) {
 SetSwingDoorDisableAutoClose("castle_arched01_2", true);
@@ -723,6 +740,8 @@ void ScriptArea_27(string &in asParent, string &in asChild, int alState) {
 			SetPlayerLookSpeedMul(1.0f);
 			PlayGuiSound("react_breath_slow",1);
 			 CheckPoint ("Checkpoint_before_posion", "PlayerStartArea_3", "", "", "");
+
+    AddEffectVoice("ACT1MAIN_4", "", "Dialogue", "ACT1MAIN_4",false, "Player", 0.0f, 10.0f);
 }
 void LoopLookingForward(string &in asTimer) {
 			StartPlayerLookAt("wall_corner_concave_1", 0.3, 0.2, "");

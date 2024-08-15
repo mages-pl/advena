@@ -1,15 +1,26 @@
 /**
 Nagarnia z https://elevenlabs.io/
-PRISON: (person1) VOICE: CALLUM
+
+	 I
+A D V E N A
+
 PLAYER: (name: ISSAC) VOICE: CHRIS
-LURKER: (person2) VOICE: WILL
-DEADMAN: (person3) VOICE: DANIEL
+
+{GOOD FRIENDS}
+PRISON: (Victor) VOICE: CALLUM (ten którego zabił na eksperymentach)
+LURKER: (Aleppo) VOICE: WILL (ten którego oszukał w kanałach, płacił m u za pracę mniej niz faktycznie powinien)
+DEADMAN: (David) VOICE: DANIEL (ten którego wywłaszczył z majątku co doprowadziło go do samobójstwa)
+
+{BAD FRIENDS}
+UNUSED: (Edward) VOICE:
+UNUSED: (Nicolas) VOICE:
+UNUSED: (Aaron) VOICE:
 **/
 
 void OnStart() {
     SetSanityDrainDisabled(true);
 	FadeSepiaColorTo(0.75f, 1.0f);
-	AddEntityCollideCallback("Player", "ScriptArea_5", "START_INTRO", true, 1);
+	// AddEntityCollideCallback("Player", "ScriptArea_5", "START_INTRO", true, 1);
 	AddEntityCollideCallback("Player", "ScriptArea_1", "ScriptArea_1", true, 1);
 	AddEntityCollideCallback("Player", "ScriptArea_2", "ScriptArea_2", true, 1);
 	AddEntityCollideCallback("Player", "ScriptArea_9", "ScriptArea_9", true, 1);
@@ -20,7 +31,13 @@ void OnStart() {
 	SetPlayerActive(true);
  	SetPlayerLampOil(0.0f);
 	PlayMusic("01RustedCage.ogg",false, 0.5,0.7,1,true);
+	AddTimer("startProlog",0,"startProlog");
 }
+
+/**
+koniec prologu
+zmiana mapy
+**/
 
 void EndProlog(string &in asTimer) { 
 
@@ -38,84 +55,130 @@ void EndProlog(string &in asTimer) {
 	SetPlayerMoveSpeedMul(1.0f);
 	SetPlayerRunSpeedMul(1.0f);
 	SetPlayerLookSpeedMul(1.0f);
+
 }
-void START_INTRO(string &in asParent, string &in asChild, int alState)
+void startProlog(string &in asTimer)
 {
+	TeleportPlayer("start");
+
+	// Wylacz kucanie/skakanie/inventarz
+	SetPlayerJumpDisabled(true);
+	SetPlayerCrouchDisabled(true);
+	SetInventoryDisabled(true);
+
+	// Black screen
 	FadeOut(0);
+	// Informacja o rozdziale
 	SetMessage("Rozdzial", "Prolog", 2.0f);
-	AddTimer("Start",2,"Start_Game");
-	Idz();
+	//Inicjuj za 2s start gry
+	RemoveTimer("startProlog");
+	AddTimer("runPlayer",3,"runPlayer");
 }
-void Start_Game(string &in asTimer) {
+void PreTeleportProlog1(string &in asTimer) {
+	RemoveTimer("runPlayer"); 
+	FadeOut(0.5f);
+	AddTimer("TeleportProlog1",2,"TeleportProlog1");
+}
+void TeleportProlog1(string &in asTimer) { 
+	RemoveTimer("PreTeleportProlog1"); 
+	TeleportPlayer("act0main_teleport1");
+	// Ustaw spojrzenie gracza 
+	StartPlayerLookAt("ScriptArea_5", 4, 4, "");
+	// Zdejmij blackscreen
 	FadeIn(0.5f);
-	/**
-	nagarnia z https://elevenlabs.io/
-	PRISON: (person1) VOICE: CALLUM
-	PLAYER: (name: ISSAC) VOICE: BRIAN
-	LURKER: (person2) VOICE: WILL
-	DEADMAN: (person3) VOICE: DANIEL
-	**/
+
+	// Wszystko to, co mówicie... to kłamstwa.  Wyciągnęliście pochopne wnioski, bez dowodów, bez zrozumienia. (CHRIS)
+	AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",false, "Player", 0.0f, 30.0f);
+
+	// Przestań kłamać! Widzieliśmy, co zrobiłeś! (WILL)
+	AddEffectVoice("PROLOG_1_6", "", "Dialogue", "PROLOG_1_6",false, "Player", 0.0f, 35.0f);
+	
+	// Nie ma już dla ciebie ucieczki! (CALLUM)
+	AddEffectVoice("PROLOG_1_7", "", "Dialogue", "PROLOG_1_7",false, "Player", 0.0f, 45.0f);
+
+	//TeleportPlayer("act0main_teleport1");
+	AddTimer("PreTeleportProlog2",9,"PreTeleportProlog2");
+	
+}
+void PreTeleportProlog2(string &in asTimer) { 
+	RemoveTimer("TeleportProlog1"); 
+	// Ustaw blackscreen
+	FadeOut(0.5f);
+	AddTimer("TeleportProlog2",2,"TeleportProlog2");
+}
+void TeleportProlog2(string &in asTimer) { 
+	RemoveTimer("PreTeleportProlog2"); 
+	TeleportPlayer("act0main_teleport2");
+	// Zdejmij blackscreen
+	FadeIn(0.5f);
+	StartPlayerLookAt("ScriptArea_4", 4, 4, "");
+
+	// Główny bohater (zdeterminowany, z narastającą frustracją):
+	// Nie mam zamiaru uciekać. Stawię czoła każdemu z was, ale wiedzcie jedno – prawda zawsze wyjdzie na jaw. A wtedy zobaczymy, kto naprawdę był winny. (CHRIS)
+
+	AddEffectVoice("PROLOG_1_8", "", "Dialogue", "PROLOG_1_8",false, "Player", 0.0f, 55.0f);
+	AddTimer("EndProlog",7,"EndProlog");
+	
+}
+void runPlayer(string &in asTimer) {
+	//Wylacz blackscreen
+	FadeIn(0.5f);
 
 	// Jesteś Morderca! Zabiłeś ich bez wahania! (DANIEL)
 	// Oszukałeś nas wszystkich! (WILL)
 	// Złodziej! Ukradłeś nasze pieniądze i zaufanie! (CALLUM)
 	// Jesteś kłamcą i oszustem! Zapłacisz za to wszystko! (WILL)
-
-	// Wszystko to, co mówicie... to kłamstwa.  Wyciągnęliście pochopne wnioski, bez dowodów, bez zrozumienia. (CHRIS)
-
-	// Przestań kłamać! Widzieliśmy, co zrobiłeś! (WILL)
-	// Nie ma już dla ciebie ucieczki! (CALLUM)
-
-	// Główny bohater (zdeterminowany, z narastającą frustracją):
-	// Nie mam zamiaru uciekać. Stawię czoła każdemu z was, ale wiedzcie jedno – prawda zawsze wyjdzie na jaw. A wtedy zobaczymy, kto naprawdę był winny. (CHRIS)
-
+	
 	AddEffectVoice("PROLOG_1_1", "", "Dialogue", "PROLOG_1_1",false, "Player", 0.0f, 10.0f);
 	AddEffectVoice("PROLOG_1_2", "", "Dialogue", "PROLOG_1_2",false, "Player", 0.0f, 15.0f);
 	AddEffectVoice("PROLOG_1_3", "", "Dialogue", "PROLOG_1_3",false, "Player", 0.0f, 20.0f);
 	AddEffectVoice("PROLOG_1_4", "", "Dialogue", "PROLOG_1_4",false, "Player", 0.0f, 25.0f);
-	AddEffectVoice("PROLOG_1_5", "", "Dialogue", "PROLOG_1_5",false, "Player", 0.0f, 30.0f);
-	AddEffectVoice("PROLOG_1_6", "", "Dialogue", "PROLOG_1_6",false, "Player", 0.0f, 35.0f);
-	AddEffectVoice("PROLOG_1_7", "", "Dialogue", "PROLOG_1_7",false, "Player", 0.0f, 45.0f);
-	AddEffectVoice("PROLOG_1_8", "", "Dialogue", "PROLOG_1_8",false, "Player", 0.0f, 55.0f);
-	AddTimer("EndProlog",15,"EndProlog");
-}
-void Idz() {
-	SetPlayerJumpDisabled(true);
-	SetPlayerCrouchDisabled(true);
-	SetInventoryDisabled(true);
-	StartPlayerLookAt("ScriptArea_4", 4, 4, "");
-	AddTimer("1", 0.5f, "StartWalking");
-	AddTimer("",15.0f,"FadeWalking");
-	AddTimer("", 35.0f, "EndWalking");
-}
 
-void StartWalking(string &in asTimer) {
-	FadeIn(10.0f);
-	AddTimer("walking", 0.016f, "TimerMoveForward");
-} 
-void TimerMoveForward(string &in asTimer) {
-	//MovePlayerForward(2.0f); // -> zwraca błąd
-	AddTimer("automove", 0.016f, "TimerMoveForward");
-} 
-void FadeWalking(string &in asTimer) {
-	FadeOut(60.0f);
+	//Remove timmer
+	RemoveTimer("runPlayer");
+	//Inicjuj za 5s PreTeleportProlog1
+	AddTimer("PreTeleportProlog1",5,"PreTeleportProlog1");
+
+	// Ustaw spojrzenie gracza 
+	StartPlayerLookAt("ScriptArea_4", 4, 4, "");
 }
-void EndWalking(string &in asTimer) {
-	RemoveTimer("walking");
-	RemoveTimer("automove");
-	FadeImageTrailTo(0.0f, 1.0f);
-	FadeSepiaColorTo(0.0f, 1.0f);
-	FadeRadialBlurTo(0.0f, 1.0f);
-	StopPlayerLookAt();
-	SetPlayerJumpDisabled(false);
-	SetPlayerCrouchDisabled(false);
-	SetInventoryDisabled(false);
-	SetPlayerActive(true);
-	ChangeMap("act1katakumby.map", "Z_act0main", "","");
-	SetPlayerMoveSpeedMul(1.0f);
-	SetPlayerRunSpeedMul(1.0f);
-	SetPlayerLookSpeedMul(1.0f);
-} 
+// void Idz() {
+// 	SetPlayerJumpDisabled(true);
+// 	SetPlayerCrouchDisabled(true);
+// 	SetInventoryDisabled(true);
+// 	StartPlayerLookAt("ScriptArea_4", 4, 4, "");
+// 	AddTimer("1", 0.5f, "StartWalking");
+// 	AddTimer("",15.0f,"FadeWalking");
+// 	AddTimer("", 35.0f, "EndWalking");
+// }
+
+// void StartWalking(string &in asTimer) {
+// 	FadeIn(10.0f);
+// 	AddTimer("walking", 0.016f, "TimerMoveForward");
+// } 
+// void TimerMoveForward(string &in asTimer) {
+// 	//MovePlayerForward(2.0f); // -> zwraca błąd
+// 	AddTimer("automove", 0.016f, "TimerMoveForward");
+// } 
+// void FadeWalking(string &in asTimer) {
+// 	FadeOut(60.0f);
+// }
+// void EndWalking(string &in asTimer) {
+// 	RemoveTimer("walking");
+// 	RemoveTimer("automove");
+// 	FadeImageTrailTo(0.0f, 1.0f);
+// 	FadeSepiaColorTo(0.0f, 1.0f);
+// 	FadeRadialBlurTo(0.0f, 1.0f);
+// 	StopPlayerLookAt();
+// 	SetPlayerJumpDisabled(false);
+// 	SetPlayerCrouchDisabled(false);
+// 	SetInventoryDisabled(false);
+// 	SetPlayerActive(true);
+// 	ChangeMap("act1katakumby.map", "Z_act0main", "","");
+// 	SetPlayerMoveSpeedMul(1.0f);
+// 	SetPlayerRunSpeedMul(1.0f);
+// 	SetPlayerLookSpeedMul(1.0f);
+// } 
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
 	StartPlayerLookAt("ScriptArea_10", 1, 1, "");
 	AddTimer("",3,"Look_Forward");

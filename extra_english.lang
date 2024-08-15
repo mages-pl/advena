@@ -70,7 +70,7 @@
     <Entry Name="Quest_act1toact2_Name">Płonąca  pułapka</Entry>
     <Entry Name="Quest_act1toact2_Text">Muszę znaleźć sposób na ominięcie płonącej przede mną, drewnianej barykady.[br]</Entry>
     <Entry Name="Quest_act1main_summon_Name">Magiczne sztuczki</Entry>
-    <Entry Name="Quest_act1main_summon_Text">Aby dostać się do wodociągów potrzebowałbym wpierw znaleźć sposób na dostanie się w dół pomieszczeń jakie skrywają te kazamaty. Ryzykownym, ale jedynym wyjściem jest ucieczka do magii. Spróbuję, więc poeksperymentować na podstawie prastarych zapisek z księgi alchemicznej.</Entry>
+    <Entry Name="Quest_act1main_summon_Text">To miejsce nawiedzają udręczone dusze istnień ludzkich. Ryzykownym, ale jedynym wyjściem aby im pomóc jest odprawienie rytuału, aby mogły zaznać wiecznego spokoju. Spróbuję, więc poeksperymentować na podstawie prastarych zapisek z księgi alchemicznej.</Entry>
     <Entry Name="Note_act1katakumby1_1_Name">Gorzkie wspomnienia</Entry>
     <Entry Name="Note_act1katakumby1_1_Text">Zawsze zaczynałem od starannego planowania. Każdy szczegół musiał być dopracowany, by nikt nie wpadł na mój ślad. Kiedy wszystko było gotowe, działałem szybko i bez wahania. Zwłoki musiały być starannie oczyszczone, by nie pozostawić żadnych śladów. Wybrałem katakumby, bo to miejsce wydawało się odpowiednie – labirynty korytarzy, ciemność, spokój. Tam, głęboko pod ziemią, umieszczałem ciała. Każde z nich miało swoje miejsce, starannie przemyślane. Z czasem stało się to jak rytuał – ułożenie, przykrycie, zabezpieczenie. Wiedziałem, że nikt ich tam nie znajdzie. Katakumby stały się moim sekretnym cmentarzyskiem..</Entry>
     <Entry Name="Quest_act1katakumby22_Name">Tajemnica run</Entry>
@@ -120,7 +120,7 @@
     <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Issac'a (30 pazdziernika 1878r.) </Entry>
     <Entry Name="Note_tasjen_note_test_Text">Przemierzając przesączone stęchlizną kanały sądziłem, że znajdę coś co doprowadzi mnie do posiadłości Issac'a. [br][br]Zamiast tego trafiłem do jakiejś dalszej części odpływu kanałowego. [br][br]Zaraz... te ściany przede mną wydają się być głuche. [br]Może to jest właśnie to co stoi mi na drodze.</Entry>
     <Entry Name="Quest_act1main2_Name">"Ślepy zaułek"</Entry>
-    <Entry Name="Quest_act1main2_Text">Schodząc w dół z spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
+    <Entry Name="Quest_act1main2_Text">Schodząc w dół spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
     <Entry Name="Quest_act1main3_Name"></Entry>
     <Entry Name="Quest_act1main3_Text">W końcu mym oczom ukazało się światełko cichej nadzieji. Ten korytarz wygląda sprawia równie antypatyczne wrażenie -  jak pozostałość z komnat. No cóż, imo wydaje się to jedyną drogą - tak więc nie pozostaje mi nic innego jak się tam udać.</Entry>
     <Entry Name="Quest_act3_q1_Name">Podisiadłość Issac'a[br]</Entry>
@@ -165,8 +165,36 @@
     <Entry Name="EPILOG_BAD_1_1"></Entry>
     <Entry Name="EPILOG_NEUTRAL_1_1"></Entry>
     <Entry Name="EPILOG_GOOD_1_1"></Entry>
-     <Entry Name="ACT1_KATAKUMBY2_3">To miejsce wygląda na jakąś zapomnianą niszę... Powinienem się tu dokładniej rozejrzeć... Być może znajduje się tuż obok sąsiednia komnata...</Entry>
-    <Entry Name="ACT1_KATAKUMBY2_1">Wygląda na to, że z dolnej kondygnacji czuć dobiegający świst powietrza... Muszę znaleźć sposób, aby otworzyć tę cholerną bramę...</Entry>
+
+
+
+
+ <Entry Name="ACT2_MAIN_3">Niech to szlag, to Aleppo. Ehh... to moja wina...Mój drogi przyjacielu, spoczywaj w pokoju...</Entry>
+
+    <Entry Name="ACT2_MAIN_2">Ten mechnizm sterujący jest niekompletny. Powinienem rozejrzeć się w poszukowaniu brakujących kół zębatych i spróbować go naprawić.</Entry>
+
+    <Entry Name="ACT2_MAIN_1">Uff, mało brakowało... siła wybuchu gazu z wodociągów pogrzebałaby mnie tu zywcem. Idąc kanałami powinienem znaleźć wyjście z podziemi.</Entry>
+
+    <Entry Name="ACT1_TO_ACT2_3">Agh, ten ulatniający się gaz musiał zainicjować pozar w kazamatach. Aby przejść dalej powinienem znaleźć naprawić uszkodzoną instalację.</Entry>
+
+     <Entry Name="ACT1_TO_ACT2_2">Widzę, mój przyjaciel Aleppo próbując uciec zalał wodą dalszą część korytarza aby powstrzymać się rozprzestrzeniający ogień. Powinienem udać się do sterowni aby wypompować wysoki poziom wody.</Entry>
+
+    <Entry Name="ACT1_TO_ACT2_1">Ten pożar okazał się większy niz myślałem.... Muszę znaleźć coś czym mógłbym go ugasić i utorować sobie drogę do ucieczki.</Entry>
+
+    <Entry Name="ACT1BURNING_1">Cholera, pożar! Przez nieszczelną instalację ta komnata zaraz legnie w gruzach. Muszę się stąd jak najbszyciej ewakuować!</Entry>
+    <Entry Name="ACT1UP_1_NEEDLE">Super, ta niepozorna igła pozwoli mi otworzyć drzwi w dolnej części kazamatów.</Entry>
+
+    <Entry Name="ACT1DOWN_1_LATERN">Dzięki Aleppo, przyda mi się Twoja latarnia. W tych ciemnościach rozświetli mi drogę do wyjścia z tych podeziemi.</Entry>
+
+    <Entry Name="ACT1MAIN_5">To tutaj trafiały ciała nieszczęśników.
+    To miejsce to obraz całkowitej dehumanizacji. Badania nad życie... nad wszelką moralność... to obraz utraty człowieczeństwa, które sprowadzało ludzkie życie do wartości surowca do dalszej obróbki, a to, co pozostało, było tylko cieniem dawnej osoby, który wkrótce miał zostać rozwiany przez ogień.</Entry>
+
+    <Entry Name="ACT1MAIN_4">Paskudne miejsce... Dolna część korytarza wypełniona jest po brzegi  zabójczym kwasem solnym.... Idąc wzdłóż liny powinienem natrafić na kołowrót który pozwoli mi pobrać z dna część roztworu.</Entry>
+     <Entry Name="ACT1MAIN_3">Nie jestem w stanie otworzyć tych drzwi... Przez szczeliny w ościeżnicy widzę korytarz który prowadzi w głęb. Powinienem poszukać czegoś czym móglbym je otworzyć.</Entry>
+    <Entry Name="ACT1MAIN_2">Te ściany miałby być okazję świadkiem niezliczonych cierpień nieszczęśników, których poddawano tu pseudoeksprymentom medycznym </Entry>
+    <Entry Name="ACT1MAIN_1">Ten orientalny posążek z bliskiego wschodu na piedestale wygląda jak by nie trafił tu przypsadkiem...</Entry>
+     <Entry Name="ACT1_KATAKUMBY2_2">To miejsce wygląda na jakąś zapomnianą niszę... Powinienem się tu dokładniej rozejrzeć... Być może znajduje się tuż obok sąsiednia komnata...</Entry>
+    <Entry Name="ACT1_KATAKUMBY2_1">Z dolnej kondygnacji czuć dobiegający świst powietrza... Muszę znaleźć sposób, aby otworzyć tę cholerną bramę...</Entry>
     <Entry Name="ACT1_KATAKUMBY_1">Wygląda mi to na stare, zapomniane miejsce, którego nie dotknęło światło dzienne od wieków... Muszę się mieć na baczności...</Entry>
      <Entry Name="PROLOG_1_8">Nie mam zamiaru uciekać. Stawię czoła każdemu z was, ale wiedzcie jedno – prawda zawsze wyjdzie na jaw. A wtedy zobaczymy, kto naprawdę był winny.</Entry>
     <Entry Name="PROLOG_1_7">Nie ma już dla ciebie ucieczki!</Entry>
@@ -177,7 +205,7 @@
     <Entry Name="PROLOG_1_2">Oszukałeś nas wszystkich!</Entry>
     <Entry Name="PROLOG_1_1">Jesteś Morderca! Zabiłeś ich bez wahania!</Entry>
     <Entry Name="DIA_1_Q1">Pomóz mi... [br]</Entry>
-    <Entry Name="DIA_2_Q1">To Ty... Nie sądziłem, że jeszcze kiedykolwiek cię zobaczę... ...ale los bywa przewrotny, prawda? To przez ciebie jestem tutaj...  ...wszystko mi zabrałeś, wolność, godność... A teraz i życie zbliża się do końca...[br]</Entry>
+    <Entry Name="DIA_2_Q1">Issac- To Ty ? ... To ja Victor... Twój dawny wspólnik... Nie sądziłem, że jeszcze kiedykolwiek cię zobaczę... ...ale los bywa przewrotny, prawda? To przez ciebie jestem tutaj...  ...wszystko mi zabrałeś, wolność, godność... A teraz i życie zbliża się do końca...[br]</Entry>
     <Entry Name="DIA_3_Q1">Wiem, że nie powinienem prosić... że nie mam prawa, ale...  ...błagam daj konającemu choć kawałek chleba. Nie proszę o litość, tylko o chwilę więcej, o moment, który pozwoli mi jeszcze raz poczuć smak… czegokolwiek. [br]</Entry>
     <Entry Name="DIA_4_Q1">Jeśli masz w sobie choć odrobinę człowieczeństwa... proszę... tylko kromkę chleba...[br]</Entry>
     <Entry Name="DIA_5_Q1">Dzięki Ci mój Panie, proszę, weź ten oto kamień. Nie pytaj co to takiego. Gwarantuję Ci że będziesz miał okazję go wykorzystać.</Entry>
