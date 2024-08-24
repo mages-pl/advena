@@ -9,7 +9,7 @@ PLAYER: (name: ISSAC) VOICE: CHRIS
 {GOOD FRIENDS}
 PRISON: (Victor) VOICE: CALLUM (ten którego zabił na eksperymentach)
 LURKER: (Aleppo) VOICE: WILL (ten którego oszukał w kanałach, płacił m u za pracę mniej niz faktycznie powinien)
-DEADMAN: (David) VOICE: DANIEL (ten którego wywłaszczył z majątku co doprowadziło go do samobójstwa)
+DEADMAN: (Dereck) VOICE: DANIEL (ten którego wywłaszczył z majątku co doprowadziło go do samobójstwa)
 
 {BAD FRIENDS}
 UNUSED: (Edward) VOICE:
@@ -30,7 +30,7 @@ void OnStart() {
 	SetPlayerLookSpeedMul(0.2f);
 	SetPlayerActive(true);
  	SetPlayerLampOil(0.0f);
-	PlayMusic("01RustedCage.ogg",false, 0.5,0.7,1,true);
+	PlayMusic("act0main.ogg",false, 0.5,0.7,1,true);
 	AddTimer("startProlog",0,"startProlog");
 }
 

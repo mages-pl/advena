@@ -30,7 +30,7 @@ AddEntityCollideCallback("rock_stone_small01_brown_*","ScriptArea_1","zniszczeni
     // Dodaj monolog
     AddEffectVoice("ACT1BURNING_1", "", "Dialogue", "ACT1BURNING_1",true, "Player", 0.0f, 10.0f);
 
-    PlayMusic("04Fire.ogg", true, 0.75, 0.1, 10, false);
+    PlayMusic("act1burning.ogg", true, 0.75, 0.1, 10, false);
     if (GetLocalVarInt("q_pozar") == 0) {
         AddLocalVarInt("q_pozar", 1);
         AddQuest("Journal", "act1burning");
@@ -70,6 +70,10 @@ void ScriptArea_26(string &in asParent, string &in asChild, int alState) {
       PlaySoundAtEntity("", "00_creak.snt", asChild, 0, false);
        
    
+}
+void dotyk_goracych_drzwi(string &in asEnity) { 
+     // Dodaj monolog
+    AddEffectVoice("ACT1BURNING_2", "", "Dialogue", "ACT1BURNING_2",true, "Player", 0.0f, 10.0f);
 }
 
 void ScriptArea_4(string &in asParent, string &in asChild, int alState) {

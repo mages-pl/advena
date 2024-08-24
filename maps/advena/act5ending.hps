@@ -426,7 +426,7 @@ AddTimer("Koniec_Teleport_Secret",2.5f,"Koniec_Teleport_Secret");
  }
 void OnEnter() {
      AutoSave();
- PlayMusic("04Fire.ogg",false, 0.8, 0.1, 1,false);
+ PlayMusic("act5ending.ogg",false, 0.8, 0.1, 1,false);
  
 }
  void OnLeave() {

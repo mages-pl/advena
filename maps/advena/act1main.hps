@@ -1,13 +1,13 @@
 //#################################################################################
 //##					- AMNESIA - ADVENA -
 //##-------------------------------------------------------------------------------
-//##	COPYRIGHT (c) 2012-2013 BY MICHA� 'TASILVAR' JENDRASZCZYK
+//##	COPYRIGHT (c) 2012-2024 BY MAGES 
 //##-------------------------------------------------------------------------------
 //## 	POLSKA MODYFIKACJA GRY AMNESIA - THE DARK DESCENT -
 //#################################################################################
 void OnEnter() {	
 	AutoSave();	
-	 PlayMusic("01RustedCage.ogg",true, 0.8, 0.1, 10, true);
+	 PlayMusic("act1main.ogg",true, 0.8, 0.1, 10, true);
 	 if(GetLocalVarInt("rozdzial1") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "1", 3.0f);

@@ -13,7 +13,8 @@ void OnStart() {
 }
 void OnEnter() {
      AutoSave();
-PlayMusic("02_amb_safe",true, 0.8, 0.1, 1,true);
+// PlayMusic("02_amb_safe",true, 0.8, 0.1, 1,true);
+ PlayMusic("act3library.ogg",true, 0.8, 0.1, 1,true);
 }
 void ScriptArea_4(string &in asParent, string &in asChild, int alState) {
 StopMusic(2.0f,1);

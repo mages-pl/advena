@@ -1,7 +1,7 @@
 <SOUNDENTITY>
  <SOUNDS>
    <Main>
-      <Sound File="ACT1BURNING_1.ogg" />
+      <Sound File="ACT1_TO_ACT2_5.ogg" />
    	</Main>
    </SOUNDS>
    <PROPERTIES Volume="9" MinDistance="1" MaxDistance="50" Random="0" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="false" Blockable="False" BlockVolumeMul="0.7" Priority="5" />

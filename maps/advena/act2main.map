@@ -6473,7 +6473,7 @@
                         <Var Name="FullGameSave" Value="false" />
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallback" Value="act2main_interactWheel2" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="ContainedItem" Value="None" />
                         <Var Name="DisableBreakable" Value="false" />
@@ -6492,7 +6492,7 @@
                         <Var Name="FullGameSave" Value="false" />
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallback" Value="act2main_interactWheel3" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="ContainedItem" Value="None" />
                         <Var Name="DisableBreakable" Value="false" />
@@ -6511,7 +6511,7 @@
                         <Var Name="FullGameSave" Value="false" />
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallback" Value="act2main_interactWheel1" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="ContainedItem" Value="None" />
                         <Var Name="DisableBreakable" Value="false" />

@@ -28,6 +28,7 @@ for(int k=0;k<4;k++) {
 	AddEntityCollideCallback("Player","ScriptArea_18","ScriptArea_18",true,1);
 	//############ ZNISZCZENIE BLOKADY ###########################################
 	AddEntityCollideCallback("stone_small01_brown_*","ScriptArea_16","wooden_boards_block_1",true,1);
+	AddEntityCollideCallback("barrel01_*","ScriptArea_16","wooden_boards_block_1",true,1);
 	//AddEntityCollideCallback("stone_small01_brown_*","wooden_boards_block_1","wooden_boards_block_1",true,1);
 	
 	//############ INTERACT ##########################################
@@ -51,6 +52,10 @@ PlayGuiSound("break_wood.snt",1);
 //########### Rury ###############################
 void ScriptArea_16(string &in asParent, string &in asChild, int alState) {
 PlaySoundAtEntity("", "insanity_whisper01", "ScriptArea_17", 0.0f, false);
+if(GetLocalVarInt("alternative_way_act1toact2") == 0) {
+	AddEffectVoice("ACT1_TO_ACT2_5", "", "Dialogue", "ACT1_TO_ACT2_5",false, "Player", 0.0f, 10.0f);
+	SetLocalVarInt("alternative_way_act1toact2",1);
+}
 }
 void ScriptArea_18(string &in asParent, string &in asChild, int alState) {
 PlaySoundAtEntity("", "03_in_a_bottle.snt", "ScriptArea_19", 0.0f, false);
@@ -200,7 +205,7 @@ if(alState == 1) {
 	if(GetGlobalVarInt('smoking_dialogue_problem') == 0) {
 		    AddEffectVoice("ACT1_TO_ACT2_3", "", "Dialogue", "ACT1_TO_ACT2_3",false, "Player", 0.0f, 10.0f);
 
-		AddLocalVarInt("smoking_dialogue_problem", 1);
+		SetLocalVarInt("smoking_dialogue_problem", 1);
 	}
 	SetLocalVarInt("enter_area_smoke",1);
 	GivePlayerDamage(1, "BloodSplash", false, false);
@@ -261,105 +266,105 @@ PlayGuiSound("react_breath.snt",1);
 }
 //####################################################
 // LEVER MOVE
+// wzór: dół(1) góra(-1) dół(1)
 //####################################################
 //void lever_up(string &in asParent, string &in asChild, int alState)
+// Dzwignia pierwsza od lewej
 void lever_move_1(string &in asEntity, int alState) {
-if(alState == 1) { // je�eli d�wignia jest na dole
-  
- SetEntityActive("LiquidArea_13",true);
-  SetEntityActive("LiquidArea_8",false);
- 
-   PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_2", 0, false);
-  
-SetLocalVarInt("lever_1",1);
-AddTimer("",0.2,"Check_lever");
-SetMoveObjectState("water_level1", 1);
-}
-else if(alState == -1) { // je�li jest na g�rze
- SetLocalVarInt("lever_1",0);
- SetMoveObjectState("water_level1", -1);
-   
- 
-SetEntityActive("LiquidArea_13",false);
-  SetEntityActive("LiquidArea_8",true);
-  
-   
-    PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_2", 0, false);
-}
-else { // je�li jest po �rodku
-SetLocalVarInt("lever_1",0);
- 
-}
+	if(alState == 1) { // jezeli dzwignia jest na dole
+	
+		SetEntityActive("LiquidArea_13",true);
+		SetEntityActive("LiquidArea_8",false);
+	
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_2", 0, false);
+	
+		SetLocalVarInt("lever_1",1);
+		AddTimer("",0.2,"Check_lever");
+		SetMoveObjectState("water_level1", 1);
+	}
+	else if(alState == -1) { // jezli jest na gorze
+		SetLocalVarInt("lever_1",0);
+		SetMoveObjectState("water_level1", -1);
+	
+	
+		SetEntityActive("LiquidArea_13",false);
+		SetEntityActive("LiquidArea_8",true);
+	
+	
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_2", 0, false);
+	}
+	else { // jezli jest po srodku
+		SetLocalVarInt("lever_1",0);
+	}
  
 }
 //##################################
+// Dzwignia srodkowa
 void lever_move_2(string &in asEntity, int alState) {
-if(alState == 1) { // je�eli d�wignia jest na dole
-SetLocalVarInt("lever_2",0);
- SetEntityActive("LiquidArea_15",false);
-  SetEntityActive("LiquidArea_9",true);
-  
-   
-    PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_1", 0, false);
-}
-else if(alState == -1) { // je�li jest na g�rze
+	if(alState == 1) { // jezeli dzwignia jest na dole
+		SetLocalVarInt("lever_2",0);
+		SetEntityActive("LiquidArea_15",false);
+		SetEntityActive("LiquidArea_9",true);
+		
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_1", 0, false);
+		
+	}
+	else if(alState == -1) { // je�li jest na g�rze
 
-//SetMoveObjectState("water_level2", 1);
-SetLocalVarInt("lever_2",1);
-AddTimer("",0.2,"Check_lever");
+		//SetMoveObjectState("water_level2", 1);
+		SetLocalVarInt("lever_2",1);
+		AddTimer("",0.2,"Check_lever");
 
- SetEntityActive("LiquidArea_15",true);
-  SetEntityActive("LiquidArea_9",false);
-  
-   
-    PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_1", 0, false);
-}
-else { // je�li jest po �rodku
-SetLocalVarInt("lever_2",0);
- 
-}
+		SetEntityActive("LiquidArea_15",true);
+		SetEntityActive("LiquidArea_9",false);
+	
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_1", 0, false);
+	}
+	else { // jezli jest po srodku
+		SetLocalVarInt("lever_2",0);
+	}
 }
 //#################################
+// Dzwignia trzecia od lewej
 void lever_move_3(string &in asEntity, int alState) {
-if(alState == 1) { // je�eli d�wignia jest na dole
+	if(alState == 1) { // jezeli dzwignia jest na dole
 
-SetLocalVarInt("lever_3",1);
-AddTimer("",0.2,"Check_lever");
+		SetLocalVarInt("lever_3",1);
+		AddTimer("",0.2,"Check_lever");
 
-SetEntityActive("LiquidArea_14",true);
-  SetEntityActive("LiquidArea_10",false);
-  
-  
-  PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_3", 0, false);
-//SetMoveObjectState("water_level1", 1);
-}
-else if(alState == -1) { // je�li jest na g�rze
-SetLocalVarInt("lever_3",0);
-//SetMoveObjectState("water_level3", 1);
-PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_3", 0, false);
+		SetEntityActive("LiquidArea_14",true);
+		SetEntityActive("LiquidArea_10",false);
+			
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_3", 0, false);
+		//SetMoveObjectState("water_level1", 1);
+	}
+	else if(alState == -1) { // jezeli jest na gorze
+		SetLocalVarInt("lever_3",0);
+		//SetMoveObjectState("water_level3", 1);
+		PlaySoundAtEntity("", "18_fill_water.snt", "wood_box01_3", 0, false);
 
-SetEntityActive("LiquidArea_14",false);
-  SetEntityActive("LiquidArea_10",true);
+		SetEntityActive("LiquidArea_14",false);
+		SetEntityActive("LiquidArea_10",true);
+	}
+	else { // jezli jest po srodku
+		SetLocalVarInt("lever_3",0);
+	}
 }
-else { // je�li jest po �rodku
-SetLocalVarInt("lever_3",0);
-}
-}
+
 void Check_lever(string &in asTimer) {
-if((GetLocalVarInt("lever_1") == 1) && (GetLocalVarInt("lever_2") == 1) && (GetLocalVarInt("lever_3") == 1) && (GetLocalVarInt("check_q") == 0)) {
-StopMusic(2,1.8f);
-PlayMusic("12_puzzle_epoxy",false, 0.5, 0.5, 1,false);
-AddPlayerSanity(10);
-PlaySoundAtEntity("", "door_level_engine_open.snt", "hatch_large_1", 0, false);
-SetLocalVarInt("check_q",1);
-AddPropImpulse("hatch_large_2", 0, 100*100, 0, "World");
-SetEntityActive("PosNodeArea_3",false);
-AddTimer("",16,"Next_Ambients");
- 
-}
+	if((GetLocalVarInt("lever_1") == 1) && (GetLocalVarInt("lever_2") == 1) && (GetLocalVarInt("lever_3") == 1) && (GetLocalVarInt("check_q") == 0)) {
+		StopMusic(2,1.8f);
+		PlayMusic("12_puzzle_epoxy",false, 0.5, 0.5, 1,false);
+		AddPlayerSanity(10);
+		PlaySoundAtEntity("", "door_level_engine_open.snt", "hatch_large_1", 0, false);
+		SetLocalVarInt("check_q",1);
+		AddPropImpulse("hatch_large_2", 0, 100*100, 0, "World");
+		SetEntityActive("PosNodeArea_3",false);
+		AddTimer("",16,"Next_Ambients");
+	}
 }
 void Next_Ambients(string &in asTimer) {
-PlayMusic("amb_extra01",true, 0.75, 0.5, 1,false);
+	PlayMusic("amb_extra01",true, 0.75, 0.5, 1,false);
 }
 //######## LADDER ADDER ################
 void ScriptArea_4(string &in asItem, string &in asEntity) {
@@ -441,6 +446,10 @@ AddTimer("",0.5,"Sound_Scare1");
 else { AddTimer("",0.5,"Sound_Scare1"); }
 }
 void ScriptArea_26(string &in asParent, string &in asChild, int alState) {
+	if(GetLocalVarInt("Hydrophore_dialogue") == 0) { 
+		AddEffectVoice("ACT1_TO_ACT2_4", "", "Dialogue", "ACT1_TO_ACT2_4",false, "Player", 0.0f, 30.0f);
+		SetLocalVarInt("Hydrophore_dialogue",1);
+	}
 if(alState == 1) {
 AddTimer("",0.5,"Sound_Scare1"); 
 }
@@ -496,7 +505,8 @@ void OnEnter() {
      StopMusic(2, 2.0f);
   AutoSave();
   
-  PlayMusic("04_amb",true, 0.75, 0.1, 1,false);
+  //PlayMusic("04_amb",true, 0.75, 0.1, 1,false);
+  PlayMusic("act1_to_act2.ogg",true, 0.75, 0.1, 1,false);
     
     if(GetLocalVarInt("FirstAct1ToAct2") == 0 ) {
          CheckPoint ("Act1ToAct2Checkpoint", "Z_act1burning", "OnEnter", "Death_Category", "Act1ToAct2Smoke");

@@ -55,6 +55,10 @@
   <CATEGORY Name="Inventory">
     <Entry Name="ItemDesc_key_office">Wydaje się pasować do zamka na dole.</Entry>
     <Entry Name="ItemName_key_office">Klucz do piwnicy</Entry>
+
+    <Entry Name="ItemDesc_key_tomb">Wydaje się pasować do drzwi prowadzących z kazamatów do sieci wodociągowej.</Entry>
+    <Entry Name="ItemName_key_tomb">Klucz do wodociągów</Entry>
+    
   </CATEGORY>
   <CATEGORY Name="Journal">
     <Entry Name="Quest_act1up_Name">Dobry Samarytanin</Entry>
@@ -63,6 +67,10 @@
     <Entry Name="Note_act2mechanizm_Text">Przechadzają pośród mrocznych czeluści, gdzieś wgłąb kanałów natrafiłem na potężny system sterujący siłownikami przy użyciu pneumatyki. Przyglądając się bliżej tej potwornej maszynie dostrzegłem jednak pewne ubytki konstrukcyjne. Część z zębatek przepadła, lub po prostu owe urządzenie nigdy nie zostało na tyle skończone aby w pełni móc z niego korzystać. Słysząc ciśnienie idące w rurach stwierdziłbym nieco śpieszno, że jedyny brakującym ogniwem do w pełni funkcjonalnego działania pozostają te zębatki. Może uda mi się gdzieś w pobliżu znaleźć coś co mogłoby posłużyć jako zamiennik. </Entry>
     <Entry Name="Note_act2ksiegaadvena_Name">Prace remontowe</Entry>
     <Entry Name="Note_act2ksiegaadvena_Text">Muszę przyznać, że im dłużej piszę, tym rzadziej mam ochotę sięgać po pióro. Tę późną wiosną postanowiłem poświęcić czas na drobny remont w moich apartamentów Rozkazałem, więc bez dwóch zdań swoim lokajom, aby zabrali się w końcu za tą wiecznie psującą się kanalizę, której ulatujący smród wprost nie daje mi spokojnie spać po nocach. Jeden z inżynierów – Aleppo\footnote{Aleppo - magister inżynier budownictwa z specjalizacją  inżynierii hydraulicznej, zajmujący się naprawą kanalizy możnowładcy}  - postanowił zorganizować ekipę pracowników, która zajmie się problemem, bezpośrednio - u źródła. Kiedy już prace ruszyły pełną parą – ciężko było znaleźć chwilę spokoju, którego przez wzgląd na mój charakter potrzebowałem najbardziej, dlatego też głównie przesiadywałem w prywatnej bibliotece studiując tam zawarte mądrości. Pewnego wczesnego, ledwie przedpołudnia jeden z pracowników zajmujących się tym śmierdzącym defektem – poinformował mnie o tajemniczym odkryciu na terenie mojej posiadłości. Nieco zirytowany tą sytuacją kazałem temu łachudrakowi wynosić się, czym prędzej z mojego pokoju i wracać, czym prędzej do roboty. On jednak nalegał abym zobaczył to coś, co według niego – tego prostego człowieka było czymś zupełnie obcym. Eh, zagroziłem temu skamlającemu mi nad tyłkiem psu, że jeśli jest to coś mało interesującego – natychmiast ląduje na zbity pysk, nie dostając za robotę złamanego grosza. Facet mimo to nie odstępował od swoich słów, a więc zdążyłem się poświęcić na taplanie się w gównie. Razem z nim udałem się do reszty ekipa, która była zszokowana tym, co ujrzeli. Podczas prac remontowych w kanale znaleziona została ukryta komnata. Niby nic dziwnego, gdyby ją jednak nie okalały jakieś dziwne znaki i przedziwna księga, na której wygrawerowany był napis Annimus – Advena \footnote{Annimus Advena - księga opisująca metody transfmutacyjne istot żywych.} . Rozkazałem ludziom zaprzestać prac drenażowych i skupić się na eksploracji tej komnaty w poszukiwaniu znalezisk, jakie w sobie kryje – oczywiście wszystko to za podyktowaną podwójną zapłatą. W momencie, kiedy reszta zajęła się pracą, ja tymczasem zabrałem znalezisko do swej biblioteki by móc przyjrzeć się temu bliżej.</Entry>
+
+     <Entry Name="Note_act1toact2hydrophore_Text">
+     Prawo Pascala mówi, że jeśli na ciecz w zamkniętym naczyniu wywierany jest nacisk, to ten nacisk jest przekazywany równomiernie we wszystkich kierunkach. Oznacza to, że zmiana ciśnienia w jednym miejscu cieczy powoduje taką samą zmianę ciśnienia w całej cieczy. [br] Jeśli odpowiednio ustawisz dźwignie regulujące ciśnienie przekierujesz siłę do otworzenia dolnej klapy. [br]</Entry>
+    <Entry Name="Note_act1toact2hydrophore_Name">Prawo Pascala</Entry>
     <Entry Name="Note_act1toact2gaz_Text">W jednej z komnat w górnej części wodociągów doszło do awarii instalacji gazowej. Aby móc dalej przejść konieczna będzie jej naprawa. [br]</Entry>
     <Entry Name="Note_act1toact2gaz_Name">Niewidzialny zabójca</Entry>
     <Entry Name="Quest_act1burning_Name">Ucieczka</Entry>
@@ -84,7 +92,7 @@
     <Entry Name="Diary_02act1main_Name1">Eksperyment Issac'a 2/3</Entry>
     <Entry Name="Diary_02act1main_Text1">Dzień 31[br][br]Nie minęło zbyt wiele czasu od znalezienia księgi Animus Advena nim przekonałem się, że jest ona kluczem do dostąpienia pierwiastku ideału człowieka. Jestem realistą, doskonale wiem, że sukces eksperymentu wisi na włosku. Musiałem więc zapomnieć o moralności. [br][br]...[br][br][br]Dzień 28[br][br]Znaleziona księga nie daje mi spokoju. Nie mogę przez nią racjonalnie myśleć. Wciąż zastanawiam się czy to wszystko jest prawdą. </Entry>
     <Entry Name="Diary_02act3library_Name1">Wspomnienia Issac'a 1/4</Entry>
-    <Entry Name="Diary_02act3library_Text1">30 października 1878[br][br]Ostatnie moje miesiące wyjątkowo związane są z tym miejscem, bowiem jedynie tutaj mogę zaleźć chwilę natchnienia na analizę tekstów zawartych w znalezionym Animus Advena. Dziki tej księdze udało mi się opanować metodę na pobudzanie układu nerwowego istot, w taki sposób aby był nadreaktywne na bodźce z zewnątrz. [br][br]Aby jednak pozostawić tajmnicę tej księgi wyłącznie dla siebie zostawiam ją ukrytą gdzie żadne oko człowieka nie dotarło.  Mam nadzieję, że to miejsce nigdy nie zotanie znalezione, a już na pewno nie kiedy będzie leżał tam mój skarb.[br][br]</Entry>
+    <Entry Name="Diary_02act3library_Text1">30 października 1853[br][br]Ostatnie moje miesiące wyjątkowo związane są z tym miejscem, bowiem jedynie tutaj mogę zaleźć chwilę natchnienia na analizę tekstów zawartych w znalezionym Animus Advena. Dziki tej księdze udało mi się opanować metodę na pobudzanie układu nerwowego istot, w taki sposób aby był nadreaktywne na bodźce z zewnątrz. [br][br]Aby jednak pozostawić tajmnicę tej księgi wyłącznie dla siebie zostawiam ją ukrytą gdzie żadne oko człowieka nie dotarło.  Mam nadzieję, że to miejsce nigdy nie zotanie znalezione, a już na pewno nie kiedy będzie leżał tam mój skarb.[br][br]</Entry>
     <Entry Name="Diary_02act3main_Name1">Ostatnie skrzypce 2/3</Entry>
     <Entry Name="Diary_02act3main_Text1">Czekają mnie kolejne kompozycje do zagrania. Jednak wiem, że muszę się bardziej postarać bo z tego co mnie słuch nie myli Pan, nie jest ostatnimi czasy[br]zadowolony z jego pracowników. Mam wrażenie, że coś się w nim zmieniło... Odczułem z jego struny chłód mrożący moje usta, gdy zaczął do mnie przemawiać nie mogłem nic odpowiedzieć w swojej obronie... [br][br]</Entry>
     <Entry Name="Diary_03act1main_Name1">Eksperyment Issac'a 3/3</Entry>
@@ -92,8 +100,8 @@
     <Entry Name="Diary_03act3main_Name1">Ostatnie skrzypce 3/3</Entry>
     <Entry Name="Diary_03act3main_Text1">To był chyba ostatni gig w moim życiu. Pianino, na którym grałem zostało przeniesione do graciarni a w jego miejsce postawiono gramofon.[br]Cóż za sztuczne podejście do sztuki. Modlę się bym nie został potraktowany jak moje narzędzie...  [br]</Entry>
     <Entry Name="Diary_act1main5_Name1">Eksperymenty Issac'a 1/3  </Entry>
-    <Entry Name="Diary_act1main5_Text1">(24 kwietnia 1878r.)[br]Drogi Albercie, Niestety - nasza kolejna próba rematerializacji tkanek zwierzęcych została zakończona niepowodzeniem.  Skoro nie można uzyskać Twojego DNA, zmuszony jestem zastosować się do planu B. Zapewne interesuje Cię co się za tym kryje, nie? Ah, spokojnie -  o nic się nie martw.  O wszytkim dowiesz się już niebawem. Tymczasem moi słudzy odprowadzą Cię z powrotem do izolatki.[br]</Entry>
-    <Entry Name="Diary_act3kitchen_Name1">Zapiski rzeźnika (30 sierpnia 1878r.)</Entry>
+    <Entry Name="Diary_act1main5_Text1">(24 kwietnia 1853r.)[br]Drogi Albercie, Niestety - nasza kolejna próba rematerializacji tkanek zwierzęcych została zakończona niepowodzeniem.  Skoro nie można uzyskać Twojego DNA, zmuszony jestem zastosować się do planu B. Zapewne interesuje Cię co się za tym kryje, nie? Ah, spokojnie -  o nic się nie martw.  O wszytkim dowiesz się już niebawem. Tymczasem moi słudzy odprowadzą Cię z powrotem do izolatki.[br]</Entry>
+    <Entry Name="Diary_act3kitchen_Name1">Zapiski rzeźnika (30 sierpnia 1853r.)</Entry>
     <Entry Name="Diary_act3kitchen_Text1">Kolejny dzień w tym powalonym miejscu. Codziennie muszę czuć pleśń tych "wyższych" ludzi. Patrzą się krzywo jak na kogoś gorszego! Ciągle im coś nie pasuje, to zupa za słona, to talerze brudne. Dłużej tak nie mogę.[br][br]Ostatnio nie mogę skupić się na pracy. Te bachory wciąż mnie denerwują! Biegają jak opętane po kuchni a ja nie mogę nic zrobić bo to przecież goście  jaśnie pana! Gdyby poczęstować ich czymś co by przegoniło tą kastę najlepiej czymś co jest im bliskie. Być może wymyślę sposób na te gównarzerię  jakiś pies albo pozamykać je w jakiejś skrzyni i mieć spokój! Tak to jest myśl! [br][br]Tylko skąd wziąć taką wielką skrzynię? Może przystawki ze szczurów coś wniosą do głowy lorda by podarować mi kufer do chłodni.[br]</Entry>
     <Entry Name="Note_01act1down_Note_Name">Lampa Alephoo</Entry>
     <Entry Name="Note_01act1down_Note_Text">Po ciężkim dniu wreszcie czas na odpoczynek. Każdy z nas stara się spędzić ten czas jak najlepiej. Część z nas gra w karty, usiłując coś uciułać na jutro - pozostali zaś  - udają się na spoczynek, aby móc zregenerować siły na kolejny dzień. Po pracy miejsce to jest tak mroczne, że nigdy nie opuszczam swojego pokoju bez mojej starej lampy oliwnej, która pomimo swoich lat potrafi rozświetlić te cholerną komnatę. </Entry>
@@ -101,10 +109,10 @@
     <Entry Name="Note_01act1up_Note_Text">Nie pamiętam jak się nazywam... Nie wiem, co tu robię... Moje ciało już dawno odmówiło mi posłuszeństwa. Jestem jedynie mrocznym cieniem człowieka, który bez większego sensu wegetuje na tym nędznym świecie. Potworny ból przeszywa moje kości, tak że nie jestem w stanie dłużej tego wytrzymać. Udało mi się utrzymać przy sobie jedynie igłę, która sam nie wiem jakim cudem znalazła się w moim bucie. Czas z tym skończyć. Czas skończyć z tym światem, Nie zniosę już dłużej tych tortur.</Entry>
     <Entry Name="Note_01act3library_Note_Name">Płyta winylowa</Entry>
     <Entry Name="Note_01act3library_Note_Text">Pomyślałem, że dobrym rozwiązaniem jest pozostawienie tej płyty pośród tych ksiąg. Dzięki temu nie narażę ją na przypadkowe zniszczenie z rąk otaczajągeo mnie pospólstwa.</Entry>
-    <Entry Name="Note_04act1main_Note_Name">Księga istot</Entry>
-    <Entry Name="Note_04act1main_Note_Text">Postanowiłem sporządzić krótkie streszczenie treści zawartej w księdze Animusa. [br][br]Dusza - każda dusza potrzebuje domu, miejsca w którym przebywa. W księdze określono nią pojemnik. Jeśli pojemnik (ciało) obumiera - dusza opuszcza dom (ciało), Dusza skazana jest na astralną wędrówkę.[br][br]Pojemnik - ciało, fizyczna część duszy, który w połączeniu z nią staje się jednością. Możliwy jest powrót duszy, gdy ciało będzie sprawne.[br][br]Czy możliwe jest więc przechowanie wielu dusz w jednym, zdrowym ciele?[br][br]Spis pojemników i sposób ich stworzenia[br][br]Przywołaniec -&amp;gt; najprostrza istota do stworzenia. Nie wymaga bezpośrednio żywej tkanki. Wymaga prostego szkieletu, kilka kropel krwi oraz związku syntetyzującego trofea.[br][br]Zszywaniec -&amp;gt; zaawansowana istota, wymagająca conajmniej kilku ciał i odpowiedniego ich zszycia, dając tym samym dużą wytrzymałość i siłę.[br][br]Strażnik -&amp;gt; wyjątkowo szybka i silna istota, wymagająca rytłau na żywym ciele.[br][br]Akolita -&amp;gt; istota doskonała, posiadająca nadludzki intelekt i siłę. Niestety nie wspomniano nigdzie o tym, w jaki sposób ją stworzyć.</Entry>
-    <Entry Name="Note_05act1main_Note_Name">Ostatnie słowa Derecka</Entry>
-    <Entry Name="Note_05act1main_Note_Text">Nie wierzę w to, co ostatnio widziałęm. Mój brat Issac to kompletny szaleniec. Bez najmniejszych skrupułów brutalnie morduje swoich ludzi, wierząc w to, co naczytał się w jakiejś śmiesznych bajkach. Muszę uniemożliwić mu ten dalszy proceder. Spróbuję jakoś zabezpieczyć klucz wodociągów którymi przyprowadzał kolejne ofiary. Może choć to zminimalizuje ciągle rosnącą ilość ofiar.</Entry>
+  <Entry Name="Note_04act1main_Note_Name">Podsumowanie eksperymentu</Entry>
+    <Entry Name="Note_04act1main_Note_Text">Postanowiłem sporządzić krótkie streszczenie treści zawartej w księdze Animusa. [br][br]Dusza - każda dusza potrzebuje domu, miejsca w którym przebywa. W księdze określono nią pojemnik. Jeśli pojemnik (ciało) obumiera - dusza opuszcza dom (ciało), Dusza skazana jest na astralną wędrówkę.[br][br]Pojemnik - ciało, fizyczna część duszy, który w połączeniu z nią staje się jednością. Możliwy jest powrót duszy, gdy ciało będzie sprawne.[br][br]Czy możliwe jest więc przechowanie wielu dusz w jednym, zdrowym ciele?[br][br]Spis pojemników i sposób ich stworzenia[br][br]Przywołaniec -&amp;gt; najprostrza istota do stworzenia. Nie wymaga bezpośrednio żywej tkanki. Wymaga prostego szkieletu, kilka kropel krwi oraz związku syntetyzującego trofea.[br][br]</Entry>
+    <Entry Name="Note_05act1main_Note_Name">Przestroga zatroskanego</Entry>
+    <Entry Name="Note_05act1main_Note_Text">Issac, wiele razy Ci mówiłem, że eksperymenty w imię nauki, bez względu na to jakie cele by Ci nie przyświęcały staną się dla Ciebie przekleństwem. Dla coraz większej rzeszy ludzi stajesz się zagrożeniem. Nie chciałbym, abyś musiał doczekać dnia kiedy tutejsi mieszkańcy swoją wrogość w stosunku do Ciebie przełożą bezpośrednio na Twoją osobę. Miej się na baczmości. [br] Twój zatroskany przyjaciel Dereck.</Entry>
     <Entry Name="Note_act1down_1_Name">Tytul wpisu</Entry>
     <Entry Name="Note_act1down_1_Text">Wpisz cos... testujemy wszystkie polskie znaki : Uwaga ! :D  </Entry>
     <Entry Name="Note_act1main1_Name">Kazamaty Isaac'a[br]</Entry>
@@ -113,11 +121,11 @@
     <Entry Name="Note_act1main4_Text">Przy jednym z przełączników znajdujących sie w głównym holu zauważyłęm defekt. Najwyraźniej inżynierowie którzy wznosili te kazmaty nie byli misrzami fachu. Koniec końców, zmuszony jestem poszukać innego sposobu na wydostanie się stąd.</Entry>
     <Entry Name="Note_act1main6_Name">Opuszczona komórka</Entry>
     <Entry Name="Note_act1main6_Text">Przodząc ten koszmar trafiłem jak mniemam na jakąś opustoszałą komórkę. Sądząc po zamieszczonych zapisakach na pulpicie, ktoś całkiem niedawno był tu przede mną. O, zaraz - co ja tu widzę. Hm, ten stary młotek - niewątpliwie może się okazać przydatny. Mam dziwne wrażenie, jakby przesuwał się pode  mną płyty skalne. Powinienem jak najszybciej stąd uciekać.</Entry>
-    <Entry Name="Note_tasjen_note_test_2_Name">W pulapce (1 listopada 1878r.)</Entry>
+    <Entry Name="Note_tasjen_note_test_2_Name">W pulapce (1 listopada 1853r.)</Entry>
     <Entry Name="Note_tasjen_note_test_2_Text">Moja ciekawość bywa zwodna. I tym razem nie było wyjątku.  [br][br]Od kilku godzin stoję w jakiejś skrytce wypełnionej po kolana wody  szukając bezradnie wyjścia. Wydaje się być to jakaś skrytka na dokumenty. Chyba powinienem przejrzeć dokładnie leżące tutaj zwoje.[br][br] </Entry>
-    <Entry Name="Note_tasjen_note_test_3_Name">Kieszonkowa zguba (2 listopada 1878r.)</Entry>
+    <Entry Name="Note_tasjen_note_test_3_Name">Kieszonkowa zguba (2 listopada 1853r.)</Entry>
     <Entry Name="Note_tasjen_note_test_3_Text">Te drzwi prowadzace na górę wygladaja na zamknięte od zewnątrz. Najwyraźniej właściciel tej posiadłości nie zbyt  był lubieć w swoim gabinecie nieproszonych gości.[br][br] Jego przebiegłość mnie coraz bardziej zaskakuje. Muszę w końcu zacząć myśleć logicznie. To jedyny 'klucz' do sukcesu.[br][br]Nie wydaje się być tutaj zbyt wiele kryjówek tę "maleństwo".</Entry>
-    <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Issac'a (30 pazdziernika 1878r.) </Entry>
+    <Entry Name="Note_tasjen_note_test_Name">W poszukiwaniu Issac'a (30 pazdziernika 1853r.) </Entry>
     <Entry Name="Note_tasjen_note_test_Text">Przemierzając przesączone stęchlizną kanały sądziłem, że znajdę coś co doprowadzi mnie do posiadłości Issac'a. [br][br]Zamiast tego trafiłem do jakiejś dalszej części odpływu kanałowego. [br][br]Zaraz... te ściany przede mną wydają się być głuche. [br]Może to jest właśnie to co stoi mi na drodze.</Entry>
     <Entry Name="Quest_act1main2_Name">"Ślepy zaułek"</Entry>
     <Entry Name="Quest_act1main2_Text">Schodząc w dół spotkałem się z kolejną niespodzianką.  Pomieszcznie na dole wydaje się ślepym zaułkiem. [br][br]Wygląda na to że, pomieszczenie to zostało wyposażone w mechanizm sterujący. Muszę poszukać czegoś, bo byłoby go w stanie aktywować.</Entry>
@@ -167,7 +175,9 @@
     <Entry Name="EPILOG_GOOD_1_1"></Entry>
 
 
-
+<Entry Name="ACT2MAIN_INTERACT_WHEEL_3">To juz ostatnie koło zębate... Sprawdźmy czy mechanizm zadziała...</Entry>
+<Entry Name="ACT2MAIN_INTERACT_WHEEL_2">Kolejne koło zębate, powinienem je zabrać do sterowni...</Entry>
+<Entry Name="ACT2MAIN_INTERACT_WHEEL_1">To koło zębate wygląda na nieuzywane, powinno pasować do sterowni...</Entry>
 
  <Entry Name="ACT2_MAIN_3">Niech to szlag, to Aleppo. Ehh... to moja wina...Mój drogi przyjacielu, spoczywaj w pokoju...</Entry>
 
@@ -175,12 +185,17 @@
 
     <Entry Name="ACT2_MAIN_1">Uff, mało brakowało... siła wybuchu gazu z wodociągów pogrzebałaby mnie tu zywcem. Idąc kanałami powinienem znaleźć wyjście z podziemi.</Entry>
 
+  <Entry Name="ACT1_TO_ACT2_5">Wygląda to na jakąś zapomnianą część systemu kanalizacyjnego... Przechodząc przez te rury powinienem znaleźć wyjście...</Entry>
+
+    <Entry Name="ACT1_TO_ACT2_4">To miejsce wygląda jak hydrofornia... Żeby zejść niżej, muszę znaleźć sposób na otwarcie włazu na dole...</Entry>
+
     <Entry Name="ACT1_TO_ACT2_3">Agh, ten ulatniający się gaz musiał zainicjować pozar w kazamatach. Aby przejść dalej powinienem znaleźć naprawić uszkodzoną instalację.</Entry>
 
-     <Entry Name="ACT1_TO_ACT2_2">Widzę, mój przyjaciel Aleppo próbując uciec zalał wodą dalszą część korytarza aby powstrzymać się rozprzestrzeniający ogień. Powinienem udać się do sterowni aby wypompować wysoki poziom wody.</Entry>
+     <Entry Name="ACT1_TO_ACT2_2">Widzę, mój przyjaciel Aleppo próbując uciec zalał wodą dalszą część korytarza aby powstrzymać się rozprzestrzeniający ogień. Powinienem udać się do rozlewni aby wypompować wysoki poziom wody.</Entry>
 
     <Entry Name="ACT1_TO_ACT2_1">Ten pożar okazał się większy niz myślałem.... Muszę znaleźć coś czym mógłbym go ugasić i utorować sobie drogę do ucieczki.</Entry>
 
+    <Entry Name="ACT1BURNING_2">Powinienem znaleźć coś czym mógłbym wyważyć te drzwi.</Entry>
     <Entry Name="ACT1BURNING_1">Cholera, pożar! Przez nieszczelną instalację ta komnata zaraz legnie w gruzach. Muszę się stąd jak najbszyciej ewakuować!</Entry>
     <Entry Name="ACT1UP_1_NEEDLE">Super, ta niepozorna igła pozwoli mi otworzyć drzwi w dolnej części kazamatów.</Entry>
 

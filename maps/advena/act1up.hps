@@ -41,6 +41,7 @@ AddTimer("",3,"Teleport_Cell");
 }
 //######### INTRO SEQUENCE ###################
 void Teleport_Cell(string &in asTimer) {
+  PlaySoundAtEntity("", "advena_fb_sfx_21_prisoner_wait_room.snt", "Player", 0, false);
 AddLocalVarInt("intro_cell_sequence",1);
 int szybkosc = 10;
 switch(GetLocalVarInt("intro_cell_sequence")) {
@@ -189,7 +190,7 @@ void wiezien_q_t(string &in asTimer) {
 void quest_1_w_timer(string &in asTimer) {
   AddQuest("Journal", "act1up");
   AddLocalVarInt("wiezien_q1_q",1);
-  AddEntityCollideCallback("chlebek_*", "ScriptArea_15", "wiezien_najedzony", true, 1);
+  AddEntityCollideCallback("chlebek", "ScriptArea_15", "wiezien_najedzony", true, 1);
 
 //zmienić instancje w mapie
 }

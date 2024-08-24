@@ -31,7 +31,7 @@ AddEnemyPatrolNode("servant_grunt_1", "PathNodeArea_22", 0, "");
 }
 void OnEnter() {
      AutoSave();
-	PlayMusic("03Resident.ogg",false, 0.85,1.0,1,false);
+	PlayMusic("act3main.ogg",false, 0.85,1.0,1,false);
 	if(GetLocalVarInt("rozdzial3") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "3", 3.0f);

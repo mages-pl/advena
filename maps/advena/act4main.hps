@@ -86,7 +86,8 @@ void InteractWheel(string &in asEntity)
 }  */
 void OnEnter() {
      AutoSave();
-PlayMusic("06_amb.ogg",true, 0.85,1.0,1,true);
+// PlayMusic("06_amb.ogg",true, 0.85,1.0,1,true);
+PlayMusic("act4main.ogg",true, 0.8, 0.1, 10, true);
 if(GetLocalVarInt("rozdzial4") == 0) {
 FadeOut(0);
  SetMessage("Rozdzial", "4", 3.0f);

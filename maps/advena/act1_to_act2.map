@@ -7380,7 +7380,7 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="CustomSubItemTypeName" Value="" />
-                        <Var Name="NoteText" Value="" />
+                        <Var Name="NoteText" Value="act1toact2hydrophore" />
                         <Var Name="OpenNoteInJournal" Value="true" />
                         <Var Name="UseNarration" Value="false" />
                     </UserVariables>

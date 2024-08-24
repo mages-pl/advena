@@ -12,7 +12,7 @@ void make_dialogue1(string &in asTimer) {
 void OnEnter() {
 
       // Wygląda mi to na stare, zapomniane miejsce, którego nie dotknęło światło dzienne od wieków... Muszę się mieć na baczności...
-      PlayMusic("02Catacombs.ogg", true, 0.85f, 1.0f, 1, true);
+      PlayMusic("act1katakumby.ogg", true, 0.85f, 1.0f, 1, true);
       AddTimer("",10,"make_dialogue1");
 
       AddLocalVarInt("losuj_czy_duch",RandInt(1,2));

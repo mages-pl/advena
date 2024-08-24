@@ -165,7 +165,8 @@ SetEntityActive("waterlurker_3",false);
 }
 void OnEnter() {
     AutoSave();
-	PlayMusic("07_amb.ogg",true, 0.85,1.0,1,true);
+	// PlayMusic("07_amb.ogg",true, 0.85,1.0,1,true);
+	PlayMusic("act4resident.ogg",true, 0.85,1.0,1,true);
 }
 
 void ScriptArea_7(string &in asParent, string &in asChild, int alState) {

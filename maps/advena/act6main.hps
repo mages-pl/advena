@@ -1,5 +1,13 @@
 void OnEnter() {
-PlayMusic("game_menu.ogg",false, 0.85,1.0,1,false);
+// PlayMusic("game_menu.ogg",false, 0.85,1.0,1,false);
+if(GetLocalVarInt("kamienie") >= 2) {
+	// Good ending
+	PlayMusic("act6main_good_ending.ogg",false, 0.85,1.0,1,false);
+} else {
+	// Bad ending
+	PlayMusic("act6main_bad_ending.ogg",false, 0.85,1.0,1,false);
+}
+ 
 	AddUseItemCallback("", "orbpiece_obsidian_1", "ScriptArea_1", "ScriptArea_1", true);
 	AddUseItemCallback("", "orbpiece_indigo_1", "ScriptArea_2", "ScriptArea_2", true);
 	AddUseItemCallback("", "orbpiece_emerald_1", "ScriptArea_3", "ScriptArea_3", true);

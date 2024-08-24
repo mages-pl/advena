@@ -45,11 +45,11 @@ void ScriptArea_19(string &in asParent, string &in asChild, int alState) {
 }
 
 void dialogue_act2_main_3(string &in asTimer) { 
-    if(GetGlobalVarInt("dialogue_act2_main_3_var") == 0) {
+    if(GetGlobalVarInt("dialogue_act2_main_2_var") == 0) {
       
-      AddEffectVoice("ACT1_TO_ACT2_3", "", "Dialogue", "ACT1_TO_ACT2_3",false, "Player", 0.0f, 10.0f);
+      AddEffectVoice("ACT2_MAIN_2", "", "Dialogue", "ACT2_MAIN_2",false, "Player", 0.0f, 10.0f);
 
-      AddLocalVarInt("dialogue_act2_main_3_var", 1);
+      AddLocalVarInt("dialogue_act2_main_2_var", 1);
     }
 }
 void brute_2_strach(string &in asParent, string &in asChild, int alState) {
@@ -84,11 +84,14 @@ SetMessage("Skrytki","Odkryto", 3); // GetGlobalVarInt("OdkryteSkrytki")+GetGlob
 void ScriptArea_1(string &in asParent, string &in asChild, int alState) {
    ChangeMap("act3main.map", "PlayerStartArea_1", "", "");
 }
+void dialogue_act2_main_1(string &in asTimer) { 
+  AddEffectVoice("ACT2_MAIN_1", "", "Dialogue", "ACT2_MAIN_1",false, "Player", 0.0f, 10.0f);
+
+}
 //#### Zawalenie g�az�w ######## 
 void ScriptArea_2(string &in asParent,string &in asChild, int alState) {
 
-
-  AddEffectVoice("ACT2_MAIN_1", "", "Dialogue", "ACT2_MAIN_1",false, "Player", 0.0f, 10.0f);
+AddTimer("dialogue_act2_main_1", 6, "dialogue_act2_main_1");
  
 SetEntityActive("cave_in_destroyed_1",true);
 SetEntityActive("cave_in_1",true);	
@@ -225,6 +228,84 @@ AddTimer("",15,"next_amb_music");
    RotatePropToSpeed("cogwheel_tiny01_3", 0.7, 0.6f , 0, 0, -1, false, "rotation3");
    
 SetMoveObjectState("crush_wall_1", -1.0f);
+}
+
+void act2main_interactWheel2(string &in asEnity) { 
+  if(GetLocalVarInt('act2main_interact3') == 0) { 
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 0) {
+      // To koło zębate wygląda na nieuzywane, powinno pasować do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_1", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_1",false, "Player", 0.0f, 10.0f);
+      
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 1) {
+      
+      // Kolejne koło zębate, powinienem je zabrać do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_2", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_2",false, "Player", 0.0f, 10.0f);
+
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+
+    if(GetLocalVarInt('act2main_interact_last') == 2) {
+      
+      // To juz ostatnie koło zębate... Sprawdźmy czy mechanizm zadziała...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_3", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_3",false, "Player", 0.0f, 10.0f);
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    SetLocalVarInt("act2main_interact3",1);
+  }
+}
+
+void act2main_interactWheel2(string &in asEnity) { 
+  if(GetLocalVarInt('act2main_interact2') == 0) { 
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 0) {
+      // To koło zębate wygląda na nieuzywane, powinno pasować do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_1", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_1",false, "Player", 0.0f, 10.0f);
+      
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 1) {
+      
+      // Kolejne koło zębate, powinienem je zabrać do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_2", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_2",false, "Player", 0.0f, 10.0f);
+
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+
+    if(GetLocalVarInt('act2main_interact_last') == 2) {
+      
+      // To juz ostatnie koło zębate... Sprawdźmy czy mechanizm zadziała...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_3", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_3",false, "Player", 0.0f, 10.0f);
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    SetLocalVarInt("act2main_interact2",1);
+  }
+}
+
+void act2main_interactWheel1(string &in asEnity) { 
+  if(GetLocalVarInt('act2main_interact1') == 0) { 
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 0) {
+      // To koło zębate wygląda na nieuzywane, powinno pasować do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_1", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_1",false, "Player", 0.0f, 10.0f);
+      
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 1) {
+      
+      // Kolejne koło zębate, powinienem je zabrać do sterowni...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_2", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_2",false, "Player", 0.0f, 10.0f);
+
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+
+    if(GetLocalVarInt('act2main_interact_last') == 2) {
+      
+      // To juz ostatnie koło zębate... Sprawdźmy czy mechanizm zadziała...
+      AddEffectVoice("ACT2MAIN_INTERACT_WHEEL_3", "", "Dialogue", "ACT2MAIN_INTERACT_WHEEL_3",false, "Player", 0.0f, 10.0f);
+      AddLocalVarInt('act2main_interact_wheel_dialogue', 1);
+    }
+    SetLocalVarInt("act2main_interact1",1);
+  }
 }
 
 void next_amb_music(string &in asTimer) {

@@ -11923,7 +11923,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="69" Group="0" ID="1802" Name="czachasummon" Rotation="3.14058 0.523601 -3.14046" Scale="1 1 1" Tag="" WorldPos="16.0354 2.61182 38.7577">
+                <Entity Active="true" FileIndex="69" Group="0" ID="1802" Name="czachasummon" Rotation="3.14058 0.523601 -3.14046" Scale="1 1 1" Tag="" WorldPos="16.0354 1.2 38.7577">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
