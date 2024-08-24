@@ -5,7 +5,9 @@ void OnStart() {
 	AddEntityCollideCallback("tabke_wood01_moveable_1","ScriptArea_20","ScriptArea_20",true,1);
 	AddEntityCollideCallback("Player","ScriptArea_6","ScriptArea_6",true,1);
 	AddEntityCollideCallback("Player","ScriptArea_15","ScriptArea_15",true,1);
- AddUseItemCallback("", "crowbar_1", "cellar_wood01_1", "UsedCrowbarOnDoor", true);
+ 	AddUseItemCallback("", "crowbar_1", "cellar_wood01_1", "UsedCrowbarOnDoor", true);
+
+	
  
  	InteractConnectPropWithMoveObject("v_s_1", "valve_iron_rusty_1", "wooden_slide_door_1", true, true, 0.1f);	
 	InteractConnectPropWithMoveObject("v_s_2", "valve_iron_rusty_2", "wooden_slide_door_2", true, true, 0.1f);	
@@ -85,6 +87,9 @@ void InteractWheel(string &in asEntity)
 	AddTimer("sound", 0.8f, "TimerCloseGate");
 }  */
 void OnEnter() {
+	 // Testowo dodaj łom 
+	 GiveItemFromFile("crowbar_1","crowbar.ent");
+	 
      AutoSave();
 // PlayMusic("06_amb.ogg",true, 0.85,1.0,1,true);
 PlayMusic("act4main.ogg",true, 0.8, 0.1, 10, true);

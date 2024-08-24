@@ -42,7 +42,7 @@ FadeOut(0);
 }
 
 void NowyTrackAmb(string &in asTimer) {
-    PlayMusic("ending_alexander.ogg",true, 0.5,0.7,1,true);
+    PlayMusic("act3main.ogg",true, 0.5,0.7,1,true);
 }
 void show_song1(string &in asEntity, int alState) {
     if(alState == 1) { 
