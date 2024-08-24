@@ -230,7 +230,7 @@ AddTimer("",15,"next_amb_music");
 SetMoveObjectState("crush_wall_1", -1.0f);
 }
 
-void act2main_interactWheel2(string &in asEnity) { 
+void act2main_interactWheel3(string &in asEnity) { 
   if(GetLocalVarInt('act2main_interact3') == 0) { 
     if(GetLocalVarInt('act2main_interact_wheel_dialogue') == 0) {
       // To koło zębate wygląda na nieuzywane, powinno pasować do sterowni...

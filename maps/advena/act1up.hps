@@ -41,7 +41,7 @@ AddTimer("",3,"Teleport_Cell");
 }
 //######### INTRO SEQUENCE ###################
 void Teleport_Cell(string &in asTimer) {
-  PlaySoundAtEntity("", "advena_fb_sfx_21_prisoner_wait_room.snt", "Player", 0, false);
+  PlaySoundAtEntity("advena_fb_sfx_21_prisoner_wait_room", "advena_fb_sfx_21_prisoner_wait_room.snt", "Player", 0, true);
 AddLocalVarInt("intro_cell_sequence",1);
 int szybkosc = 10;
 switch(GetLocalVarInt("intro_cell_sequence")) {
@@ -77,6 +77,7 @@ break; // panika, cela wype�nia si� krwi� + panika + os�abienie
  break;
 case 5: 
 szybkosc = 2;
+StopSound("advena_fb_sfx_21_prisoner_wait_room", 1.0f);
 TeleportPlayer("PlayerStartArea_3");
  FadeRadialBlurTo(0.0f, 0.8f);
   SetEntityActive("enemy_suitor_1",false);
@@ -90,7 +91,7 @@ break;
 
 	if (GetLocalVarInt("intro_cell_sequence") <= 6){ AddTimer("", szybkosc, "Teleport_Cell"); }
 }
-//############# EFEKTY D�WI�KOWE ##############
+//############# EFEKTY DZWIEKOWE ##############
 void ScriptArea_6(string &in asParent, string &in asChild, int alState) {
 	if(alState == 1) {
  RemoveTimer("scare_sound_prison_n");
@@ -170,9 +171,9 @@ void OnLeave() {
 void ScriptArea_16(string &in asParent, string &in asChild, int alState) {
   if(GetLocalVarInt("wiezien_q1_q") == 0) {
     if(alState == 1) {
-      AddEffectVoice("DIA_1_Q1", "", "Dialogue", "DIA_1_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
-      AddEffectVoice("DIA_2_Q1", "", "Dialogue", "DIA_2_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
-      AddEffectVoice("DIA_3_Q1", "", "Dialogue", "DIA_3_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_1_Q1", "", "Dialogue", "DIA_1_Q1",false, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_2_Q1", "", "Dialogue", "DIA_2_Q1",false, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_3_Q1", "", "Dialogue", "DIA_3_Q1",false, "ScriptArea_16", 0.0f, 10.0f);
 
       AddTimer("wiezien_q",10,"wiezien_q_t");
       //SetEffectVoiceOverCallback("koniec_gadania_q1");
@@ -180,7 +181,7 @@ void ScriptArea_16(string &in asParent, string &in asChild, int alState) {
     if(alState == -1) {
       RemoveTimer("wiezien_q");
       RemoveTimer("next_dialoge");
-      AddEffectVoice("DIA_4_Q1", "", "Dialogue", "DIA_4_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+      AddEffectVoice("DIA_4_Q1", "", "Dialogue", "DIA_4_Q1",false, "ScriptArea_16", 0.0f, 10.0f);
     }
   }
 }
@@ -196,7 +197,7 @@ void quest_1_w_timer(string &in asTimer) {
 }
 void wiezien_najedzony(string &in asParent, string &in asChild, int alState) {
  FadeOut(3);
- AddEffectVoice("DIA_5_Q1", "", "Dialogue", "DIA_5_Q1",true, "ScriptArea_16", 0.0f, 10.0f);
+ AddEffectVoice("DIA_5_Q1", "", "Dialogue", "DIA_5_Q1",false, "ScriptArea_16", 0.0f, 10.0f);
  
  AddTimer("",6,"end_fade_wiezien_q1");
 }
